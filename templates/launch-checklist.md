@@ -1,116 +1,116 @@
-# Product Launch Checklist
+# 製品ローンチチェックリスト
 
-## 8 Weeks Before Launch
+## ローンチ8週前
 
-### Strategy
-- [ ] Define launch goals (revenue target, user target, awareness target)
-- [ ] Identify target audience segments for launch
-- [ ] Choose launch type (Product Hunt, email, social, paid, partner, community)
-- [ ] Set launch date and time
-- [ ] Define success metrics and how you'll track them
+### 戦略
+- [ ] ローンチ目標を設定する（収益目標、ユーザー目標、認知度目標）
+- [ ] ローンチ対象のターゲットオーディエンスセグメントを特定する
+- [ ] ローンチ方法を選択する（Product Hunt、メール、SNS、有料広告、パートナー、コミュニティ）
+- [ ] ローンチ日時を設定する
+- [ ] 成功指標と測定方法を定義する
 
-### Product
-- [ ] Product is feature-complete for launch version
-- [ ] Landing page is built and optimized
-- [ ] Pricing is finalized
-- [ ] Onboarding flow is tested
-- [ ] Help docs / FAQ are written
-
----
-
-## 4 Weeks Before Launch
-
-### Content
-- [ ] Write launch blog post / announcement
-- [ ] Create email sequence (teaser, launch, follow-up, close)
-- [ ] Prepare social media posts for launch week (all platforms)
-- [ ] Record product demo video
-- [ ] Create launch graphics / images
-- [ ] Write press release or media pitch (if applicable)
-
-### Audience Building
-- [ ] Set up waitlist / early access page
-- [ ] Start teasing on social media
-- [ ] Reach out to 10-20 potential beta users
-- [ ] Contact potential launch partners or affiliates
-- [ ] Identify 5-10 influencers or creators to notify
-
-### Technical
-- [ ] Set up analytics tracking for launch pages
-- [ ] Test payment flow end-to-end
-- [ ] Set up email automations
-- [ ] Configure UTM parameters for all launch links
-- [ ] Load test infrastructure (if applicable)
+### 製品
+- [ ] ローンチバージョンの機能開発が完了している
+- [ ] ランディングページが構築・最適化されている
+- [ ] 価格設定が確定している
+- [ ] オンボーディングフローがテスト済みである
+- [ ] ヘルプドキュメント / よくある質問が作成されている
 
 ---
 
-## 1 Week Before Launch
+## ローンチ4週前
 
-### Final Prep
-- [ ] Send teaser email to full list
-- [ ] Schedule all social media posts
-- [ ] Brief any team members on launch plan
-- [ ] Prepare customer support responses for common questions
-- [ ] Set up launch day war room (Slack channel, dashboard)
-- [ ] Test all links, forms, and payment flows one more time
+### コンテンツ
+- [ ] ローンチブログ記事 / アナウンスを書く
+- [ ] メールシーケンスを作成する（ティーザー、ローンチ、フォローアップ、クロージング）
+- [ ] ローンチ週のSNS投稿を準備する（全プラットフォーム）
+- [ ] 製品デモ動画を録画する
+- [ ] ローンチ用グラフィック / 画像を作成する
+- [ ] プレスリリースまたはメディアへのピッチを書く（必要な場合）
 
-### Community
-- [ ] Prepare Product Hunt listing (if applicable)
-- [ ] Draft launch day tweets / posts
-- [ ] Prepare responses for expected questions
-- [ ] Reach out to supporters for launch day engagement
+### オーディエンス構築
+- [ ] ウェイトリスト / 早期アクセスページを設置する
+- [ ] SNSでティーザー投稿を開始する
+- [ ] 10〜20名の潜在的なベータユーザーにコンタクトする
+- [ ] ローンチパートナーまたはアフィリエイトに連絡する
+- [ ] 通知すべきインフルエンサーやクリエイター5〜10名を特定する
 
----
-
-## Launch Day
-
-### Morning
-- [ ] Send launch email to full list
-- [ ] Post launch announcement on all social channels
-- [ ] Submit to Product Hunt (if applicable)
-- [ ] Notify partners, affiliates, and influencers
-- [ ] Monitor analytics dashboard
-
-### Throughout the Day
-- [ ] Respond to every comment and question within 1 hour
-- [ ] Share user reactions and early results on social
-- [ ] Send personal thanks to first customers
-- [ ] Monitor for bugs or technical issues
-- [ ] Post updates on engagement and milestones
-
-### Evening
-- [ ] Send social proof email (early results, testimonials)
-- [ ] Thank your community for support
-- [ ] Document lessons learned while fresh
+### 技術
+- [ ] ローンチページの分析トラッキングを設定する
+- [ ] 決済フローを一連の流れでテストする
+- [ ] メール自動化を設定する
+- [ ] 全ローンチリンクにUTMパラメータを設定する
+- [ ] インフラの負荷テストを実施する（必要な場合）
 
 ---
 
-## Post-Launch (Week 1-2)
+## ローンチ1週前
 
-### Follow-Up
-- [ ] Send follow-up emails (social proof, FAQ, deadline)
-- [ ] Reach out personally to biggest supporters
-- [ ] Collect and publish testimonials
-- [ ] Create case study from best early result
-- [ ] Close launch offer (if time-limited)
+### 最終準備
+- [ ] リスト全体にティーザーメールを送信する
+- [ ] 全SNS投稿を予約投稿する
+- [ ] チームメンバーにローンチ計画を共有する
+- [ ] よくある質問に対するカスタマーサポートの回答を準備する
+- [ ] ローンチ当日の作戦本部を設置する（Slackチャンネル、ダッシュボード）
+- [ ] 全リンク、フォーム、決済フローを再度テストする
 
-### Analysis
-- [ ] Compile launch metrics vs. goals
-- [ ] Identify top-performing channels
-- [ ] Document what worked and what didn't
-- [ ] Plan post-launch content strategy
-- [ ] Set 30-day and 90-day targets based on launch data
+### コミュニティ
+- [ ] Product Huntのリスティングを準備する（必要な場合）
+- [ ] ローンチ当日のツイート / 投稿の下書きを作成する
+- [ ] 想定される質問への回答を準備する
+- [ ] ローンチ当日のエンゲージメントに協力してくれるサポーターに声をかける
 
 ---
 
-## Key Launch Metrics to Track
-| Metric | How to Measure |
-|--------|----------------|
-| Total signups/sales | Payment processor + analytics |
-| Revenue | Stripe / payment dashboard |
-| Conversion rate | Visitors → signups |
-| Email open rate | Email platform |
-| Social impressions | Platform analytics |
-| Product Hunt rank | Product Hunt dashboard |
-| Customer feedback | Support inbox + social mentions |
-| Referral signups | UTM tracking |
+## ローンチ当日
+
+### 午前
+- [ ] リスト全体にローンチメールを送信する
+- [ ] 全SNSチャンネルでローンチ告知を投稿する
+- [ ] Product Huntに投稿する（必要な場合）
+- [ ] パートナー、アフィリエイト、インフルエンサーに通知する
+- [ ] 分析ダッシュボードを監視する
+
+### 日中
+- [ ] 全てのコメントと質問に1時間以内に返信する
+- [ ] ユーザーの反応や初期成果をSNSでシェアする
+- [ ] 最初のお客様に個別でお礼を伝える
+- [ ] バグや技術的な問題を監視する
+- [ ] エンゲージメントやマイルストーンの更新を投稿する
+
+### 夜
+- [ ] 社会的証明メールを送信する（初期成果、お客様の声）
+- [ ] コミュニティへのサポートに感謝する
+- [ ] 記憶が新鮮なうちに学んだことを記録する
+
+---
+
+## ローンチ後（第1〜2週）
+
+### フォローアップ
+- [ ] フォローアップメールを送信する（社会的証明、よくある質問、締め切り）
+- [ ] 最も貢献してくれたサポーターに個別に連絡する
+- [ ] お客様の声を収集・公開する
+- [ ] 最も良い初期成果からケーススタディを作成する
+- [ ] ローンチオファーを終了する（期間限定の場合）
+
+### 分析
+- [ ] 目標に対するローンチ指標をまとめる
+- [ ] 最もパフォーマンスの高いチャンネルを特定する
+- [ ] うまくいったことといかなかったことを記録する
+- [ ] ローンチ後のコンテンツ戦略を計画する
+- [ ] ローンチデータに基づいて30日・90日目標を設定する
+
+---
+
+## 追跡すべき主要ローンチ指標
+| 指標 | 測定方法 |
+|------|---------|
+| 総登録者数 / 売上数 | 決済処理システム＋分析ツール |
+| 収益 | Stripe / 決済ダッシュボード |
+| コンバージョン率 | 訪問者 → 登録者 |
+| メール開封率 | メールプラットフォーム |
+| SNSインプレッション数 | 各プラットフォームの分析 |
+| Product Huntランキング | Product Huntダッシュボード |
+| 顧客フィードバック | サポート受信箱＋SNSメンション |
+| リファラル登録数 | UTMトラッキング |

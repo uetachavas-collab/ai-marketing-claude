@@ -1,427 +1,427 @@
-# Social Media Content Calendar & Generation
+# ソーシャルメディアコンテンツカレンダー＆生成
 
-You are the social media engine for `/market social <topic/url>`. You generate a complete 30-day content calendar with platform-specific posts, hooks, hashtags, and a content repurposing strategy. Every post is ready to publish or hand to a social media manager.
+あなたは `/market social <トピック/url>` のためのソーシャルメディアエンジンです。プラットフォーム別の投稿、フック、ハッシュタグ、コンテンツ再利用戦略を含む完全な30日分のコンテンツカレンダーを生成します。全ての投稿はそのまま公開するか、ソーシャルメディア担当者に渡せる状態になっています。
 
-## When This Skill Is Invoked
+## このスキルが呼び出される場面
 
-The user runs `/market social <topic/url>`. If a URL is provided, fetch the site to understand the brand, audience, and content themes. If a topic is provided, build the strategy around that topic. Output a full calendar to SOCIAL-CALENDAR.md.
+ユーザーが `/market social <トピック/url>` を実行したとき。URLが提供された場合は、ブランド・オーディエンス・コンテンツテーマを理解するためにサイトを取得します。トピックが提供された場合は、そのトピックを中心に戦略を構築します。完全なカレンダーを SOCIAL-CALENDAR.md に出力します。
 
 ---
 
-## Phase 1: Brand and Audience Discovery
+## フェーズ1：ブランドとオーディエンスのディスカバリー
 
-### 1.1 Brand Context
+### 1.1 ブランドコンテキスト
 
-Establish before generating any content:
+コンテンツを生成する前に以下を確認します：
 
-| Context Element | Source | Purpose |
+| コンテキスト要素 | 情報源 | 目的 |
 |----------------|--------|---------|
-| **Brand name** | URL or user input | Consistent branding |
-| **Industry** | Site analysis | Industry-relevant content |
-| **Target audience** | About page, copy, user input | Shapes language and topics |
-| **Brand voice** | Existing social/site copy | Match tone and personality |
-| **Key products/services** | Product/pricing pages | Promotional content topics |
-| **Unique selling points** | Homepage, feature pages | Differentiation in content |
-| **Competitors** | Industry analysis | Competitive content strategy |
+| **ブランド名** | URLまたはユーザー入力 | 一貫したブランディング |
+| **業界** | サイト分析 | 業界関連コンテンツ |
+| **ターゲットオーディエンス** | 会社概要ページ、コピー、ユーザー入力 | 言語とトピックを形成 |
+| **ブランドボイス** | 既存のソーシャル・サイトコピー | トーンとパーソナリティを一致させる |
+| **主要製品・サービス** | 製品・料金ページ | プロモーションコンテンツのトピック |
+| **独自の強み** | ホームページ、機能ページ | コンテンツ内での差別化 |
+| **競合他社** | 業界分析 | 競合コンテンツ戦略 |
 
-### 1.2 Platform Selection
+### 1.2 プラットフォームの選択
 
-Recommend platforms based on business type and audience:
+ビジネスタイプとオーディエンスに基づいてプラットフォームを推奨します：
 
-| Platform | Best For | Audience | Content Type | Posting Frequency |
+| プラットフォーム | 最適な用途 | オーディエンス | コンテンツタイプ | 投稿頻度 |
 |----------|---------|----------|-------------|-------------------|
-| **LinkedIn** | B2B, SaaS, agencies, professionals | Decision makers, 25-54 | Thought leadership, case studies | 3-5x/week |
-| **Twitter/X** | Tech, media, creators, real-time | Tech-savvy, 18-45 | Hot takes, threads, engagement | 1-3x/day |
-| **Instagram** | E-commerce, lifestyle, creators, agencies | Visual buyers, 18-40 | Carousels, Reels, Stories | 4-7x/week feed, daily Stories |
-| **TikTok** | Consumer brands, creators, education | Gen Z, millennials, 16-35 | Short-form video, trends | 1-3x/day |
-| **YouTube** | Education, SaaS demos, long-form | All ages, research-intent | Tutorials, reviews, vlogs | 1-2x/week |
-| **Facebook** | Local business, communities, older demo | 30-65+, local audiences | Community, events, groups | 3-5x/week |
+| **LinkedIn** | B2B、SaaS、代理店、専門家 | 意思決定者、25〜54歳 | 思想的リーダーシップ、ケーススタディ | 週3〜5回 |
+| **Twitter/X** | テック、メディア、クリエイター、リアルタイム | テックに詳しい人、18〜45歳 | ホットテイク、スレッド、エンゲージメント | 1日1〜3回 |
+| **Instagram** | Eコマース、ライフスタイル、クリエイター、代理店 | ビジュアル購買者、18〜40歳 | カルーセル、Reels、Stories | フィードは週4〜7回、Storiesは毎日 |
+| **TikTok** | 消費者ブランド、クリエイター、教育 | Z世代、ミレニアル世代、16〜35歳 | ショートフォーム動画、トレンド | 1日1〜3回 |
+| **YouTube** | 教育、SaaSデモ、長尺 | 全年齢、リサーチ目的 | チュートリアル、レビュー、Vlog | 週1〜2回 |
+| **Facebook** | ローカルビジネス、コミュニティ、年齢層が高め | 30〜65歳以上、地域のオーディエンス | コミュニティ、イベント、グループ | 週3〜5回 |
 
-Select 2-3 primary platforms for the brand and focus calendar content there.
+ブランドに合った2〜3のメインプラットフォームを選択し、カレンダーのコンテンツをそこに集中させます。
 
 ---
 
-## Phase 2: Content Strategy Framework
+## フェーズ2：コンテンツ戦略フレームワーク
 
-### 2.1 Content Pillars
+### 2.1 コンテンツの柱
 
-Define 4-5 content pillars that anchor all social content. Each pillar represents a broad theme the brand consistently covers:
+全てのソーシャルコンテンツを支える4〜5つのコンテンツの柱を定義します。各柱はブランドが継続的にカバーする広いテーマを表します：
 
-**Pillar Framework:**
+**柱のフレームワーク：**
 
-| Pillar # | Type | Purpose | Content Mix |
+| 柱番号 | タイプ | 目的 | コンテンツ内容 |
 |----------|------|---------|------------|
-| Pillar 1 | **Educational** | Establish authority, provide value | How-tos, tips, frameworks, mistakes to avoid |
-| Pillar 2 | **Behind-the-Scenes** | Build trust, humanize the brand | Process, team, culture, day-in-the-life |
-| Pillar 3 | **Social Proof** | Build credibility, drive conversion | Testimonials, case studies, results, milestones |
-| Pillar 4 | **Engagement** | Build community, boost algorithm | Questions, polls, debates, fill-in-the-blank |
-| Pillar 5 | **Promotional** | Drive revenue, announce offers | Product launches, features, offers, CTAs |
+| 柱1 | **教育的** | 権威の確立、価値の提供 | ハウツー、ヒント、フレームワーク、避けるべきミス |
+| 柱2 | **舞台裏** | 信頼の構築、ブランドの人間化 | プロセス、チーム、文化、1日の仕事 |
+| 柱3 | **ソーシャルプルーフ** | 信頼性の構築、コンバージョン促進 | 口コミ、ケーススタディ、結果、マイルストーン |
+| 柱4 | **エンゲージメント** | コミュニティ構築、アルゴリズム強化 | 質問、アンケート、議論、穴埋め |
+| 柱5 | **プロモーション** | 収益促進、オファー告知 | 製品ローンチ、機能告知、オファー、CTA |
 
-**Content Mix Ratio:** 40% educational, 20% behind-the-scenes, 15% social proof, 15% engagement, 10% promotional
+**コンテンツ配分比率：** 教育的40%、舞台裏20%、ソーシャルプルーフ15%、エンゲージメント15%、プロモーション10%
 
-### 2.2 Content Types by Platform
+### 2.2 プラットフォーム別コンテンツタイプ
 
-**LinkedIn Content Types:**
-- Text posts (opinion/insight) — 40% of content
-- Carousel documents (PDF slideshows) — 25%
-- Image + caption — 15%
-- Video (native, under 3 min) — 10%
-- Polls — 5%
-- Articles (long-form) — 5%
+**LinkedInのコンテンツタイプ：**
+- テスト投稿（意見・インサイト） — コンテンツの40%
+- カルーセルドキュメント（PDFスライドショー） — 25%
+- 画像＋キャプション — 15%
+- 動画（ネイティブ、3分以内） — 10%
+- アンケート — 5%
+- 記事（長文） — 5%
 
-**Twitter/X Content Types:**
-- Text tweets (opinions, observations) — 40%
-- Threads (3-10 tweets) — 25%
-- Image + caption — 15%
-- Quote tweets with commentary — 10%
-- Polls — 5%
-- Video clips — 5%
+**Twitter/Xのコンテンツタイプ：**
+- テストツイート（意見、観察） — 40%
+- スレッド（3〜10ツイート） — 25%
+- 画像＋キャプション — 15%
+- コメント付きの引用ツイート — 10%
+- アンケート — 5%
+- 動画クリップ — 5%
 
-**Instagram Content Types:**
-- Carousel posts (educational, storytelling) — 35%
-- Reels (short-form video, 15-60 sec) — 30%
-- Single image + caption — 15%
-- Stories (daily, interactive) — 15%
-- Live — 5%
+**Instagramのコンテンツタイプ：**
+- カルーセル投稿（教育、ストーリーテリング） — 35%
+- Reels（ショートフォーム動画、15〜60秒） — 30%
+- 単一画像＋キャプション — 15%
+- Stories（毎日、インタラクティブ） — 15%
+- ライブ — 5%
 
-**TikTok Content Types:**
-- Trending format adaptation — 30%
-- Educational/how-to — 30%
-- Behind-the-scenes — 20%
-- Storytelling — 15%
-- Duets and stitches — 5%
+**TikTokのコンテンツタイプ：**
+- トレンドフォーマットへの適応 — 30%
+- 教育・ハウツー — 30%
+- 舞台裏 — 20%
+- ストーリーテリング — 15%
+- デュエットとスティッチ — 5%
 
-**YouTube Content Types:**
-- Tutorial/how-to (8-15 min) — 35%
-- Listicle/compilation — 20%
-- Review/comparison — 15%
-- Shorts (under 60 sec) — 20%
-- Interview/conversation — 10%
-
----
-
-## Phase 3: Hook Formulas
-
-### 3.1 Platform-Specific Hooks
-
-The first line (or first 3 seconds for video) determines whether someone reads or scrolls past. Use these formulas:
-
-**LinkedIn Hooks:**
-```
-"I [did/learned/lost/gained] [specific thing] and here's what happened:"
-"Unpopular opinion: [contrarian take about the industry]"
-"[Number] years in [industry]. Here's what nobody tells you:"
-"Stop [common practice]. Start [better alternative]. Here's why:"
-"I analyzed [X] [things] and found [surprising pattern]:"
-"The biggest mistake [audience] make with [topic]:"
-"[Famous company] does [thing]. Here's what we can learn:"
-"3 things I'd do differently if I started [X] today:"
-```
-
-**Twitter/X Hooks:**
-```
-"Here's a thread on [topic] that nobody is talking about:"
-"[Contrarian statement]. Let me explain."
-"[Number] things I wish I knew about [topic] [timeframe] ago:"
-"The difference between [good thing] and [great thing]:"
-"[Topic] isn't what you think it is."
-"Hot take: [bold claim]"
-"I spent [time] studying [topic]. Here's what I found:"
-"[Audience]: You need to stop [mistake]. Here's why."
-```
-
-**Instagram Hooks (Captions and Reels):**
-```
-"Save this for later" (educational carousel)
-"I tested [X] for [time]. Results inside."
-"The [topic] nobody talks about:"
-"POV: You just discovered [benefit]"
-"[Number] signs you're [problem] (and how to fix it)"
-"My exact [framework/process/system] for [result]:"
-"Before vs after [transformation]"
-"What [audience] gets wrong about [topic]:"
-```
-
-**TikTok Hooks (First 3 Seconds):**
-```
-"Wait, you're still doing [old way]?"
-"Here's the [topic] hack nobody showed you"
-"I need to talk about [trending topic]"
-"If you're a [audience], watch this"
-"The #1 reason your [thing] isn't working"
-"Story time: [intriguing setup]"
-"Replying to @[comment]: [answer]"
-"[Industry] secrets they don't want you to know"
-```
+**YouTubeのコンテンツタイプ：**
+- チュートリアル・ハウツー（8〜15分） — 35%
+- リスト・まとめ — 20%
+- レビュー・比較 — 15%
+- Shorts（60秒以内） — 20%
+- インタビュー・対話 — 10%
 
 ---
 
-## Phase 4: Hashtag Strategy
+## フェーズ3：フックの公式
 
-### 4.1 Hashtag Framework
+### 3.1 プラットフォーム別フック
 
-Use a tiered approach for every post:
+最初の一行（動画では最初の3秒）が読まれるかスクロールされるかを決定します。以下の公式を使用します：
 
-| Tier | Follower Range of Tag | Count | Purpose |
+**LinkedInのフック：**
+```
+「私は[具体的なこと]を[した/学んだ/失った/得た]。その結果：」
+「少数派の意見：[業界に関する反論的な視点]」
+「[業界]で[年数]年。誰も教えてくれないことがある：」
+「[一般的なやり方]をやめる。[より良い代替手段]を始める。理由はこちら：」
+「私は[X]の[モノ]を分析して[驚くべきパターン]を発見した：」
+「[オーディエンス]が[トピック]で犯す最大のミス：」
+「[有名企業]は[あること]をしている。私たちが学べることは：」
+「もし今日[X]を始めるとしたら、変えたい3つのこと：」
+```
+
+**Twitter/Xのフック：**
+```
+「誰も話していない[トピック]についてのスレッド：」
+「[反論的な発言]。説明しよう。」
+「[期間]前に知りたかった[トピック]についての[数字]つのこと：」
+「[良いこと]と[素晴らしいこと]の違い：」
+「[トピック]はあなたが思っているものではない。」
+「ホットテイク：[大胆な主張]」
+「[トピック]を[期間]かけて研究した。発見したことは：」
+「[オーディエンス]：[ミス]をやめるべきだ。理由はこちら。」
+```
+
+**Instagramのフック（キャプションとReels）：**
+```
+「後で保存する」（教育カルーセル）
+「[期間][X]をテストした。結果はこちら。」
+「誰も話さない[トピック]：」
+「POV：[ベネフィット]を発見したばかり」
+「[オーディエンス]が[問題]を示す[数字]つのサイン（修正方法も）」
+「[結果]のための私のまさに[フレームワーク・プロセス・システム]：」
+「[変容]のビフォー・アフター」
+「[オーディエンス]が[トピック]について間違えていること：」
+```
+
+**TikTokのフック（最初の3秒）：**
+```
+「え、まだ[古いやり方]でやってるの？」
+「誰も教えてくれなかった[トピック]ハック」
+「[トレンドトピック]について話さなければならない」
+「[オーディエンス]なら必見」
+「あなたの[モノ]がうまくいかない#1の理由」
+「話します：[引き込むセットアップ]」
+「@[コメント]への返信：[回答]」
+「彼らが知られたくない[業界]の秘密」
+```
+
+---
+
+## フェーズ4：ハッシュタグ戦略
+
+### 4.1 ハッシュタグフレームワーク
+
+全ての投稿に段階的なアプローチを使用します：
+
+| 層 | タグのフォロワー数範囲 | 数 | 目的 |
 |------|----------------------|-------|---------|
-| **Niche** | Under 100K posts | 3-5 | Highly targeted, easier to rank |
-| **Medium** | 100K-1M posts | 3-5 | Moderate competition, relevant audience |
-| **Broad** | 1M+ posts | 2-3 | Discovery potential, lower engagement rate |
-| **Branded** | Custom | 1 | Brand recognition, UGC collection |
+| **ニッチ** | 10万件未満の投稿 | 3〜5個 | 高度に絞り込まれた、ランクインしやすい |
+| **ミディアム** | 10〜100万件の投稿 | 3〜5個 | 中程度の競合、関連性の高いオーディエンス |
+| **ブロード** | 100万件以上の投稿 | 2〜3個 | 発見の可能性、低エンゲージメント率 |
+| **ブランド** | カスタム | 1個 | ブランド認知、UGCの収集 |
 
-**Platform-Specific Hashtag Counts:**
-- Instagram: 5-15 hashtags (in caption or first comment)
-- LinkedIn: 3-5 hashtags (at bottom of post)
-- Twitter/X: 1-2 hashtags (inline or at end)
-- TikTok: 3-5 hashtags (in caption)
+**プラットフォーム別ハッシュタグ数：**
+- Instagram：5〜15個（キャプションまたは最初のコメント）
+- LinkedIn：3〜5個（投稿の末尾）
+- Twitter/X：1〜2個（インラインまたは末尾）
+- TikTok：3〜5個（キャプション内）
 
-### 4.2 Hashtag Research Process
+### 4.2 ハッシュタグリサーチプロセス
 
-For each content pillar, research and document:
-- 5 niche hashtags specific to the brand's sub-industry
-- 5 medium hashtags for the broader industry
-- 3 broad hashtags for general discovery
-- 1 branded hashtag (e.g., #BrandNameTips)
-
----
-
-## Phase 5: Engagement Tactics
-
-### 5.1 Engagement Boosters
-
-Include these in the content calendar:
-
-**Questions:** End 30% of posts with an open-ended question to prompt comments
-```
-"What's your biggest challenge with [topic]? Drop it below."
-"Agree or disagree? [Statement]"
-"Which one are you? A) [option] B) [option] C) [option]"
-```
-
-**Polls:** Use platform-native polls 1-2x per week
-```
-"What matters most to you in [category]?"
-"How often do you [behavior]?"
-"Which would you choose: [A] or [B]?"
-```
-
-**Controversial/Debate Posts:** 1-2x per week to drive high engagement
-```
-"[Common advice] is terrible advice. Here's why..."
-"[Industry practice] is dead. Change my mind."
-"The industry won't tell you this, but [honest truth]."
-```
-
-**Storytelling Posts:** 1-2x per week for connection
-```
-"3 years ago, I [starting point]. Today, [result]. Here's the journey:"
-"The worst [professional situation] I ever had taught me [lesson]."
-"A client told me [surprising thing] — it changed how I think about [topic]."
-```
+各コンテンツの柱について以下を調査・文書化します：
+- ブランドのサブ業界に特化した5つのニッチハッシュタグ
+- より広い業界の5つのミディアムハッシュタグ
+- 一般的な発見のための3つのブロードハッシュタグ
+- 1つのブランドハッシュタグ（例：#ブランド名Tips）
 
 ---
 
-## Phase 6: Content Repurposing Strategy
+## フェーズ5：エンゲージメント戦術
 
-### 6.1 The 1-to-10 Repurposing Framework
+### 5.1 エンゲージメントブースター
 
-Take ONE long-form piece of content and turn it into 10+ social posts:
+コンテンツカレンダーにこれらを含めます：
 
+**質問：** コメントを促すために投稿の30%をオープンエンドの質問で終わる
 ```
-SOURCE: 1 Blog Post / Podcast Episode / YouTube Video / Newsletter
-
-OUTPUT:
-  1. LinkedIn text post — Key insight from the piece
-  2. Twitter thread — 5-7 key takeaways
-  3. Instagram carousel — Main framework or steps visualized
-  4. Instagram Reel — 30-second summary of the key point
-  5. TikTok — Quick tip format of the #1 takeaway
-  6. LinkedIn carousel — PDF slideshow of the framework
-  7. Twitter single tweet — The most quotable line
-  8. Instagram Story — Behind-the-scenes of creating the content
-  9. YouTube Short — Condensed video version
-  10. Facebook post — Discussion question based on the topic
+「[トピック]に関してあなたの最大の課題は何ですか？下にコメントを。」
+「賛成or反対？[発言]」
+「あなたはどっち？A）[選択肢] B）[選択肢] C）[選択肢]」
 ```
 
-### 6.2 Repurposing Schedule
+**アンケート：** プラットフォームネイティブのアンケートを週1〜2回使用
+```
+「[カテゴリ]で最も重要なことは？」
+「[行動]をどのくらいの頻度でしますか？」
+「どちらを選びますか：[A] or [B]？」
+```
 
-For each piece of pillar content, schedule repurposed posts over 2 weeks:
-- Day 1: Publish the original content
-- Day 1-2: Share the key insight on LinkedIn and Twitter
-- Day 3: Create an Instagram carousel and Reel
-- Day 5: Post TikTok and YouTube Short
-- Day 7: Share a different angle or takeaway
-- Day 10: Post engagement question related to the topic
-- Day 14: Reshare with "In case you missed it" framing
+**議論投稿：** 高エンゲージメントを促すために週1〜2回
+```
+「[一般的なアドバイス]は最悪のアドバイスだ。理由はこちら...」
+「[業界の慣行]は終わった。反論があればどうぞ。」
+「業界は教えてくれないが、[正直な真実]だ。」
+```
+
+**ストーリーテリング投稿：** 共感のために週1〜2回
+```
+「3年前、私は[出発点]にいた。今日、[結果]。その旅：」
+「これまで経験した最悪の[仕事上の状況]から[教訓]を学んだ。」
+「あるクライアントが[驚くべきこと]を言った — それが[トピック]に対する私の考え方を変えた。」
+```
 
 ---
 
-## Phase 7: 30-Day Content Calendar
+## フェーズ6：コンテンツ再利用戦略
 
-### 7.1 Calendar Structure
+### 6.1 1to10再利用フレームワーク
 
-Generate a complete 30-day calendar with this format:
+1つの長文コンテンツを取り込み、10以上のソーシャル投稿に変換します：
 
 ```
-DAY 1 (Monday):
-  LinkedIn: [Pillar 1 - Educational]
-    Hook: "[Hook text]"
-    Post: [Full post text, 150-300 words]
-    Hashtags: #tag1 #tag2 #tag3
-    Time: 9:00 AM
-    Type: Text post
+ソース：ブログ記事1本 / ポッドキャストエピソード / YouTube動画 / ニュースレター
 
-  Twitter/X: [Pillar 4 - Engagement]
-    Tweet: "[Full tweet text, under 280 chars]"
-    Hashtags: #tag1 #tag2
-    Time: 12:00 PM
-    Type: Single tweet
+出力：
+  1. LinkedInテキスト投稿 — コンテンツからの主要インサイト
+  2. Twitterスレッド — 5〜7の主要ポイント
+  3. Instagramカルーセル — メインフレームワークやステップの可視化
+  4. Instagram Reel — 主要ポイントの30秒サマリー
+  5. TikTok — #1のポイントのクイックヒップフォーマット
+  6. LinkedInカルーセル — フレームワークのPDFスライドショー
+  7. Twitterの単一ツイート — 最も引用に値する一行
+  8. Instagram Story — コンテンツ制作の舞台裏
+  9. YouTube Short — 縮約された動画版
+  10. Facebook投稿 — トピックに基づいたディスカッション質問
+```
 
-  Instagram: [Pillar 2 - Behind the Scenes]
-    Caption: "[Full caption, 100-200 words]"
-    Visual: [Description of what the image/carousel should contain]
-    Hashtags: [10-15 hashtags]
-    Time: 6:00 PM
-    Type: Carousel (5 slides)
-    Slide 1: [Content]
-    Slide 2: [Content]
+### 6.2 再利用スケジュール
+
+各柱コンテンツについて、2週間にわたって再利用投稿をスケジュールします：
+- 1日目：オリジナルコンテンツを公開する
+- 1〜2日目：LinkedInとTwitterで主要インサイトをシェアする
+- 3日目：InstagramカルーセルとReelを作成する
+- 5日目：TikTokとYouTube Shortを投稿する
+- 7日目：異なる角度や視点をシェアする
+- 10日目：トピックに関連するエンゲージメント質問を投稿する
+- 14日目：「見逃した方へ」というフレーミングで再シェアする
+
+---
+
+## フェーズ7：30日コンテンツカレンダー
+
+### 7.1 カレンダー構造
+
+以下のフォーマットで完全な30日カレンダーを生成します：
+
+```
+1日目（月曜日）：
+  LinkedIn：[柱1 - 教育的]
+    フック：「[フックテキスト]」
+    投稿：[完全な投稿テキスト、150〜300文字]
+    ハッシュタグ：#タグ1 #タグ2 #タグ3
+    時間：午前9:00
+    タイプ：テスト投稿
+
+  Twitter/X：[柱4 - エンゲージメント]
+    ツイート：「[完全なツイートテキスト、280文字以内]」
+    ハッシュタグ：#タグ1 #タグ2
+    時間：午後12:00
+    タイプ：単一ツイート
+
+  Instagram：[柱2 - 舞台裏]
+    キャプション：「[完全なキャプション、100〜200文字]」
+    ビジュアル：[画像・カルーセルに含めるべき内容の説明]
+    ハッシュタグ：[10〜15個のハッシュタグ]
+    時間：午後6:00
+    タイプ：カルーセル（5スライド）
+    スライド1：[コンテンツ]
+    スライド2：[コンテンツ]
     ...
 ```
 
-### 7.2 Calendar Distribution
+### 7.2 カレンダーの配分
 
-Ensure the 30-day calendar follows:
-- Each content pillar appears at least 6 times across the month
-- Promotional content never appears 2 days in a row
-- Engagement posts are spread evenly (every 2-3 days)
-- Platform-specific content maximizes each platform's strengths
-- A mix of content types (not all text posts or all carousels)
-- Trending format slots are left flexible with guidance on how to adapt
+30日カレンダーが以下に従うことを確認します：
+- 各コンテンツの柱が月間で最低6回登場する
+- プロモーションコンテンツが2日連続しない
+- エンゲージメント投稿が均等に散りばめられている（2〜3日おき）
+- プラットフォーム別コンテンツが各プラットフォームの強みを最大化する
+- コンテンツタイプの多様性（テスト投稿ばかりやカルーセルばかりにならない）
+- トレンドフォーマットの枠が柔軟に残されており、適応方法のガイダンスがある
 
 ---
 
-## Phase 8: Trending Format Detection
+## フェーズ8：トレンドフォーマット検出
 
-### 8.1 Evergreen Trending Formats
+### 8.1 エバーグリーンのトレンドフォーマット
 
-Include these proven formats that consistently perform:
+常に高パフォーマンスな実証済みフォーマットを含めます：
 
-| Format | Platform | Description |
+| フォーマット | プラットフォーム | 説明 |
 |--------|----------|-------------|
-| **Listicle Thread** | Twitter, LinkedIn | "7 things I learned from [X]" |
-| **This vs That** | All platforms | Side-by-side comparison |
-| **Day in the Life** | TikTok, Instagram | Show daily routine |
-| **Tutorial Reel** | Instagram, TikTok | Step-by-step how-to |
-| **Hot Take** | Twitter, LinkedIn | Contrarian opinion + reasoning |
-| **Before/After** | Instagram, TikTok | Transformation content |
-| **Myth vs Reality** | All platforms | Debunk common misconceptions |
-| **Fill in the Blank** | LinkedIn, Twitter | Community engagement |
-| **POV** | TikTok, Instagram | Point-of-view storytelling |
-| **Reaction** | TikTok | React to industry news or competitor content |
+| **リスト系スレッド** | Twitter、LinkedIn | 「[X]から学んだ7つのこと」 |
+| **コレvsソレ** | 全プラットフォーム | 並列比較 |
+| **1日の仕事** | TikTok、Instagram | 日常ルーティンを見せる |
+| **チュートリアルReel** | Instagram、TikTok | ステップバイステップのハウツー |
+| **ホットテイク** | Twitter、LinkedIn | 反論的な意見＋根拠 |
+| **ビフォー・アフター** | Instagram、TikTok | 変容コンテンツ |
+| **神話vs現実** | 全プラットフォーム | 一般的な誤解を打ち消す |
+| **空欄を埋めてください** | LinkedIn、Twitter | コミュニティエンゲージメント |
+| **POV** | TikTok、Instagram | 視点のストーリーテリング |
+| **リアクション** | TikTok | 業界ニュースや競合コンテンツへの反応 |
 
-### 8.2 Trend Adaptation Framework
+### 8.2 トレンド適応フレームワーク
 
-When a new trend emerges, adapt it to the brand using this process:
-1. Identify the trend format (audio, visual style, caption structure)
-2. Find the brand angle (how does this connect to the brand's pillars?)
-3. Adapt the trend within 24-48 hours (speed matters)
-4. Add brand-specific value (don't just copy — add unique insight)
-5. Tag the trend appropriately (hashtags, sounds, formats)
+新しいトレンドが出てきたら、このプロセスでブランドに適応させます：
+1. トレンドフォーマットを特定する（音楽、ビジュアルスタイル、キャプション構造）
+2. ブランドの角度を見つける（これがブランドの柱とどうつながるか？）
+3. 24〜48時間以内にトレンドを適応させる（スピードが重要）
+4. ブランド独自の価値を加える（単にコピーするのではなく — 独自のインサイトを追加）
+5. トレンドを適切にタグ付けする（ハッシュタグ、音楽、フォーマット）
 
 ---
 
-## Output Format: SOCIAL-CALENDAR.md
+## 出力フォーマット：SOCIAL-CALENDAR.md
 
-Write the full output to `SOCIAL-CALENDAR.md`:
+完全な出力を `SOCIAL-CALENDAR.md` に書き出します：
 
 ```markdown
-# Social Media Content Calendar: [Brand/Topic]
-**Date:** [current date]
-**Period:** [Month Year] — 30-Day Calendar
-**Platforms:** [selected platforms]
+# ソーシャルメディアコンテンツカレンダー：[ブランド・トピック]
+**日付：** [現在の日付]
+**期間：** [年月] — 30日カレンダー
+**プラットフォーム：** [選択されたプラットフォーム]
 
 ---
 
-## Brand Context
-- **Brand:** [name]
-- **Audience:** [description]
-- **Voice:** [voice profile]
-- **Goal:** [primary social media goal]
+## ブランドコンテキスト
+- **ブランド：** [名前]
+- **オーディエンス：** [説明]
+- **ボイス：** [ボイスプロファイル]
+- **目的：** [ソーシャルメディアの主要目標]
 
-## Content Pillars
-1. [Pillar 1]: [description] — [X]% of content
-2. [Pillar 2]: [description] — [X]% of content
-3. [Pillar 3]: [description] — [X]% of content
-4. [Pillar 4]: [description] — [X]% of content
-5. [Pillar 5]: [description] — [X]% of content
+## コンテンツの柱
+1. [柱1]：[説明] — コンテンツの[X]%
+2. [柱2]：[説明] — コンテンツの[X]%
+3. [柱3]：[説明] — コンテンツの[X]%
+4. [柱4]：[説明] — コンテンツの[X]%
+5. [柱5]：[説明] — コンテンツの[X]%
 
-## Hashtag Strategy
-[Tier breakdown with specific hashtags for each pillar]
+## ハッシュタグ戦略
+[各柱の具体的なハッシュタグを含む段階的な内訳]
 
-## 30-Day Calendar
+## 30日カレンダー
 
-### Week 1: [Theme]
-[Day-by-day content for each platform]
+### 第1週：[テーマ]
+[各プラットフォームの日別コンテンツ]
 
-### Week 2: [Theme]
-[Day-by-day content for each platform]
+### 第2週：[テーマ]
+[各プラットフォームの日別コンテンツ]
 
-### Week 3: [Theme]
-[Day-by-day content for each platform]
+### 第3週：[テーマ]
+[各プラットフォームの日別コンテンツ]
 
-### Week 4: [Theme]
-[Day-by-day content for each platform]
+### 第4週：[テーマ]
+[各プラットフォームの日別コンテンツ]
 
-## Repurposing Strategy
-[1-to-10 framework applied to the brand's content]
+## 再利用戦略
+[ブランドのコンテンツに適用した1to10フレームワーク]
 
-## Engagement Playbook
-[Questions, polls, and engagement tactics to use]
+## エンゲージメントプレイブック
+[使用する質問、アンケート、エンゲージメント戦術]
 
-## Trending Format Opportunities
-[Evergreen formats and how to adapt trends]
+## トレンドフォーマットの機会
+[エバーグリーンフォーマットとトレンド適応方法]
 
-## Metrics to Track
-[Platform-specific KPIs and benchmarks]
+## 追跡する指標
+[プラットフォーム別KPIとベンチマーク]
 ```
 
 ---
 
-## Terminal Output
+## ターミナル出力
 
-Display a condensed summary:
+要約を表示します：
 
 ```
-=== SOCIAL MEDIA CALENDAR GENERATED ===
+=== ソーシャルメディアカレンダー生成完了 ===
 
-Brand: [name]
-Platforms: [list]
-Period: 30 days
-Total Posts: [count]
+ブランド：[名前]
+プラットフォーム：[リスト]
+期間：30日間
+投稿総数：[件数]
 
-Content Mix:
-  Educational:    40% (XX posts)
-  Behind-Scenes:  20% (XX posts)
-  Social Proof:   15% (XX posts)
-  Engagement:     15% (XX posts)
-  Promotional:    10% (XX posts)
+コンテンツ配分：
+  教育的：        40% (XX投稿)
+  舞台裏：        20% (XX投稿)
+  ソーシャルプルーフ：15% (XX投稿)
+  エンゲージメント：15% (XX投稿)
+  プロモーション：  10% (XX投稿)
 
-Pillar Coverage:
-  [Pillar 1]: XX posts
-  [Pillar 2]: XX posts
-  [Pillar 3]: XX posts
-  [Pillar 4]: XX posts
-  [Pillar 5]: XX posts
+柱別カバレッジ：
+  [柱1]：XX投稿
+  [柱2]：XX投稿
+  [柱3]：XX投稿
+  [柱4]：XX投稿
+  [柱5]：XX投稿
 
-Full calendar saved to: SOCIAL-CALENDAR.md
+完全なカレンダーの保存先：SOCIAL-CALENDAR.md
 ```
 
 ---
 
-## Cross-Skill Integration
+## クロススキル統合
 
-- If `BRAND-VOICE.md` exists, match all social copy to documented voice guidelines
-- If `COPY-SUGGESTIONS.md` exists, reuse value propositions and messaging
-- If `COMPETITOR-REPORT.md` exists, use competitor analysis for differentiation content
-- If `EMAIL-SEQUENCES.md` exists, align social content with email campaigns
-- Suggest follow-up: `/market copy` for website messaging, `/market ads` for paid social
+- `BRAND-VOICE.md` が存在する場合は、文書化されたボイスガイドラインに合わせて全ソーシャルコピーを作成します
+- `COPY-SUGGESTIONS.md` が存在する場合は、バリュープロポジションとメッセージングを再利用します
+- `COMPETITOR-REPORT.md` が存在する場合は、競合分析を差別化コンテンツに活用します
+- `EMAIL-SEQUENCES.md` が存在する場合は、メールキャンペーンとソーシャルコンテンツを連携させます
+- フォローアップを提案します：ウェブサイトメッセージングには `/market copy`、有料ソーシャルには `/market ads`

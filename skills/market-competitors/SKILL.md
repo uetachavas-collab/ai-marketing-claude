@@ -1,537 +1,536 @@
-# Competitive Intelligence Analysis
+# 競合インテリジェンス分析
 
-You are the competitive intelligence engine for `/market competitors <url>`. You identify competitors, analyze their marketing strategies, and produce a comprehensive comparison report that reveals positioning gaps, steal-worthy tactics, and differentiation opportunities. Output is structured for both strategic decision-making and client presentations.
+あなたは `/market competitors <url>` の競合インテリジェンスエンジンです。競合他社を特定し、そのマーケティング戦略を分析し、ポジショニングのギャップ・参考にすべき戦術・差別化の機会を明らかにする包括的な比較レポートを作成します。出力は戦略的意思決定とクライアントへのプレゼンテーション両方に対応した構成です。
 
-## When This Skill Is Invoked
+## このスキルが呼び出されるとき
 
-The user runs `/market competitors <url>`. Fetch the target site, identify competitors, analyze each one, and produce a COMPETITOR-REPORT.md with actionable intelligence.
+ユーザーが `/market competitors <url>` を実行します。対象サイトをフェッチし、競合他社を特定して各社を分析し、実行可能なインテリジェンスをまとめた COMPETITOR-REPORT.md を作成します。
 
 ---
 
-## Phase 1: Competitor Identification
+## フェーズ1：競合他社の特定
 
-### 1.1 Competitor Categories
+### 1.1 競合他社のカテゴリ
 
-Identify competitors across three tiers:
+3つの階層で競合他社を特定します：
 
-| Category | Definition | How to Find | Count |
+| カテゴリ | 定義 | 探し方 | 数 |
 |----------|-----------|-------------|-------|
-| **Direct Competitors** | Same product, same audience, same market | Search for product category keywords, check who ranks | 3-5 |
-| **Indirect Competitors** | Different product, same problem solved | Search for the problem being solved, check alternative approaches | 2-3 |
-| **Aspirational Competitors** | Market leaders the brand aspires to become | Industry leaders, category creators, well-known brands | 1-2 |
+| **直接競合** | 同じ商品、同じオーディエンス、同じ市場 | 商品カテゴリのキーワードで検索、ランキングを確認 | 3〜5社 |
+| **間接競合** | 異なる商品だが同じ問題を解決 | 解決される課題で検索、代替アプローチを確認 | 2〜3社 |
+| **目指すべき競合** | ブランドが目標とする市場リーダー | 業界リーダー、カテゴリ創造者、知名度の高いブランド | 1〜2社 |
 
-### 1.2 Competitor Discovery Methods
+### 1.2 競合他社の発見方法
 
-Use multiple methods to identify competitors:
+複数の方法で競合他社を特定します：
 
-**Method 1: Keyword-Based Discovery**
-- Search for the target site's primary keywords
-- Note which companies rank on page 1
-- Search for "[product category] software/service/tool"
-- Search for "[target brand] alternatives"
-- Search for "[target brand] vs"
+**方法1：キーワードベースの発見**
+- 対象サイトの主要キーワードで検索する
+- 1ページ目にランクインしている企業をメモする
+- 「[商品カテゴリ] ソフトウェア/サービス/ツール」で検索する
+- 「[対象ブランド] 代替」で検索する
+- 「[対象ブランド] vs」で検索する
 
-**Method 2: Site-Based Discovery**
-- Look for comparison pages on the target site
-- Check footer links for industry associations
-- Look for "integrations" pages that mention similar tools
-- Check the target site's blog for competitor mentions
+**方法2：サイトベースの発見**
+- 対象サイト内の比較ページを探す
+- フッターリンクで業界団体を確認する
+- 類似ツールに言及している「連携」ページを確認する
+- 対象サイトのブログで競合他社への言及を確認する
 
-**Method 3: Review Platform Discovery**
-- Search G2, Capterra, Trustpilot for the product category
-- Note top-rated competitors in the same category
-- Check "Compare" features on review sites
+**方法3：レビュープラットフォームでの発見**
+- 商品カテゴリでG2、Capterra、Trustpilotを検索する
+- 同じカテゴリで高評価の競合他社をメモする
+- レビューサイトの「比較」機能を確認する
 
-**Method 4: Social and Community Discovery**
-- Search Reddit for "[product category] recommendations"
-- Check Twitter/X for conversations about the product category
-- Look at LinkedIn for companies followed by the target's audience
+**方法4：SNSとコミュニティでの発見**
+- 「[商品カテゴリ] おすすめ」でRedditを検索する
+- 商品カテゴリに関する会話をTwitter/Xで確認する
+- 対象オーディエンスがフォローしている企業をLinkedInで確認する
 
-### 1.3 Automated Data Collection
+### 1.3 自動データ収集
 
-Use the Python script at `scripts/competitor_scanner.py` for automated data collection when available:
+利用可能な場合は `scripts/competitor_scanner.py` の Pythonスクリプトで自動データ収集を実施：
 
 ```
 python scripts/competitor_scanner.py --url [competitor-url] --output json
 ```
 
-The script can collect:
-- Homepage content and metadata
-- Pricing page data (if public)
-- Blog post count and recent topics
-- Social media profile links and follower counts
-- Technology stack detection
-- Page speed metrics
+スクリプトで収集できる情報：
+- ホームページのコンテンツとメタデータ
+- 料金ページのデータ（公開されている場合）
+- ブログ記事数と最近のトピック
+- SNSプロフィールのリンクとフォロワー数
+- 技術スタックの検出
+- ページ速度の指標
 
-If the script is not available, use `WebFetch` to manually collect this data for each competitor.
+スクリプトが利用できない場合は、`WebFetch` を使って各競合他社のデータを手動収集します。
 
 ---
 
-## Phase 2: Competitor Analysis Framework
+## フェーズ2：競合他社分析フレームワーク
 
-### 2.1 Website and Messaging Analysis
+### 2.1 ウェブサイトとメッセージングの分析
 
-For each competitor, analyze:
+各競合他社について以下を分析します：
 
-**Messaging:**
-| Element | What to Capture | Why It Matters |
+**メッセージング：**
+| 要素 | 収集内容 | 重要な理由 |
 |---------|----------------|----------------|
-| **Headline** | Exact H1 text | Reveals positioning and value prop |
-| **Subheadline** | Supporting text | Shows secondary messaging angle |
-| **Value proposition** | Core promise | Identifies positioning territory |
-| **Target audience** | Who they speak to | Reveals market segment focus |
-| **Key differentiator** | What sets them apart | Shows competitive moat claims |
-| **Tone of voice** | Casual/formal/technical | Reveals brand personality choices |
-| **Social proof** | Type and quantity | Shows credibility strategy |
+| **見出し** | 正確なH1テキスト | ポジショニングと価値提案を明らかにする |
+| **サブ見出し** | サポートテキスト | セカンダリメッセージングアングルを示す |
+| **価値提案** | コアとなる約束 | ポジショニングの領域を特定する |
+| **ターゲットオーディエンス** | 誰に語りかけているか | 市場セグメントのフォーカスを明らかにする |
+| **主要差別化要素** | 差別化ポイント | 競争上の強みの主張を示す |
+| **トーン・声調** | カジュアル/フォーマル/技術的 | ブランドパーソナリティの選択を明らかにする |
+| **ソーシャルプルーフ** | 種類と量 | 信頼構築戦略を示す |
 
-**Positioning Map:**
-Plot each competitor on two axes:
-- X-axis: Perceived simplicity ←→ Perceived power
-- Y-axis: Perceived affordability ←→ Perceived premium
+**ポジショニングマップ：**
+2つの軸で各競合他社をプロットします：
+- X軸：知覚されるシンプルさ ←→ 知覚されるパワー
+- Y軸：知覚される手頃さ ←→ 知覚されるプレミアム感
 
 ```
-POSITIONING MAP
+ポジショニングマップ
 ===============
-                    PREMIUM
+                    プレミアム
                        |
                        |
-        [Competitor C] |  [Aspirational]
+        [競合C]        |  [目指すべき競合]
                        |
-  SIMPLE ──────────────┼────────────── POWERFUL
+  シンプル ──────────────┼────────────── パワフル
                        |
-        [Target]       |  [Competitor A]
+        [対象]         |  [競合A]
                        |
                        |
-                    BUDGET
+                    バジェット
 ```
 
-Adjust axes based on what matters most in the specific industry.
+業界で最も重要な要素に応じて軸を調整します。
 
-### 2.2 Pricing Comparison
+### 2.2 料金比較
 
-Build a detailed pricing matrix:
+詳細な料金比較マトリクスを作成します：
 
 ```markdown
-| Feature/Plan | [Target] | Competitor A | Competitor B | Competitor C |
+| 機能・プラン | [対象] | 競合A | 競合B | 競合C |
 |-------------|----------|-------------|-------------|-------------|
-| Free Plan | Yes/No | Yes/No | Yes/No | Yes/No |
-| Starter Price | $X/mo | $X/mo | $X/mo | $X/mo |
-| Pro Price | $X/mo | $X/mo | $X/mo | $X/mo |
-| Enterprise | Custom | Custom | $X/mo | Custom |
-| Free Trial | X days | X days | X days | X days |
-| Annual Discount | X% | X% | X% | X% |
-| Per-User Pricing | Yes/No | Yes/No | Yes/No | Yes/No |
-| Usage Limits | [detail] | [detail] | [detail] | [detail] |
+| 無料プラン | あり/なし | あり/なし | あり/なし | あり/なし |
+| スターター価格 | $X/月 | $X/月 | $X/月 | $X/月 |
+| プロ価格 | $X/月 | $X/月 | $X/月 | $X/月 |
+| エンタープライズ | 要相談 | 要相談 | $X/月 | 要相談 |
+| 無料トライアル | X日間 | X日間 | X日間 | X日間 |
+| 年間割引 | X% | X% | X% | X% |
+| ユーザーごとの課金 | あり/なし | あり/なし | あり/なし | あり/なし |
+| 利用制限 | [詳細] | [詳細] | [詳細] | [詳細] |
 ```
 
-**Pricing Strategy Assessment:**
-- Is the target priced above, below, or at market average?
-- Is pricing transparent or hidden (requiring sales calls)?
-- What pricing model is used (per-user, per-usage, flat-rate, tiered)?
-- Are there pricing anchoring tactics being used?
-- Does the pricing page communicate value before showing numbers?
+**料金戦略の評価：**
+- 対象ブランドは市場平均より高い・同等・安い価格か？
+- 料金は透明か、それとも非公開（商談必要）か？
+- どの料金モデルを採用しているか（ユーザー課金、使用量課金、定額、段階制）？
+- 価格アンカリング戦術が使われているか？
+- 数字を見せる前に価値を伝えているか？
 
-### 2.3 Feature Comparison Matrix
+### 2.3 機能比較マトリクス
 
-Build a comprehensive feature comparison:
+包括的な機能比較を作成します：
 
 ```markdown
-| Feature Category | Feature | [Target] | Comp A | Comp B | Comp C |
+| 機能カテゴリ | 機能 | [対象] | 競合A | 競合B | 競合C |
 |-----------------|---------|----------|--------|--------|--------|
-| Core | [Feature 1] | Full | Full | Partial | No |
-| Core | [Feature 2] | Full | Full | Full | Full |
-| Core | [Feature 3] | Partial | Full | No | Full |
-| Advanced | [Feature 4] | No | Full | No | Full |
-| Advanced | [Feature 5] | Full | No | Full | No |
-| Integration | [Feature 6] | Full | Full | No | Partial |
-| Support | [Feature 7] | Full | Partial | Full | Full |
+| コア | [機能1] | フル | フル | 一部 | なし |
+| コア | [機能2] | フル | フル | フル | フル |
+| コア | [機能3] | 一部 | フル | なし | フル |
+| 高度 | [機能4] | なし | フル | なし | フル |
+| 高度 | [機能5] | フル | なし | フル | なし |
+| 連携 | [機能6] | フル | フル | なし | 一部 |
+| サポート | [機能7] | フル | 一部 | フル | フル |
 ```
 
-Use: Full, Partial, No, or Beta to categorize.
+「フル」「一部」「なし」「ベータ」でカテゴリ分けします。
 
-Highlight:
-- Features where the target has an advantage (competitive moats)
-- Features where the target has a gap (vulnerability)
-- Features unique to one competitor (potential differentiators)
+ハイライトすべき項目：
+- 対象ブランドが優位な機能（競争上の強み）
+- 対象ブランドが不足している機能（脆弱性）
+- 特定の競合他社のみが持つ機能（潜在的な差別化要素）
 
-### 2.4 SEO Competition Analysis
+### 2.4 SEO競合分析
 
-For each competitor, analyze:
+各競合他社について以下を分析します：
 
-**Content Strategy:**
-| Metric | [Target] | Comp A | Comp B | Comp C |
+**コンテンツ戦略：**
+| 指標 | [対象] | 競合A | 競合B | 競合C |
 |--------|----------|--------|--------|--------|
-| Blog posts (estimated) | X | X | X | X |
-| Publishing frequency | X/week | X/week | X/week | X/week |
-| Content depth | Shallow/Medium/Deep | | | |
-| Content types | Blog/Video/Podcast | | | |
-| Key topics | [list] | [list] | [list] | [list] |
+| ブログ記事数（推定） | X | X | X | X |
+| 投稿頻度 | X本/週 | X本/週 | X本/週 | X本/週 |
+| コンテンツの深さ | 浅い/中程度/深い | | | |
+| コンテンツタイプ | ブログ/動画/ポッドキャスト | | | |
+| 主要トピック | [一覧] | [一覧] | [一覧] | [一覧] |
 
-**Keyword Strategy:**
-- What keywords is each competitor clearly targeting?
-- Where do multiple competitors rank but the target does not? (content gaps)
-- Are competitors creating comparison/alternatives content?
-- What long-tail keywords are competitors ranking for?
+**キーワード戦略：**
+- 各競合他社が明確にターゲットにしているキーワードは何か？
+- 複数の競合他社がランクインしているが対象ブランドがランクインしていないキーワードはどこか？（コンテンツギャップ）
+- 競合他社は比較・代替コンテンツを作成しているか？
+- 競合他社がランクインしているロングテールキーワードは何か？
 
-**Content Gap Analysis:**
-List topics that competitors cover but the target does not:
+**コンテンツギャップ分析：**
+競合他社がカバーしているが対象ブランドがカバーしていないトピックを列挙：
 ```
-CONTENT GAPS (Competitors Cover, Target Does Not):
-  1. [Topic] — covered by Comp A, B (high search intent)
-  2. [Topic] — covered by Comp A, C (medium search intent)
-  3. [Topic] — covered by Comp B (high search intent)
-  4. [Topic] — covered by all competitors (critical gap)
+コンテンツギャップ（競合はカバー済み、対象はカバーなし）：
+  1. [トピック]——競合A・B がカバー（高い検索意図）
+  2. [トピック]——競合A・C がカバー（中程度の検索意図）
+  3. [トピック]——競合B がカバー（高い検索意図）
+  4. [トピック]——全競合がカバー（重大なギャップ）
 ```
 
-### 2.5 Social Media Presence Comparison
+### 2.5 SNSプレゼンスの比較
 
-| Platform | [Target] | Comp A | Comp B | Comp C |
+| プラットフォーム | [対象] | 競合A | 競合B | 競合C |
 |----------|----------|--------|--------|--------|
-| LinkedIn followers | X | X | X | X |
-| Twitter/X followers | X | X | X | X |
-| Instagram followers | X | X | X | X |
-| YouTube subscribers | X | X | X | X |
-| TikTok followers | X | X | X | X |
-| Posting frequency | X/week | X/week | X/week | X/week |
-| Engagement rate | X% | X% | X% | X% |
-| Top content type | [type] | [type] | [type] | [type] |
+| LinkedInフォロワー | X | X | X | X |
+| Twitter/Xフォロワー | X | X | X | X |
+| Instagramフォロワー | X | X | X | X |
+| YouTubeチャンネル登録者 | X | X | X | X |
+| TikTokフォロワー | X | X | X | X |
+| 投稿頻度 | X本/週 | X本/週 | X本/週 | X本/週 |
+| エンゲージメント率 | X% | X% | X% | X% |
+| トップコンテンツタイプ | [タイプ] | [タイプ] | [タイプ] | [タイプ] |
 
-### 2.6 Review Mining
+### 2.6 レビューのマイニング
 
-Analyze reviews on third-party platforms (G2, Capterra, Trustpilot, Reddit):
+サードパーティプラットフォーム（G2、Capterra、Trustpilot、Reddit）のレビューを分析します：
 
-**For each competitor, extract:**
-- Overall rating (stars)
-- Number of reviews
-- Top 3 praised features (what customers love)
-- Top 3 complaints (what customers hate)
-- Common switching reasons (why customers leave)
-- Use cases mentioned most frequently
+**各競合他社について以下を抽出：**
+- 総合評価（星）
+- レビュー数
+- 高評価上位3つの機能（顧客が好む点）
+- 苦情上位3つ（顧客が嫌う点）
+- よくある乗り換え理由（顧客が離れる理由）
+- 最も頻繁に言及されるユースケース
 
-**Review Intelligence Matrix:**
+**レビューインテリジェンスマトリクス：**
 ```markdown
-| Competitor | Rating | Reviews | Top Praise | Top Complaint | Switch Reason |
+| 競合他社 | 評価 | レビュー数 | 高評価 | 主な苦情 | 乗り換え理由 |
 |-----------|--------|---------|-----------|---------------|--------------|
-| Comp A | 4.5/5 | 500+ | Easy to use | Limited integrations | Price increase |
-| Comp B | 4.2/5 | 200+ | Powerful features | Steep learning curve | Poor support |
-| Comp C | 3.8/5 | 100+ | Good value | Buggy | Better alternatives |
+| 競合A | 4.5/5 | 500件以上 | 使いやすさ | 連携機能が限定的 | 値上げ |
+| 競合B | 4.2/5 | 200件以上 | 強力な機能 | 学習コストが高い | サポートが悪い |
+| 競合C | 3.8/5 | 100件以上 | コスパが良い | バグが多い | より良い代替品 |
 ```
 
 ---
 
-## Phase 3: SWOT Analysis
+## フェーズ3：SWOT分析
 
-### 3.1 SWOT for Each Competitor
+### 3.1 各競合他社のSWOT
 
-For each identified competitor, produce a SWOT:
+特定した各競合他社についてSWOTを作成します：
 
 ```
-COMPETITOR: [Name]
-URL: [url]
+競合他社：[名前]
+URL：[url]
 
-STRENGTHS:
-  - [Specific strength with evidence]
-  - [Specific strength with evidence]
-  - [Specific strength with evidence]
+強み：
+  - [証拠付きの具体的な強み]
+  - [証拠付きの具体的な強み]
+  - [証拠付きの具体的な強み]
 
-WEAKNESSES:
-  - [Specific weakness with evidence]
-  - [Specific weakness with evidence]
-  - [Specific weakness with evidence]
+弱み：
+  - [証拠付きの具体的な弱み]
+  - [証拠付きの具体的な弱み]
+  - [証拠付きの具体的な弱み]
 
-OPPORTUNITIES (for the target to exploit):
-  - [Opportunity based on competitor weakness]
-  - [Opportunity based on market gap]
-  - [Opportunity based on unserved segment]
+機会（対象ブランドが活かせる）：
+  - [競合の弱みに基づく機会]
+  - [市場ギャップに基づく機会]
+  - [未開拓セグメントに基づく機会]
 
-THREATS (competitor advantages to watch):
-  - [Threat with potential impact]
-  - [Threat with potential impact]
-  - [Threat with potential impact]
+脅威（注視すべき競合の優位点）：
+  - [潜在的インパクト付きの脅威]
+  - [潜在的インパクト付きの脅威]
+  - [潜在的インパクト付きの脅威]
 ```
 
-### 3.2 Aggregate SWOT for the Target
+### 3.2 対象ブランドの総合SWOT
 
-Combine all competitor intelligence into a single SWOT for the target brand:
+全競合のインテリジェンスを統合して対象ブランドの単一のSWOTを作成します：
 
-- **Strengths:** Where the target outperforms all or most competitors
-- **Weaknesses:** Where the target lags behind all or most competitors
-- **Opportunities:** Gaps in the market no competitor is addressing well
-- **Threats:** Areas where competitors are significantly stronger
+- **強み：** 対象ブランドが全競合または大半の競合を上回る点
+- **弱み：** 対象ブランドが全競合または大半の競合に劣る点
+- **機会：** どの競合も十分に対応していない市場のギャップ
+- **脅威：** 競合が大幅に優位な分野
 
 ---
 
-## Phase 4: Strategic Recommendations
+## フェーズ4：戦略的推奨事項
 
-### 4.1 "Steal-Worthy" Tactics
+### 4.1 「参考にすべき戦術」
 
-Identify specific marketing tactics from competitors worth adopting:
+採用する価値のある競合他社の具体的なマーケティング戦術を特定します：
 
 ```
-STEAL-WORTHY TACTICS
+参考にすべき戦術
 ====================
 
-1. [Competitor A] — [Tactic: e.g., "Interactive pricing calculator"]
-   Why it works: [explanation]
-   How to implement: [specific steps for the target]
-   Estimated effort: [Low/Medium/High]
-   Expected impact: [Low/Medium/High]
+1. [競合A]——[戦術例：「インタラクティブな料金計算機」]
+   なぜ効果的か：[説明]
+   実装方法：[対象ブランド向けの具体的なステップ]
+   推定工数：[低・中・高]
+   期待インパクト：[低・中・高]
 
-2. [Competitor B] — [Tactic: e.g., "Customer success story video series"]
-   Why it works: [explanation]
-   How to implement: [specific steps]
-   Estimated effort: [Low/Medium/High]
-   Expected impact: [Low/Medium/High]
+2. [競合B]——[戦術例：「顧客サクセスストーリー動画シリーズ」]
+   なぜ効果的か：[説明]
+   実装方法：[具体的なステップ]
+   推定工数：[低・中・高]
+   期待インパクト：[低・中・高]
 
-[Continue for 5-10 tactics]
+[5〜10の戦術について続ける]
 ```
 
-Focus on tactics that are:
-- Proven (working for the competitor)
-- Adaptable (can be customized for the target)
-- Underutilized (the target is not currently doing this)
+以下の条件を満たす戦術に注目します：
+- 実績がある（競合他社において機能している）
+- 適応可能（対象ブランド向けにカスタマイズできる）
+- 活用不足（対象ブランドが現在実施していない）
 
-### 4.2 Messaging Differentiation Strategy
+### 4.2 メッセージングの差別化戦略
 
-Based on the competitive analysis, recommend how the target should differentiate:
+競合分析に基づき、対象ブランドがどのように差別化すべきかを推奨します：
 
-**Differentiation Framework:**
-1. **Category:** Can the target create or own a sub-category? (e.g., "the [specific attribute] [category]")
-2. **Audience:** Can the target own a specific audience segment competitors ignore?
-3. **Feature:** Is there a unique feature or capability no competitor offers?
-4. **Philosophy:** Can the target differentiate on values, approach, or methodology?
-5. **Experience:** Can the target differentiate on customer experience, support, or community?
+**差別化フレームワーク：**
+1. **カテゴリ：** 対象ブランドはサブカテゴリを創造・確立できるか？（例：「特定属性の[カテゴリ]」）
+2. **オーディエンス：** 競合他社が無視している特定のオーディエンスセグメントを確立できるか？
+3. **機能：** 競合他社が持たないユニークな機能・性能があるか？
+4. **哲学：** 価値観・アプローチ・方法論で差別化できるか？
+5. **体験：** 顧客体験・サポート・コミュニティで差別化できるか？
 
-For each viable differentiation angle, provide:
-- Positioning statement
-- Headline recommendation
-- Supporting evidence or proof points
-- How it would manifest across the website
+実行可能な各差別化アングルについて提供する内容：
+- ポジショニングステートメント
+- 見出しの推奨
+- 裏付けとなる証拠やプルーフポイント
+- ウェブサイト全体での展開方法
 
-### 4.3 Alternative Page Strategy
+### 4.3 「代替ページ」戦略
 
-Recommend creating "[Competitor] Alternative" pages:
+「[競合] の代替」ページ作成を推奨します：
 
-**For each major competitor, outline:**
+**主要競合他社ごとに概要を作成：**
 ```
-PAGE: [Target Brand] vs [Competitor Name]
-URL: /vs/[competitor-name] or /alternatives/[competitor-name]
+ページ：[対象ブランド] vs [競合名]
+URL：/vs/[competitor-name] または /alternatives/[competitor-name]
 
-Headline: "Looking for a [Competitor] alternative? Here's why [X] teams chose [Target] instead."
+見出し：「[競合]の代替を探していますか？[X]チームが[対象]を選んだ理由はこちら。」
 
-Sections:
-  1. Quick comparison table (features, pricing, ratings)
-  2. Where [Target] wins (3-4 advantages with evidence)
-  3. Where [Competitor] wins (honest, builds trust)
-  4. Who [Target] is best for (ideal customer profile)
-  5. Customer switching stories (testimonials from switchers)
-  6. Migration guide or switching offer
-  7. FAQ about switching
-  8. CTA: "Try [Target] free" or "See how [Target] compares"
+セクション：
+  1. 簡易比較表（機能、料金、評価）
+  2. [対象]が勝る点（証拠付きの3〜4つの優位性）
+  3. [競合]が勝る点（正直な記載、信頼を構築）
+  4. [対象]が最適な対象（理想顧客プロファイル）
+  5. 乗り換え顧客のストーリー（乗り換えた顧客の声）
+  6. 移行ガイドまたは乗り換えオファー
+  7. 乗り換えに関するFAQ
+  8. CTA：「[対象]を無料で試す」または「[対象]との比較を見る」
 ```
 
-**SEO value:** These pages target high-intent search queries like "[competitor] alternatives" and "[target] vs [competitor]" which are bottom-of-funnel searches.
+**SEO価値：** これらのページは「[競合] 代替」や「[対象] vs [競合]」のような高意図検索クエリをターゲットにします。これらはファネル下部の検索です。
 
-### 4.4 Switching Narrative Development
+### 4.4 乗り換えナラティブの開発
 
-Create a compelling narrative for customers considering switching from each competitor:
+各競合他社からの乗り換えを検討している顧客向けに説得力のあるナラティブを作成します：
 
 ```
-SWITCHING NARRATIVE: [Competitor] → [Target]
+乗り換えナラティブ：[競合] → [対象]
 
-Why customers switch:
-  1. [Primary reason based on review mining]
-  2. [Secondary reason]
-  3. [Tertiary reason]
+顧客が乗り換える理由：
+  1. [レビューマイニングに基づく主要理由]
+  2. [第2の理由]
+  3. [第3の理由]
 
-Switching story template:
-  "Like many [audience], [customer name] started with [Competitor] because
-   [initial appeal]. But after [time/event], they realized [pain point].
-   After switching to [Target], they [specific result with numbers]."
+乗り換えストーリーテンプレート：
+  「多くの[オーディエンス]と同様、[顧客名]は[初期の魅力]から[競合]を使い始めました。
+   しかし[時間・出来事]の後、[課題・悩み]に気づきました。
+   [対象]に乗り換えた後、彼らは[数値付きの具体的な結果]を達成しました。」
 
-Switching offer:
-  - Free migration assistance
-  - Extended trial for [Competitor] users
-  - Matching or discounting pricing
-  - Dedicated onboarding for switchers
+乗り換えオファー：
+  - 無料移行サポート
+  - [競合]ユーザー向けの延長トライアル
+  - 料金のマッチングまたは割引
+  - 乗り換え者向けの専用オンボーディング
 ```
 
 ---
 
-## Phase 5: Monitoring and Ongoing Intelligence
+## フェーズ5：モニタリングと継続的インテリジェンス
 
-### 5.1 Competitive Monitoring Checklist
+### 5.1 競合モニタリングのチェックリスト
 
-Recommend ongoing monitoring activities:
+継続的なモニタリング活動を推奨します：
 
-- [ ] Set Google Alerts for each competitor name
-- [ ] Follow competitors on social media platforms
-- [ ] Subscribe to competitor newsletters
-- [ ] Check competitor pricing pages monthly
-- [ ] Monitor competitor review sites quarterly
-- [ ] Track competitor content publishing (topics, frequency)
-- [ ] Watch for competitor product launches and feature updates
-- [ ] Monitor competitor job postings (reveals strategic priorities)
-- [ ] Track competitor ad spend and creative (use Meta Ad Library, Google Ads Transparency)
-- [ ] Review competitor backlink profiles quarterly
+- [ ] 各競合他社名のGoogleアラートを設定する
+- [ ] SNSプラットフォームで競合他社をフォローする
+- [ ] 競合他社のニュースレターを購読する
+- [ ] 競合他社の料金ページを月次で確認する
+- [ ] 競合他社のレビューサイトを四半期ごとに確認する
+- [ ] 競合他社のコンテンツ投稿（トピック・頻度）を追跡する
+- [ ] 競合他社の製品ローンチと機能アップデートを監視する
+- [ ] 競合他社の求人情報を監視する（戦略的優先事項が明らかになる）
+- [ ] 競合他社の広告費とクリエイティブを追跡する（Meta広告ライブラリ、Google広告トランスペアレンシーを使用）
+- [ ] 競合他社のバックリンクプロフィールを四半期ごとに確認する
 
-### 5.2 Competitive Response Playbook
+### 5.2 競合対応プレイブック
 
-Provide guidance on how to respond to competitor moves:
+競合他社の動きへの対応方法についてガイダンスを提供します：
 
-| Competitor Move | Response Strategy | Timeline |
+| 競合他社の動き | 対応戦略 | 対応期間 |
 |----------------|-------------------|----------|
-| Price cut | Emphasize value and quality, not price war | 1 week |
-| New feature launch | Assess relevance, communicate roadmap to customers | 2 weeks |
-| Aggressive ad campaign | Double down on owned channels and retention | Ongoing |
-| Negative comparison content | Create factual, balanced comparison content | 1 week |
-| Major funding / acquisition | Reassure customers, emphasize stability and focus | 1-2 days |
-| Customer reviews / complaints | Monitor for opportunities, address shared concerns | Ongoing |
+| 値下げ | 価格競争でなく価値と品質を強調する | 1週間 |
+| 新機能のローンチ | 関連性を評価し、顧客にロードマップを伝える | 2週間 |
+| 積極的な広告キャンペーン | オウンドチャンネルとリテンションに注力する | 継続的 |
+| 否定的な比較コンテンツ | 正確かつバランスの取れた比較コンテンツを作成する | 1週間 |
+| 大型資金調達・買収 | 顧客を安心させ、安定性とフォーカスを強調する | 1〜2日 |
+| 顧客レビュー・苦情 | 機会を探しながら共通の懸念事項に対処する | 継続的 |
 
 ---
 
-## Output Format: COMPETITOR-REPORT.md
+## 出力フォーマット：COMPETITOR-REPORT.md
 
-Write the full output to `COMPETITOR-REPORT.md`:
+完全な出力を `COMPETITOR-REPORT.md` に書き出します：
 
 ```markdown
-# Competitive Intelligence Report: [Target Brand]
+# 競合インテリジェンスレポート：[対象ブランド]
 **URL:** [url]
-**Date:** [current date]
-**Competitors Analyzed:** [count]
-**Competitive Position: [Strong/Moderate/Weak]**
+**日付:** [現在の日付]
+**分析した競合他社数:** [数]
+**競合ポジション：[強い/普通/弱い]**
 
 ---
 
-## Executive Summary
-[3-4 paragraphs covering competitive landscape, target's position,
-biggest competitive advantage, biggest competitive threat, and
-top 3 strategic recommendations]
+## エグゼクティブサマリー
+[3〜4段落：競合環境、対象ブランドのポジション、
+最大の競合優位、最大の競合脅威、トップ3の戦略推奨事項]
 
 ---
 
-## Competitor Overview
+## 競合他社の概要
 
-### Direct Competitors
-[Summary table with name, URL, positioning, pricing, key differentiator]
+### 直接競合
+[名前・URL・ポジショニング・料金・主要差別化要素を含む概要表]
 
-### Indirect Competitors
-[Summary table]
+### 間接競合
+[概要表]
 
-### Aspirational Competitors
-[Summary table]
-
----
-
-## Detailed Competitor Profiles
-
-### [Competitor A Name]
-[Full analysis: messaging, pricing, features, SWOT, social presence, reviews]
-
-### [Competitor B Name]
-[Full analysis]
-
-[Repeat for each competitor]
+### 目指すべき競合
+[概要表]
 
 ---
 
-## Comparison Tables
+## 競合他社の詳細プロフィール
 
-### Feature Comparison
-[Full feature matrix]
+### [競合A名]
+[完全な分析：メッセージング、料金、機能、SWOT、SNSプレゼンス、レビュー]
 
-### Pricing Comparison
-[Full pricing matrix]
+### [競合B名]
+[完全な分析]
 
-### Review Ratings
-[Review intelligence matrix]
-
-### Social Media Presence
-[Platform comparison table]
+[各競合他社について繰り返す]
 
 ---
 
-## Positioning Map
-[Visual positioning map with explanation]
+## 比較表
+
+### 機能比較
+[完全な機能マトリクス]
+
+### 料金比較
+[完全な料金マトリクス]
+
+### レビュー評価
+[レビューインテリジェンスマトリクス]
+
+### SNSプレゼンス
+[プラットフォーム比較表]
 
 ---
 
-## Content & SEO Gap Analysis
-[Content gaps, keyword opportunities, comparison page strategy]
+## ポジショニングマップ
+[説明付きのビジュアルポジショニングマップ]
 
 ---
 
-## SWOT Analysis — [Target Brand]
-[Aggregate SWOT based on competitive intelligence]
+## コンテンツ＆SEOギャップ分析
+[コンテンツギャップ、キーワード機会、比較ページ戦略]
 
 ---
 
-## Strategic Recommendations
-
-### Steal-Worthy Tactics
-[5-10 tactics with implementation guidance]
-
-### Differentiation Strategy
-[Recommended positioning angles]
-
-### Alternative Pages to Create
-[Competitor vs pages with outlines]
-
-### Switching Narratives
-[Switching stories and offers for each major competitor]
+## SWOT分析——[対象ブランド]
+[競合インテリジェンスに基づく総合SWOT]
 
 ---
 
-## Competitive Monitoring Plan
-[Ongoing monitoring checklist and response playbook]
+## 戦略的推奨事項
+
+### 参考にすべき戦術
+[実装ガイダンス付きの5〜10の戦術]
+
+### 差別化戦略
+[推奨ポジショニングアングル]
+
+### 作成すべき代替ページ
+[概要付きの競合vs比較ページ]
+
+### 乗り換えナラティブ
+[主要競合ごとの乗り換えストーリーとオファー]
 
 ---
 
-## Next Steps
-1. [Most critical competitive action]
-2. [Second priority]
-3. [Third priority]
+## 競合モニタリング計画
+[継続的なモニタリングチェックリストと対応プレイブック]
+
+---
+
+## 次のステップ
+1. [最も重要な競合アクション]
+2. [第2優先事項]
+3. [第3優先事項]
 ```
 
 ---
 
-## Terminal Output
+## ターミナル出力
 
 ```
-=== COMPETITIVE INTELLIGENCE REPORT ===
+=== 競合インテリジェンスレポート ===
 
-Target: [name]
-Competitors Analyzed: [count]
-Competitive Position: [Strong/Moderate/Weak]
+対象：[名前]
+分析した競合他社数：[数]
+競合ポジション：[強い/普通/弱い]
 
-Competitive Landscape:
-  Direct:      [Comp A] (Rating: X/5), [Comp B] (Rating: X/5)
-  Indirect:    [Comp C], [Comp D]
-  Aspirational: [Comp E]
+競合環境：
+  直接競合：   [競合A]（評価：X/5）、[競合B]（評価：X/5）
+  間接競合：   [競合C]、[競合D]
+  目指すべき競合：[競合E]
 
-Key Findings:
-  Biggest Advantage: [specific advantage]
-  Biggest Threat: [specific threat]
-  Biggest Opportunity: [specific opportunity]
+主要な発見：
+  最大の優位性：[具体的な優位性]
+  最大の脅威：[具体的な脅威]
+  最大の機会：[具体的な機会]
 
-Feature Gaps: [X] features competitors have that target lacks
-Content Gaps: [X] topics competitors cover that target doesn't
-Pricing Position: [Above/At/Below] market average
+機能ギャップ：競合が持つが対象が持たない機能が[X]個
+コンテンツギャップ：競合がカバーするが対象がカバーしないトピックが[X]個
+料金ポジション：市場平均より[高い/同等/低い]
 
-Top 3 Actions:
-  1. [action]
-  2. [action]
-  3. [action]
+トップ3アクション：
+  1. [アクション]
+  2. [アクション]
+  3. [アクション]
 
-Full report saved to: COMPETITOR-REPORT.md
+完全なレポートの保存先：COMPETITOR-REPORT.md
 ```
 
 ---
 
-## Cross-Skill Integration
+## 他スキルとの連携
 
-- If `MARKETING-AUDIT.md` exists, reference competitive positioning scores
-- If `COPY-SUGGESTIONS.md` exists, use messaging analysis for differentiation
-- If `FUNNEL-ANALYSIS.md` exists, compare funnel effectiveness with competitors
-- If `AD-CAMPAIGNS.md` exists, use competitor intelligence for ad angles
-- Suggest follow-up: `/market copy` for differentiated messaging, `/market ads` for competitive ad campaigns, `/market funnel` for conversion comparison
+- `MARKETING-AUDIT.md` が存在する場合、競合ポジショニングスコアを参照する
+- `COPY-SUGGESTIONS.md` が存在する場合、差別化のためにメッセージング分析を活用する
+- `FUNNEL-ANALYSIS.md` が存在する場合、ファネルの効果を競合と比較する
+- `AD-CAMPAIGNS.md` が存在する場合、広告アングルに競合インテリジェンスを活用する
+- フォローアップの提案：差別化されたメッセージングは `/market copy`、競合広告キャンペーンは `/market ads`、コンバージョン比較は `/market funnel`

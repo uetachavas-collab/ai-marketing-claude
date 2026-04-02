@@ -4,43 +4,43 @@
 
 # AI Marketing Suite for Claude Code
 
-A comprehensive marketing analysis and automation skill system for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Audit any website's marketing, generate copy, build email sequences, create content calendars, analyze competitors, and produce client-ready PDF reports — all from your terminal.
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code) 向けの包括的なマーケティング分析・自動化スキルシステムです。ウェブサイトのマーケティングを監査し、コピーを生成し、メールシーケンスを構築し、コンテンツカレンダーを作成し、競合他社を分析し、クライアントに提出できるPDFレポートを作成する — これら全てをターミナルから実行できます。
 
-**Built for entrepreneurs, agency builders, and solopreneurs who want to sell marketing services powered by AI.**
+**AIを活用したマーケティングサービスを販売したい起業家、代理店ビルダー、ソロプレナーのために作られています。**
 
 ---
 
-## What This Does
+## 何ができるか
 
-Type a command in Claude Code and get instant, actionable marketing analysis:
+Claude Codeでコマンドを入力するだけで、即座に実用的なマーケティング分析が得られます:
 
 ```
 > /market audit https://calendly.com
 
-Launching 5 parallel agents...
-✓ Content & Messaging Analysis     — Score: 72/100
-✓ Conversion Optimization          — Score: 58/100
-✓ SEO & Discoverability            — Score: 81/100
-✓ Competitive Positioning          — Score: 64/100
-✓ Brand & Trust                    — Score: 76/100
-✓ Growth & Strategy                — Score: 61/100
+5つの並列エージェントを起動中...
+✓ コンテンツ＆メッセージング分析     — スコア: 72/100
+✓ コンバージョン最適化               — スコア: 58/100
+✓ SEO＆発見性                        — スコア: 81/100
+✓ 競合ポジショニング                  — スコア: 64/100
+✓ ブランド＆信頼性                    — スコア: 76/100
+✓ 成長＆戦略                          — スコア: 61/100
 
-Overall Marketing Score: 69/100
+総合マーケティングスコア: 69/100
 
-Full report saved to MARKETING-AUDIT.md
+フルレポートを MARKETING-AUDIT.md に保存しました
 ```
 
 ---
 
-## Installation
+## インストール
 
-### One-Command Install
+### ワンコマンドインストール
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/ai-marketing-claude/main/install.sh | bash
 ```
 
-### Manual Install
+### 手動インストール
 
 ```bash
 git clone https://github.com/zubair-trabzada/ai-marketing-claude.git
@@ -48,7 +48,7 @@ cd ai-marketing-claude
 ./install.sh
 ```
 
-### Optional: PDF Report Support
+### オプション: PDFレポート対応
 
 ```bash
 pip install reportlab
@@ -56,133 +56,133 @@ pip install reportlab
 
 ---
 
-## Commands
+## コマンド一覧
 
-| Command | What It Does |
+| コマンド | 機能 |
 |---------|-------------|
-| `/market audit <url>` | Full marketing audit with 5 parallel agents |
-| `/market quick <url>` | 60-second marketing snapshot |
-| `/market copy <url>` | Generate optimized copy with before/after examples |
-| `/market emails <topic>` | Generate complete email sequences |
-| `/market social <topic>` | 30-day social media content calendar |
-| `/market ads <url>` | Ad creative and copy for all platforms |
-| `/market funnel <url>` | Sales funnel analysis and optimization |
-| `/market competitors <url>` | Competitive intelligence report |
-| `/market landing <url>` | Landing page CRO analysis |
-| `/market launch <product>` | Product launch playbook |
-| `/market proposal <client>` | Client proposal generator |
-| `/market report <url>` | Full marketing report (Markdown) |
-| `/market report-pdf <url>` | Professional marketing report (PDF) |
-| `/market seo <url>` | SEO content audit |
-| `/market brand <url>` | Brand voice analysis and guidelines |
+| `/market audit <url>` | 5つの並列エージェントによる完全なマーケティング監査 |
+| `/market quick <url>` | 60秒のマーケティングスナップショット |
+| `/market copy <url>` | 改善前後の例を含む最適化コピーの生成 |
+| `/market emails <topic>` | 完全なメールシーケンスの生成 |
+| `/market social <topic>` | 30日間のSNSコンテンツカレンダー |
+| `/market ads <url>` | 全プラットフォーム向け広告クリエイティブとコピー |
+| `/market funnel <url>` | セールスファネルの分析と最適化 |
+| `/market competitors <url>` | 競合インテリジェンスレポート |
+| `/market landing <url>` | ランディングページのCRO分析 |
+| `/market launch <product>` | 製品ローンチプレイブック |
+| `/market proposal <client>` | クライアント提案書の生成 |
+| `/market report <url>` | 完全なマーケティングレポート（Markdown） |
+| `/market report-pdf <url>` | プロフェッショナルなマーケティングレポート（PDF） |
+| `/market seo <url>` | SEOコンテンツ監査 |
+| `/market brand <url>` | ブランドボイスの分析とガイドライン |
 
 ---
 
-## Architecture
+## アーキテクチャ
 
 ```
 ai-marketing-claude/
-├── market/SKILL.md                     # Main orchestrator (routes all /market commands)
+├── market/SKILL.md                     # メインオーケストレーター（全 /market コマンドのルーティング）
 │
-├── skills/                             # 14 sub-skills
-│   ├── market-audit/SKILL.md           # Full audit orchestration
-│   ├── market-copy/SKILL.md            # Copywriting analysis & generation
-│   ├── market-emails/SKILL.md          # Email sequence generation
-│   ├── market-social/SKILL.md          # Social media content calendar
-│   ├── market-ads/SKILL.md             # Ad creative & copy
-│   ├── market-funnel/SKILL.md          # Funnel analysis & optimization
-│   ├── market-competitors/SKILL.md     # Competitive intelligence
-│   ├── market-landing/SKILL.md         # Landing page CRO
-│   ├── market-launch/SKILL.md          # Launch playbook generation
-│   ├── market-proposal/SKILL.md        # Client proposal generator
-│   ├── market-report/SKILL.md          # Marketing report (Markdown)
-│   ├── market-report-pdf/SKILL.md      # Marketing report (PDF)
-│   ├── market-seo/SKILL.md             # SEO content audit
-│   └── market-brand/SKILL.md           # Brand voice analysis
+├── skills/                             # 14個のサブスキル
+│   ├── market-audit/SKILL.md           # 完全監査のオーケストレーション
+│   ├── market-copy/SKILL.md            # コピーライティング分析と生成
+│   ├── market-emails/SKILL.md          # メールシーケンスの生成
+│   ├── market-social/SKILL.md          # SNSコンテンツカレンダー
+│   ├── market-ads/SKILL.md             # 広告クリエイティブとコピー
+│   ├── market-funnel/SKILL.md          # ファネル分析と最適化
+│   ├── market-competitors/SKILL.md     # 競合インテリジェンス
+│   ├── market-landing/SKILL.md         # ランディングページのCRO
+│   ├── market-launch/SKILL.md          # ローンチプレイブックの生成
+│   ├── market-proposal/SKILL.md        # クライアント提案書の生成
+│   ├── market-report/SKILL.md          # マーケティングレポート（Markdown）
+│   ├── market-report-pdf/SKILL.md      # マーケティングレポート（PDF）
+│   ├── market-seo/SKILL.md             # SEOコンテンツ監査
+│   └── market-brand/SKILL.md           # ブランドボイス分析
 │
-├── agents/                             # 5 parallel subagents
-│   ├── market-content.md               # Content & messaging analysis
-│   ├── market-conversion.md            # CRO & funnel optimization
-│   ├── market-competitive.md           # Competitive positioning
-│   ├── market-technical.md             # Technical SEO & tracking
-│   └── market-strategy.md              # Brand, pricing & growth strategy
+├── agents/                             # 5つの並列サブエージェント
+│   ├── market-content.md               # コンテンツ＆メッセージング分析
+│   ├── market-conversion.md            # CRO＆ファネル最適化
+│   ├── market-competitive.md           # 競合ポジショニング
+│   ├── market-technical.md             # テクニカルSEO＆トラッキング
+│   └── market-strategy.md              # ブランド、価格設定＆成長戦略
 │
-├── scripts/                            # Python utility scripts
-│   ├── analyze_page.py                 # Webpage marketing analysis
-│   ├── competitor_scanner.py           # Competitor website scanner
-│   ├── social_calendar.py              # Social content calendar generator
-│   └── generate_pdf_report.py          # PDF report generator
+├── scripts/                            # Pythonユーティリティスクリプト
+│   ├── analyze_page.py                 # ウェブページマーケティング分析
+│   ├── competitor_scanner.py           # 競合ウェブサイトスキャナー
+│   ├── social_calendar.py              # SNSコンテンツカレンダー生成ツール
+│   └── generate_pdf_report.py          # PDFレポート生成ツール
 │
-├── templates/                          # Marketing templates
-│   ├── email-welcome.md                # Welcome email sequence (5 emails)
-│   ├── email-nurture.md                # Lead nurture sequence (6 emails)
-│   ├── email-launch.md                 # Product launch sequence (8 emails)
-│   ├── proposal-template.md            # Client proposal template
-│   ├── content-calendar.md             # 30-day content calendar
-│   └── launch-checklist.md             # Launch checklist
+├── templates/                          # マーケティングテンプレート
+│   ├── email-welcome.md                # ウェルカムメールシーケンス（5通）
+│   ├── email-nurture.md                # リードナーチャリングシーケンス（6通）
+│   ├── email-launch.md                 # 製品ローンチシーケンス（8通）
+│   ├── proposal-template.md            # クライアント提案書テンプレート
+│   ├── content-calendar.md             # 30日間コンテンツカレンダー
+│   └── launch-checklist.md             # ローンチチェックリスト
 │
-├── install.sh                          # One-command installer
-├── uninstall.sh                        # Clean uninstaller
-├── requirements.txt                    # Python dependencies
-└── LICENSE                             # MIT License
+├── install.sh                          # ワンコマンドインストーラー
+├── uninstall.sh                        # クリーンアンインストーラー
+├── requirements.txt                    # Python依存関係
+└── LICENSE                             # MITライセンス
 ```
 
 ---
 
-## Scoring Methodology
+## スコアリング方法論
 
-The full marketing audit scores websites across 6 dimensions:
+完全なマーケティング監査では、ウェブサイトを6つの次元でスコアリングします:
 
-| Category | Weight | What It Measures |
+| カテゴリ | 重み | 測定内容 |
 |----------|--------|------------------|
-| Content & Messaging | 25% | Copy quality, value props, headlines, CTAs |
-| Conversion Optimization | 20% | Funnels, forms, social proof, friction, urgency |
-| SEO & Discoverability | 20% | On-page SEO, technical SEO, content structure |
-| Competitive Positioning | 15% | Differentiation, market awareness, alternatives |
-| Brand & Trust | 10% | Design quality, trust signals, authority |
-| Growth & Strategy | 10% | Pricing, acquisition channels, retention |
+| コンテンツ＆メッセージング | 25% | コピー品質、バリュープロポジション、見出し、CTA |
+| コンバージョン最適化 | 20% | ファネル、フォーム、社会的証明、摩擦、緊迫感 |
+| SEO＆発見性 | 20% | オンページSEO、テクニカルSEO、コンテンツ構造 |
+| 競合ポジショニング | 15% | 差別化、市場認知、代替製品への対応 |
+| ブランド＆信頼性 | 10% | デザイン品質、信頼シグナル、権威性 |
+| 成長＆戦略 | 10% | 価格設定、獲得チャネル、リテンション |
 
-**Overall Marketing Score** = Weighted average of all categories (0-100)
-
----
-
-## How It Works
-
-1. **You type a command** — e.g., `/market audit https://example.com`
-2. **Claude reads the skill files** — they tell Claude exactly how to analyze the site
-3. **5 subagents launch in parallel** — each one analyzes a different dimension
-4. **Python scripts run** — automated page analysis, competitor scanning
-5. **Results are compiled** — into a scored, prioritized, actionable report
-6. **Output is saved** — as a Markdown file or professional PDF
+**総合マーケティングスコア** = 全カテゴリの加重平均（0〜100点）
 
 ---
 
-## Use Cases
+## 仕組み
 
-### For Agency Builders
-- Run `/market audit` on a prospect's website before a sales call
-- Generate `/market proposal` with specific findings and pricing
-- Deliver `/market report-pdf` as a professional client deliverable
-
-### For Solopreneurs
-- Use `/market copy` to optimize your own landing pages
-- Generate `/market emails` for your product launches
-- Build `/market social` calendars for consistent posting
-
-### For Content Creators
-- Research competitors with `/market competitors`
-- Plan launches with `/market launch`
-- Analyze your funnel with `/market funnel`
+1. **コマンドを入力する** — 例: `/market audit https://example.com`
+2. **Claudeがスキルファイルを読み込む** — サイトの分析方法が正確に記述されています
+3. **5つのサブエージェントが並列起動** — それぞれが異なる次元を分析します
+4. **Pythonスクリプトが実行される** — 自動ページ分析、競合スキャン
+5. **結果が集計される** — スコア付き、優先度別、実行可能なレポートとして
+6. **出力が保存される** — MarkdownファイルまたはプロフェッショナルなPDFとして
 
 ---
 
-## Uninstall
+## ユースケース
+
+### 代理店ビルダー向け
+- 営業前に見込み客のウェブサイトに `/market audit` を実行する
+- 具体的な発見事項と価格を含む `/market proposal` を生成する
+- プロフェッショナルなクライアント成果物として `/market report-pdf` を納品する
+
+### ソロプレナー向け
+- `/market copy` を使って自分のランディングページを最適化する
+- 製品ローンチ用に `/market emails` を生成する
+- 継続的な投稿のために `/market social` カレンダーを作成する
+
+### コンテンツクリエイター向け
+- `/market competitors` で競合他社をリサーチする
+- `/market launch` でローンチを計画する
+- `/market funnel` でファネルを分析する
+
+---
+
+## アンインストール
 
 ```bash
 ./uninstall.sh
 ```
 
-Or manually:
+または手動で:
 ```bash
 rm -rf ~/.claude/skills/market*
 rm -f ~/.claude/agents/market-*.md
@@ -190,14 +190,14 @@ rm -f ~/.claude/agents/market-*.md
 
 ---
 
-## Learn More
+## さらに詳しく
 
-Want to learn how to build a marketing agency powered by AI tools like this?
+AIツールを活用したマーケティング代理店の構築方法を学びたい方へ:
 
-**[Join the AI Workshop Community](https://www.skool.com/aiworkshop)** — Learn AI automations, vibe coding, and how to build AI-powered services for clients.
+**[AI Workshopコミュニティに参加する](https://www.skool.com/aiworkshop)** — AIオートメーション、バイブコーディング、クライアント向けAI搭載サービスの構築方法を学べます。
 
 ---
 
-## License
+## ライセンス
 
-MIT License — see [LICENSE](LICENSE) for details.
+MITライセンス — 詳細は [LICENSE](LICENSE) をご覧ください。

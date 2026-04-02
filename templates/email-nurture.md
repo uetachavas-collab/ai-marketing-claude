@@ -1,103 +1,103 @@
-# Lead Nurture Email Sequence Template (6 Emails)
+# リードナーチャリングメールシーケンステンプレート（全6通）
 
-## Purpose
-Convert leads who signed up but haven't purchased. Build trust through value, then present the offer.
+## 目的
+登録済みだが未購入のリードをコンバージョンへ導く。価値提供を通じて信頼を築き、オファーを提示する。
 
-## Sequence Strategy: Value → Trust → Offer (70/20/10 rule)
-- 70% pure value (no selling)
-- 20% soft positioning (subtle product mentions)
-- 10% direct offer (clear CTA to buy)
-
----
-
-## Email 1: The Big Insight (Send: Day 1 after signup)
-
-**Subject:** The [industry] mistake that costs you [money/time]
-**Preview text:** 90% of [audience] make this mistake. Here's the fix.
-
-**Framework:**
-1. Hook with a surprising stat or counterintuitive insight
-2. Explain the mistake most people make
-3. Give the fix (actionable, not vague)
-4. No selling — pure value
-5. PS: "More insights like this coming this week"
+## シーケンス戦略：価値 → 信頼 → オファー（70/20/10ルール）
+- 70% 純粋な価値提供（販売なし）
+- 20% ソフトなポジショニング（さりげない製品への言及）
+- 10% 直接オファー（購入への明確なCTA）
 
 ---
 
-## Email 2: The Framework (Send: Day 3)
+## メール1：重要な気づき（送信タイミング：登録後1日目）
 
-**Subject:** My [number]-step framework for [desired result]
-**Preview text:** I've used this with [X] clients. It works every time.
+**件名：** [業界]で[お金/時間]を失う原因となるミス
+**プレビューテキスト：** [ターゲット層]の90%がこのミスを犯しています。解決策をご紹介します。
 
-**Framework:**
-1. Share a repeatable framework (3-5 steps)
-2. Make it immediately implementable
-3. Include one real example of it working
-4. No selling — establish expertise
-5. CTA: "Try step 1 today and reply with your results"
-
----
-
-## Email 3: The Story (Send: Day 5)
-
-**Subject:** How I went from [before state] to [after state]
-**Preview text:** It wasn't what I expected...
-
-**Framework:**
-1. Personal or client story (beginning → struggle → breakthrough → result)
-2. The one thing that made the difference
-3. Lesson the reader can apply
-4. Subtle mention of your product/service as part of the story
-5. No hard sell — let the story speak
+**フレームワーク：**
+1. 驚くべき統計や逆説的な気づきでフックする
+2. 多くの人が犯すミスを説明する
+3. 解決策を提示する（具体的に、曖昧にしない）
+4. 販売なし — 純粋な価値提供
+5. PS：「今週も同様の情報をお届けします」
 
 ---
 
-## Email 4: The Objection Crusher (Send: Day 8)
+## メール2：フレームワーク（送信タイミング：3日目）
 
-**Subject:** "But I've already tried [common solution]..."
-**Preview text:** Here's why that didn't work — and what will.
+**件名：** [望ましい結果]を実現する[数字]ステップのフレームワーク
+**プレビューテキスト：** [X]人のクライアントに活用してきました。毎回効果があります。
 
-**Framework:**
-1. Address the #1 reason leads don't buy
-2. Explain why their past approach didn't work
-3. Show your different approach
-4. Social proof: quick testimonial or result
-5. Soft CTA: "If this resonates, here's what I'd suggest"
-
----
-
-## Email 5: The Value Stack (Send: Day 10)
-
-**Subject:** Everything you get when you [join/subscribe/buy]
-**Preview text:** I laid it all out — and it's more than you think.
-
-**Framework:**
-1. Recap all the value you've provided in previous emails
-2. Transition: "Imagine having this systematized"
-3. Present your product/service as the complete solution
-4. Clear value stack (what they get + the value of each component)
-5. Direct CTA to buy/join
+**フレームワーク：**
+1. 再現可能なフレームワークを共有する（3〜5ステップ）
+2. すぐに実践できる内容にする
+3. 実際に機能した例を1つ含める
+4. 販売なし — 専門性を確立する
+5. CTA：「今日ステップ1を試して、結果を返信してください」
 
 ---
 
-## Email 6: The Deadline / Last Chance (Send: Day 12)
+## メール3：ストーリー（送信タイミング：5日目）
 
-**Subject:** Last chance: [offer expires / spots filling up]
-**Preview text:** After today, this goes away.
+**件名：** [before状態]から[after状態]になるまで
+**プレビューテキスト：** 予想とは違う展開でした…
 
-**Framework:**
-1. Brief reminder of the offer
-2. Quick recap of one powerful testimonial
-3. Address one final objection
-4. Clear urgency (real deadline, limited spots, price increase)
-5. Strong CTA
-6. PS: "If now isn't the right time, no worries. I'll keep sending you free value."
+**フレームワーク：**
+1. 自分またはクライアントのストーリー（始まり → 苦悩 → 突破口 → 結果）
+2. 変化をもたらした1つのこと
+3. 読者が応用できる教訓
+4. ストーリーの一部として製品・サービスをさりげなく言及
+5. 強引な販売なし — ストーリーに語らせる
 
 ---
 
-## Key Metrics
-- Sequence completion rate target: 60%+ should receive all 6 emails
-- Conversion rate target: 2-8% of sequence recipients
-- Best performing email: Usually Email 5 or 6 (the offer emails)
-- If Email 1-2 have low opens, fix your subject lines
-- If Email 5-6 have low clicks, fix your offer positioning
+## メール4：懸念事項の解消（送信タイミング：8日目）
+
+**件名：** 「でも[一般的な解決策]は既に試しました…」
+**プレビューテキスト：** うまくいかなかった理由と、効果的な方法をご説明します。
+
+**フレームワーク：**
+1. リードが購入しない最大の理由に向き合う
+2. これまでのアプローチがうまくいかなかった理由を説明する
+3. あなたの異なるアプローチを示す
+4. 社会的証明：短いお客様の声や実績
+5. ソフトなCTA：「共感いただけたなら、こちらをお勧めします」
+
+---
+
+## メール5：価値の積み上げ（送信タイミング：10日目）
+
+**件名：** [参加/登録/購入]で得られるすべて
+**プレビューテキスト：** 全て並べてみました — 思っているより多いはずです。
+
+**フレームワーク：**
+1. これまでのメールで提供してきた価値を振り返る
+2. 移行：「これが体系化されていたら…と想像してみてください」
+3. 製品・サービスを完全な解決策として提示する
+4. 明確な価値の積み上げ（得られるもの＋各要素の価値）
+5. 購入・参加への直接CTA
+
+---
+
+## メール6：締め切り／最終案内（送信タイミング：12日目）
+
+**件名：** 最終案内：[オファー終了 / 残席わずか]
+**プレビューテキスト：** 本日で終了します。
+
+**フレームワーク：**
+1. オファーの簡単なリマインダー
+2. 強力なお客様の声を1つ簡潔に紹介
+3. 最後の懸念事項に回答する
+4. 明確な緊急性（実際の締め切り、残席限定、値上げ）
+5. 力強いCTA
+6. PS：「今が適切なタイミングでなければ、ご安心ください。引き続き無料のコンテンツをお送りします。」
+
+---
+
+## 重要指標
+- シーケンス完了率の目標：60%以上が全6通を受信
+- コンバージョン率の目標：シーケンス受信者の2〜8%
+- 最もパフォーマンスが高いメール：通常はメール5またはメール6（オファーメール）
+- メール1〜2の開封率が低い場合：件名を改善する
+- メール5〜6のクリック率が低い場合：オファーの見せ方を改善する

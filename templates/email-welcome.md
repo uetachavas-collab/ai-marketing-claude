@@ -1,83 +1,83 @@
-# Welcome Email Sequence Template (5 Emails)
+# ウェルカムメールシーケンステンプレート（全5通）
 
-## Email 1: Welcome & Quick Win (Send: Immediately)
+## メール1：ウェルカム＆即効アドバイス（送信タイミング：登録直後）
 
-**Subject:** Welcome! Here's your first quick win
-**Preview text:** You made a great decision. Let me show you why.
+**件名：** ようこそ！まず試せる即効アドバイスをお届けします
+**プレビューテキスト：** 正しい選択をされました。その理由をご説明します。
 
-**Body Framework:**
-1. Welcome + acknowledge their decision (1-2 sentences)
-2. Set expectations — what they'll get from you (bullet list, 3-4 items)
-3. Deliver immediate value — one actionable tip they can use right now
-4. Single CTA: Complete your profile / Take the first step
+**本文フレームワーク：**
+1. ウェルカム＋登録への感謝（1〜2文）
+2. 期待値の設定 — 今後提供するコンテンツの概要（箇条書き3〜4項目）
+3. 即時価値の提供 — 今すぐ実践できる具体的なアドバイスを1つ
+4. 単一CTA：プロフィールを完成させる／最初のステップを踏む
 
-**Key principle:** Deliver value immediately. Don't just say "welcome" — give them something useful in the first email.
-
----
-
-## Email 2: The Problem We Solve (Send: Day 2)
-
-**Subject:** The real reason [problem] happens
-**Preview text:** It's not what you think...
-
-**Body Framework:**
-1. Describe the problem they're facing (empathy)
-2. Explain why common solutions don't work (agitate)
-3. Introduce your approach as the fix (solve)
-4. Social proof: One quick result or testimonial
-5. CTA: Try [specific feature] or Read [relevant content]
-
-**Key principle:** Show you understand their pain better than anyone else.
+**重要原則：** すぐに価値を届けること。「ようこそ」と言うだけでなく、最初のメールから役立つ情報を提供する。
 
 ---
 
-## Email 3: Social Proof & Results (Send: Day 4)
+## メール2：私たちが解決する課題（送信タイミング：2日目）
 
-**Subject:** How [customer] got [specific result]
-**Preview text:** And you can too — here's exactly how.
+**件名：** [課題]が起きる本当の理由
+**プレビューテキスト：** 思っていたのとは違うかもしれません…
 
-**Body Framework:**
-1. Quick case study: situation → action → result
-2. What made the difference (1-2 key insights)
-3. How they can get the same result
-4. CTA: Start [specific action] now
+**本文フレームワーク：**
+1. 読者が抱えている問題を描写する（共感）
+2. よくある解決策がうまくいかない理由を説明する（問題の深堀り）
+3. あなたのアプローチを解決策として紹介する（解決）
+4. 社会的証明：短い実績やお客様の声を1つ
+5. CTA：[特定の機能]を試す、または[関連コンテンツ]を読む
 
-**Key principle:** Prove it works with real results. Numbers > claims.
-
----
-
-## Email 4: Overcome the #1 Objection (Send: Day 6)
-
-**Subject:** "I don't have time for [thing]" — Sound familiar?
-**Preview text:** Here's the 10-minute version that works.
-
-**Body Framework:**
-1. Acknowledge the most common objection
-2. Reframe it — show why it's easier than they think
-3. Give a simplified version / quick-start approach
-4. CTA: Try the 10-minute version
-
-**Key principle:** Address the biggest barrier head-on. Don't ignore it.
+**重要原則：** 誰よりも深くユーザーの悩みを理解していることを示す。
 
 ---
 
-## Email 5: The Ask (Send: Day 8)
+## メール3：社会的証明と実績（送信タイミング：4日目）
 
-**Subject:** Quick question about your experience
-**Preview text:** I'd love your honest feedback.
+**件名：** [お客様名]が[具体的な成果]を達成した方法
+**プレビューテキスト：** あなたも同じことができます — 詳しいやり方をご紹介します。
 
-**Body Framework:**
-1. Check in — how's their experience so far?
-2. Ask a specific question (reply-based engagement)
-3. Offer help or a resource based on where they are
-4. Soft CTA: upgrade, book a call, or explore next steps
+**本文フレームワーク：**
+1. 短いケーススタディ：状況 → 行動 → 結果
+2. 変化をもたらした要因（1〜2つの重要な気づき）
+3. 読者が同じ結果を得るための方法
+4. CTA：今すぐ[具体的なアクション]を始める
 
-**Key principle:** Create two-way conversation. A reply is worth 10x a click.
+**重要原則：** 実際の結果で効果を証明する。数字は主張よりも説得力がある。
 
 ---
 
-## Metrics to Track
-- Open rate target: 40-60% (welcome series runs higher than campaigns)
-- Click rate target: 8-15%
-- Reply rate target: 3-5% (especially on Email 5)
-- Unsubscribe rate: < 0.5% per email
+## メール4：最大の懸念事項を解消する（送信タイミング：6日目）
+
+**件名：** 「[○○]をやる時間がない」— 心当たりありませんか？
+**プレビューテキスト：** 10分でできる方法があります。
+
+**本文フレームワーク：**
+1. 最も多い懸念事項を認める
+2. 再解釈する — 思っているより簡単な理由を伝える
+3. 簡易版／クイックスタートの方法を提示する
+4. CTA：10分バージョンを試してみる
+
+**重要原則：** 最大の障壁に正面から向き合う。無視しない。
+
+---
+
+## メール5：お願い（送信タイミング：8日目）
+
+**件名：** ご利用状況について、少しお聞きしてもよいですか
+**プレビューテキスト：** 率直なご意見をお聞かせください。
+
+**本文フレームワーク：**
+1. 近況確認 — これまでの体験はいかがでしたか？
+2. 具体的な質問を1つ（返信による双方向コミュニケーション）
+3. 現在の状況に合わせたサポートやリソースを提案する
+4. ソフトなCTA：アップグレード、通話予約、または次のステップへ
+
+**重要原則：** 双方向の会話を生み出す。返信1件はクリック10回分の価値がある。
+
+---
+
+## 追跡すべき指標
+- 開封率の目標：40〜60%（ウェルカムシリーズは通常のキャンペーンより高め）
+- クリック率の目標：8〜15%
+- 返信率の目標：3〜5%（特にメール5）
+- 配信停止率：メール1通あたり0.5%未満

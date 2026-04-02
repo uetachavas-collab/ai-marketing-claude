@@ -1,471 +1,471 @@
-# Brand Voice Analysis and Guidelines Generation
+# ブランドボイス分析とガイドライン生成
 
-## Skill Purpose
-Analyze a brand's voice, tone, and messaging across all available channels and generate a comprehensive brand voice guidelines document. This skill examines how a brand communicates, identifies patterns and inconsistencies, and produces actionable guidelines that any writer or marketer can follow to maintain brand consistency.
+## スキルの目的
+利用可能なすべてのチャネルを横断してブランドのボイス・トーン・メッセージングを分析し、包括的なブランドボイスガイドラインドキュメントを生成します。このスキルはブランドのコミュニケーション方法を調査し、パターンと不一致を特定し、ライターやマーケターがブランドの一貫性を維持するために従えるアクション可能なガイドラインを作成します。
 
-## When to Use
-- User wants to understand or document a brand's voice
-- User needs brand voice guidelines for a team, freelancers, or agency
-- User wants to ensure consistency across marketing channels
-- User is rebranding or refining their brand identity
-- User wants to compare their brand voice to competitors
-- Triggered by `/market brand <url>` or `/market brand`
+## 使用するタイミング
+- ユーザーがブランドのボイスを理解またはドキュメント化したい場合
+- ユーザーがチーム、フリーランサー、または代理店のためのブランドボイスガイドラインが必要な場合
+- ユーザーがマーケティングチャネル全体の一貫性を確保したい場合
+- ユーザーがリブランドまたはブランドアイデンティティを洗練させている場合
+- ユーザーが自分のブランドボイスを競合他社と比較したい場合
+- `/market brand <url>` または `/market brand` でトリガーされた場合
 
-## How to Execute
+## 実行方法
 
-### Step 1: Gather Source Material
-To analyze a brand's voice, examine content from multiple sources. Prioritize in this order:
+### ステップ1: 素材の収集
+ブランドのボイスを分析するために、複数のソースからコンテンツを調査します。以下の順に優先します：
 
-**Primary Sources (must analyze):**
-1. **Homepage** -- The most curated representation of the brand
-2. **About page** -- How the brand describes itself
-3. **Product/service pages** -- How they present their offerings
+**主要ソース（必ず分析する）：**
+1. **ホームページ** -- ブランドの最も厳選された表現
+2. **アバウトページ** -- ブランドが自己をどのように説明しているか
+3. **製品/サービスページ** -- オファリングをどのように提示しているか
 
-**Secondary Sources (analyze if available):**
-4. **Blog posts** (at least 3-5 recent posts)
-5. **Social media profiles** (bio, recent posts, engagement style)
-6. **Email newsletters** (welcome email, recent sends)
-7. **Customer-facing copy** (error messages, onboarding flows, help docs)
+**二次ソース（利用可能な場合は分析する）：**
+4. **ブログ記事**（最近の記事3〜5本）
+5. **SNSプロフィール**（プロフィール文、最近の投稿、エンゲージメントスタイル）
+6. **メールニュースレター**（ウェルカムメール、最近の配信）
+7. **顧客向けコピー**（エラーメッセージ、オンボーディングフロー、ヘルプドキュメント）
 
-**Tertiary Sources:**
-8. **Job postings** -- Reveals internal culture and values
-9. **Press releases** -- Formal communication style
-10. **Ad copy** -- Paid messaging approach
-11. **Video scripts or podcast transcripts** -- Spoken brand voice
+**三次ソース：**
+8. **求人票** -- 内部の文化と価値観を明らかにする
+9. **プレスリリース** -- 公式なコミュニケーションスタイル
+10. **広告コピー** -- 有料メッセージングのアプローチ
+11. **動画スクリプトまたはポッドキャストの文字起こし** -- 話し言葉のブランドボイス
 
-Use browser tools or the analyze_page.py script to access web content. For social media, check the website for social links and analyze the linked profiles.
+ウェブコンテンツへのアクセスにはブラウザツールまたはanalyze_page.pyスクリプトを使用します。SNSについては、ウェブサイトのソーシャルリンクを確認してリンクされたプロフィールを分析します。
 
-### Step 2: Voice Dimension Analysis
-Map the brand's voice along four primary dimensions. Each dimension is a spectrum, not a binary.
+### ステップ2: ボイスディメンション分析
+4つの主要ディメンションに沿ってブランドのボイスをマッピングします。各ディメンションは二択ではなく、スペクトルです。
 
-#### Dimension 1: Formal <-----> Casual
-Where does the brand fall on the formality spectrum?
+#### ディメンション1：フォーマル ←→ カジュアル
+ブランドはフォーマリティのスペクトルのどこにいるか？
 
-| Signal | Formal | Casual |
+| シグナル | フォーマル | カジュアル |
 |---|---|---|
-| Contractions | Avoids them ("do not", "cannot") | Uses them freely ("don't", "can't") |
-| Sentence structure | Complex, longer sentences | Short, punchy sentences |
-| Vocabulary | Professional, industry-standard | Conversational, everyday words |
-| Greetings | "Dear valued customer" | "Hey there!" |
-| Pronouns | Third person ("the company", "one") | First/second person ("we", "you") |
-| Humor | Rare or absent | Frequent, natural |
-| Slang/colloquialisms | Never | Occasionally or frequently |
+| 短縮形 | 避ける（「do not」「cannot」） | 自由に使う（「don't」「can't」） |
+| 文構造 | 複雑で長い文 | 短く、パンチのある文 |
+| 語彙 | プロフェッショナル、業界標準 | 会話的、日常的な言葉 |
+| 挨拶 | 「お客様各位」 | 「こんにちは！」 |
+| 代名詞 | 三人称（「弊社」「一般に」） | 一人称/二人称（「私たち」「あなた」） |
+| ユーモア | まれまたはなし | 頻繁、自然 |
+| スラング/口語 | 決して使わない | 時々または頻繁に使う |
 
-**Score: 1 (extremely formal) to 10 (extremely casual)**
+**スコア：1（非常にフォーマル）〜10（非常にカジュアル）**
 
-**Evidence required:** Quote 3-5 specific examples from the source material that support your rating.
+**証拠が必要：** 評価を裏付ける素材からの3〜5の具体的な例を引用します。
 
-#### Dimension 2: Serious <-----> Playful
-How much levity does the brand inject into its communication?
+#### ディメンション2：シリアス ←→ プレイフル
+ブランドはコミュニケーションにどれだけ軽さを加えているか？
 
-| Signal | Serious | Playful |
+| シグナル | シリアス | プレイフル |
 |---|---|---|
-| Tone | Authoritative, measured | Light-hearted, fun |
-| Metaphors | Rare, conservative | Creative, unexpected |
-| Exclamation marks | Rare | Frequent |
-| Emoji use | Never | Sometimes or often |
-| Wordplay/puns | Never | Enjoys them |
-| Error messages | "An error has occurred" | "Oops! Something went sideways" |
-| Self-deprecation | Never | Occasionally |
+| トーン | 権威的、測定された | 軽快、楽しい |
+| メタファー | まれ、保守的 | クリエイティブ、意外性がある |
+| 感嘆符 | まれ | 頻繁 |
+| 絵文字の使用 | 決して使わない | 時々または頻繁に使う |
+| ダジャレ/言葉遊び | 決してしない | 楽しんでいる |
+| エラーメッセージ | 「エラーが発生しました」 | 「おっと！何かがおかしくなりました」 |
+| 自己批判 | 決してしない | 時々する |
 
-**Score: 1 (extremely serious) to 10 (extremely playful)**
+**スコア：1（非常にシリアス）〜10（非常にプレイフル）**
 
-#### Dimension 3: Technical <-----> Simple
-How much domain expertise does the brand assume in its audience?
+#### ディメンション3：テクニカル ←→ シンプル
+ブランドはオーディエンスにどれだけのドメイン知識を前提としているか？
 
-| Signal | Technical | Simple |
+| シグナル | テクニカル | シンプル |
 |---|---|---|
-| Jargon | Uses industry terms freely | Avoids or explains all jargon |
-| Acronyms | Uses without definition | Spells out on first use |
-| Detail level | In-depth explanations | High-level overviews |
-| Audience assumption | Expert audience | General audience |
-| Data/statistics | Frequent, detailed | Occasional, simplified |
-| Examples | Complex, domain-specific | Simple, relatable analogies |
+| 専門用語 | 業界用語を自由に使用 | 専門用語を避けるか説明する |
+| 頭字語 | 定義なしで使用 | 初出時に展開する |
+| 詳細レベル | 詳細な説明 | ハイレベルな概要 |
+| オーディエンスの前提 | 専門家オーディエンス | 一般オーディエンス |
+| データ/統計 | 頻繁で詳細 | 時々、簡略化 |
+| 例 | 複雑、ドメイン固有 | シンプルで親しみやすい例え |
 
-**Score: 1 (extremely technical) to 10 (extremely simple)**
+**スコア：1（非常にテクニカル）〜10（非常にシンプル）**
 
-#### Dimension 4: Reserved <-----> Bold
-How much personality and confidence does the brand project?
+#### ディメンション4：リザーブド ←→ ボールド
+ブランドはどれだけのパーソナリティと自信を示しているか？
 
-| Signal | Reserved | Bold |
+| シグナル | リザーブド | ボールド |
 |---|---|---|
-| Claims | Hedged ("we believe", "may help") | Direct ("we guarantee", "the best") |
-| Opinions | Neutral, balanced | Strong, opinionated |
-| Competitive references | Avoids mentioning competitors | Directly compares |
-| Personality | Professional, understated | Distinctive, memorable |
-| Promises | Conservative | Ambitious |
-| Controversy | Avoids | Embraces when aligned with values |
+| 主張 | ヘッジされている（「私たちは信じる」「役立つかもしれない」） | 直接的（「私たちは保証する」「最高の」） |
+| 意見 | 中立、バランスのとれた | 強い、意見がある |
+| 競合他社への言及 | 言及を避ける | 直接比較する |
+| パーソナリティ | プロフェッショナル、控えめ | 特徴的で記憶に残る |
+| 約束 | 保守的 | 野心的 |
+| 論争 | 避ける | 価値観と一致する場合は受け入れる |
 
-**Score: 1 (extremely reserved) to 10 (extremely bold)**
+**スコア：1（非常にリザーブド）〜10（非常にボールド）**
 
-### Step 3: Tone Spectrum Mapping
+### ステップ3: トーンスペクトラムのマッピング
 
-Beyond the four dimensions, map how the brand's tone shifts across different contexts:
+4つのディメンションを超えて、ブランドのトーンがさまざまなコンテキストでどのように変化するかをマッピングします：
 
-| Context | Typical Tone | Example |
+| コンテキスト | 典型的なトーン | 例 |
 |---|---|---|
-| Homepage | [Confident/Welcoming/Urgent/etc.] | "[quote from homepage]" |
-| Product description | [Informative/Persuasive/Technical/etc.] | "[quote]" |
-| Blog post | [Educational/Conversational/Authoritative/etc.] | "[quote]" |
-| Social media | [Casual/Engaging/Promotional/etc.] | "[quote]" |
-| Error/404 page | [Apologetic/Humorous/Helpful/etc.] | "[quote]" |
-| Email subject lines | [Direct/Curious/Urgent/etc.] | "[quote]" |
-| CTA buttons | [Action-oriented/Benefit-driven/Urgent/etc.] | "[quote]" |
-| Customer support | [Empathetic/Professional/Friendly/etc.] | "[quote]" |
+| ホームページ | [自信あり/歓迎/緊急/など] | 「[ホームページからの引用]」 |
+| 製品説明 | [情報的/説得的/テクニカル/など] | 「[引用]」 |
+| ブログ記事 | [教育的/会話的/権威的/など] | 「[引用]」 |
+| SNS | [カジュアル/エンゲージング/プロモーショナル/など] | 「[引用]」 |
+| エラー/404ページ | [謝罪的/ユーモラス/親切/など] | 「[引用]」 |
+| メール件名 | [直接的/好奇心/緊急/など] | 「[引用]」 |
+| CTAボタン | [行動指向/利益主導/緊急/など] | 「[引用]」 |
+| カスタマーサポート | [共感的/プロフェッショナル/フレンドリー/など] | 「[引用]」 |
 
-### Step 4: Brand Personality Framework
+### ステップ4: ブランドパーソナリティフレームワーク
 
-Map the brand to one of five core personality archetypes (brands may blend 1-2):
+5つのコアパーソナリティアーキタイプのうち1つにブランドをマッピングします（ブランドは1〜2つをブレンドする場合があります）：
 
-#### The 5 Archetypes
+#### 5つのアーキタイプ
 
-**1. The Authority**
-- Characteristics: Expert, trustworthy, data-driven, established
-- Voice: Confident but not arrogant, educational, precise
-- Industries: Finance, healthcare, B2B enterprise, legal, consulting
-- Example brands: McKinsey, IBM, Mayo Clinic
-- Key phrases: "Research shows...", "Our experts...", "Industry-leading..."
+**1. オーソリティ（権威）**
+- 特徴：専門家的、信頼性が高い、データドリブン、確立されている
+- ボイス：自信があるが傲慢でない、教育的、正確
+- 業界：金融、医療、B2Bエンタープライズ、法律、コンサルティング
+- ブランド例：マッキンゼー、IBM、メイヨークリニック
+- キーフレーズ：「調査によると...」「専門家が...」「業界をリードする...」
 
-**2. The Innovator**
-- Characteristics: Forward-thinking, disruptive, visionary, tech-savvy
-- Voice: Exciting, future-focused, sometimes provocative
-- Industries: Tech, SaaS, startups, renewable energy
-- Example brands: Tesla, Stripe, Notion
-- Key phrases: "Reimagine...", "The future of...", "We're building..."
+**2. イノベーター（革新者）**
+- 特徴：先進的、破壊的、ビジョナリー、テクノロジーに精通
+- ボイス：エキサイティング、未来志向、時に挑発的
+- 業界：テクノロジー、SaaS、スタートアップ、再生可能エネルギー
+- ブランド例：テスラ、Stripe、Notion
+- キーフレーズ：「再想像する...」「未来の...」「私たちは構築している...」
 
-**3. The Friend**
-- Characteristics: Warm, approachable, helpful, relatable
-- Voice: Conversational, empathetic, inclusive, encouraging
-- Industries: Consumer products, education, community platforms
-- Example brands: Mailchimp, Slack, Duolingo
-- Key phrases: "We get it...", "You've got this...", "Here to help..."
+**3. フレンド（友人）**
+- 特徴：温かい、親しみやすい、親切、共感できる
+- ボイス：会話的、共感的、インクルーシブ、励ます
+- 業界：コンシューマー製品、教育、コミュニティプラットフォーム
+- ブランド例：Mailchimp、Slack、Duolingo
+- キーフレーズ：「分かります...」「あなたならできます...」「お手伝いします...」
 
-**4. The Rebel**
-- Characteristics: Bold, challenging conventions, irreverent, passionate
-- Voice: Direct, opinionated, sometimes confrontational, memorable
-- Industries: Lifestyle, fitness, creative industries, direct-to-consumer
-- Example brands: Nike, Oatly, Cards Against Humanity
-- Key phrases: "Stop settling for...", "The truth is...", "We're done with..."
+**4. リベル（反逆者）**
+- 特徴：大胆、慣習への挑戦、反骨精神、情熱的
+- ボイス：直接的、意見が強い、時に対立的、記憶に残る
+- 業界：ライフスタイル、フィットネス、クリエイティブ産業、D2C
+- ブランド例：Nike、Oatly、Cards Against Humanity
+- キーフレーズ：「もう妥協するのをやめよう...」「真実は...」「私たちは...に終止符を打つ」
 
-**5. The Guide**
-- Characteristics: Wise, patient, methodical, trustworthy
-- Voice: Clear, instructional, supportive, knowledgeable
-- Industries: Education, professional development, tools, platforms
-- Example brands: HubSpot, Khan Academy, Ahrefs
-- Key phrases: "Here's how to...", "Step by step...", "The complete guide to..."
+**5. ガイド（案内人）**
+- 特徴：賢い、辛抱強い、系統的、信頼できる
+- ボイス：明確、指導的、支持的、知識豊富
+- 業界：教育、専門能力開発、ツール、プラットフォーム
+- ブランド例：HubSpot、Khan Academy、Ahrefs
+- キーフレーズ：「こうやって...」「ステップバイステップで...」「完全ガイド...」
 
-**Assessment:**
-- Primary archetype: [which one and why]
-- Secondary archetype: [if applicable]
-- Archetype fit: [Strong/Moderate/Weak -- how well does the brand embody this archetype?]
+**評価：**
+- プライマリアーキタイプ：[どれか、なぜか]
+- セカンダリアーキタイプ：[該当する場合]
+- アーキタイプの適合性：[強/中/弱 -- ブランドはこのアーキタイプをどれだけ体現しているか？]
 
-### Step 5: Vocabulary Analysis
+### ステップ5: 語彙分析
 
-Identify patterns in the brand's word choices:
+ブランドの言葉遣いのパターンを特定します：
 
-#### Words They Use Frequently
-Analyze all source material and identify the 15-20 most characteristic words or phrases. Organize by category:
+#### 頻繁に使う言葉
+すべての素材を分析し、最も特徴的な15〜20の言葉またはフレーズを特定します。カテゴリー別に整理します：
 
-**Action words:** (verbs they favor)
-- e.g., "build", "scale", "transform", "streamline"
+**アクションワード：**（好んで使う動詞）
+- 例：「構築する」「スケールする」「変革する」「効率化する」
 
-**Descriptive words:** (adjectives they use)
-- e.g., "powerful", "simple", "enterprise-grade", "effortless"
+**説明語：**（使用する形容詞）
+- 例：「パワフルな」「シンプルな」「エンタープライズグレードの」「手間いらずの」
 
-**Value words:** (words that reflect their values)
-- e.g., "transparent", "sustainable", "inclusive", "innovative"
+**価値語：**（価値観を反映する言葉）
+- 例：「透明な」「持続可能な」「インクルーシブな」「革新的な」
 
-**Industry-specific terms:**
-- e.g., "workflow", "pipeline", "conversion", "engagement"
+**業界特有の用語：**
+- 例：「ワークフロー」「パイプライン」「コンバージョン」「エンゲージメント」
 
-#### Words They Avoid
-Identify words that are notably absent or that would feel out of character:
+#### 避ける言葉
+特に欠如している、またはブランドに合わない言葉を特定します：
 
-- Words that are too casual for the brand (if formal)
-- Words that are too technical for the brand (if simple)
-- Competitor terminology they deliberately avoid
-- Industry cliches they seem to sidestep
+- ブランドにとってカジュアルすぎる言葉（フォーマルな場合）
+- ブランドにとってテクニカルすぎる言葉（シンプルな場合）
+- 意図的に避けている競合他社の用語
+- 回避しているような業界の決まり文句
 
-#### Signature Phrases
-Does the brand have any recurring phrases, taglines, or linguistic patterns?
+#### シグネチャーフレーズ
+ブランドに繰り返し出現するフレーズ、タグライン、または言語パターンはあるか？
 
-- Tagline: [if they have one]
-- Recurring phrases: [patterns you notice]
-- Linguistic patterns: [e.g., always starts sentences with verbs, uses dashes frequently, favors short paragraphs]
+- タグライン：[持っている場合]
+- 繰り返し出現するフレーズ：[気づいたパターン]
+- 言語パターン：[例：常に動詞で文を始める、ダッシュを頻繁に使用、短い段落を好む]
 
-### Step 6: Competitor Voice Comparison
+### ステップ6: 競合他社のボイス比較
 
-Compare the brand's voice to 2-3 key competitors:
+2〜3社の主要競合他社とブランドのボイスを比較します：
 
-**Voice Comparison Matrix:**
-| Dimension | [Brand] | Competitor 1 | Competitor 2 | Competitor 3 |
+**ボイス比較マトリックス：**
+| ディメンション | [ブランド] | 競合他社1 | 競合他社2 | 競合他社3 |
 |---|---|---|---|---|
-| Formal <> Casual | X/10 | X/10 | X/10 | X/10 |
-| Serious <> Playful | X/10 | X/10 | X/10 | X/10 |
-| Technical <> Simple | X/10 | X/10 | X/10 | X/10 |
-| Reserved <> Bold | X/10 | X/10 | X/10 | X/10 |
-| Primary Archetype | [type] | [type] | [type] | [type] |
+| フォーマル ↔ カジュアル | X/10 | X/10 | X/10 | X/10 |
+| シリアス ↔ プレイフル | X/10 | X/10 | X/10 | X/10 |
+| テクニカル ↔ シンプル | X/10 | X/10 | X/10 | X/10 |
+| リザーブド ↔ ボールド | X/10 | X/10 | X/10 | X/10 |
+| プライマリアーキタイプ | [タイプ] | [タイプ] | [タイプ] | [タイプ] |
 
-**Differentiation Assessment:**
-- How distinct is the brand's voice from competitors?
-- Where do voices overlap? (potential differentiation opportunity)
-- What voice territory is unoccupied in the competitive landscape?
-- Specific recommendations for vocal differentiation
+**差別化の評価：**
+- ブランドのボイスはどれだけ競合他社と異なるか？
+- ボイスが重なっている部分は？（差別化の機会）
+- 競合環境で占有されていないボイスの領域は何か？
+- ボイスの差別化のための具体的な推奨事項
 
-### Step 7: Consistency Audit
+### ステップ7: 一貫性の監査
 
-Assess voice consistency across all analyzed channels:
+分析したすべてのチャネルでボイスの一貫性を評価します：
 
-| Channel | Voice Consistency | Notes |
+| チャネル | ボイスの一貫性 | メモ |
 |---|---|---|
-| Homepage | Consistent/Mostly/Inconsistent | [specific observations] |
-| About page | Consistent/Mostly/Inconsistent | [notes] |
-| Blog | Consistent/Mostly/Inconsistent | [notes] |
-| Social media | Consistent/Mostly/Inconsistent | [notes] |
-| Email | Consistent/Mostly/Inconsistent | [notes] |
-| Product pages | Consistent/Mostly/Inconsistent | [notes] |
+| ホームページ | 一貫/概ね一貫/不一致 | [具体的な観察] |
+| アバウトページ | 一貫/概ね一貫/不一致 | [メモ] |
+| ブログ | 一貫/概ね一貫/不一致 | [メモ] |
+| SNS | 一貫/概ね一貫/不一致 | [メモ] |
+| メール | 一貫/概ね一貫/不一致 | [メモ] |
+| 製品ページ | 一貫/概ね一貫/不一致 | [メモ] |
 
-**Common Consistency Issues:**
-- Different writers creating noticeably different tones
-- Social media voice drastically different from website
-- Formal website copy but casual email newsletters
-- Blog content written in a completely different voice than product pages
-- Error messages or microcopy that feels off-brand
-- Old pages that haven't been updated to match current brand voice
+**よくある一貫性の問題：**
+- 異なるライターがはっきりと異なるトーンを生み出している
+- SNSのボイスがウェブサイトと大きく異なる
+- フォーマルなウェブサイトコピーだがカジュアルなメールニュースレター
+- 製品ページとは全く異なるボイスで書かれたブログコンテンツ
+- ブランドに合わないと感じるエラーメッセージやマイクロコピー
+- 現在のブランドボイスに合わせて更新されていない古いページ
 
-**Overall Consistency Score:** X/10
+**全体的な一貫性スコア：** X/10
 
-### Step 8: Brand Messaging Hierarchy
+### ステップ8: ブランドメッセージング階層
 
-Document the brand's messaging from most distilled to most expanded:
+最も凝縮されたものから最も展開されたものへ、ブランドのメッセージングを記録します：
 
-#### Level 1: Tagline (under 10 words)
-The most compressed form of the brand message.
-- Current: "[existing tagline or suggested one]"
-- Assessment: Does it capture the core value proposition?
+#### レベル1：タグライン（10語未満）
+ブランドメッセージの最も圧縮された形式。
+- 現在：「[既存のタグライン、またはそれが示すもの]」
+- 評価：コアな価値提案を捉えているか？
 
-#### Level 2: Value Propositions (1 sentence each)
-3-5 core value propositions that support the brand promise.
-1. "[Value prop 1]"
-2. "[Value prop 2]"
-3. "[Value prop 3]"
+#### レベル2：バリュープロポジション（各1文）
+ブランドの約束を支持する3〜5のコアな価値提案。
+1. 「[価値提案1]」
+2. 「[価値提案2]」
+3. 「[価値提案3]」
 
-#### Level 3: Elevator Pitch (30 seconds / 75 words)
-A conversational explanation of what the brand does and why it matters.
-"[Draft elevator pitch based on analyzed content]"
+#### レベル3：エレベーターピッチ（30秒 / 75語）
+ブランドが何をするか、なぜそれが重要かの会話的な説明。
+「[分析したコンテンツに基づくエレベーターピッチの下書き]」
 
-#### Level 4: Boilerplate (100-150 words)
-The standard "about us" paragraph used in press releases, email signatures, and speaker bios.
-"[Draft boilerplate based on analyzed content]"
+#### レベル4：定型文（100〜150語）
+プレスリリース、メール署名、スピーカープロフィールで使われる標準的な「会社概要」段落。
+「[分析したコンテンツに基づく定型文の下書き]」
 
-#### Level 5: Full Brand Story (300-500 words)
-The complete narrative of who the brand is, what they stand for, and why they exist.
-- Current status: [Exists/Partial/Missing]
-- Recommendations for improvement
+#### レベル5：完全なブランドストーリー（300〜500語）
+ブランドが誰で、何を支持し、なぜ存在するかについての完全な物語。
+- 現状：[存在する/一部/なし]
+- 改善のための推奨事項
 
-### Step 9: Generate Brand Voice Documentation
+### ステップ9: ブランドボイスドキュメンテーションの生成
 
-Create the comprehensive Do's and Don'ts guide:
+包括的なDo's and Don'tsガイドを作成します：
 
-#### Voice Chart
+#### ボイスチャート
 
 ```
-OUR VOICE IS:                    OUR VOICE IS NOT:
+私たちのボイスは：                 私たちのボイスはこうではない：
 --------------------------------------------------
-[Characteristic 1]              [Anti-characteristic 1]
-e.g., "Confident"               e.g., "Arrogant"
+[特徴1]                          [反特徴1]
+例：「自信がある」                  例：「傲慢」
 
-[Characteristic 2]              [Anti-characteristic 2]
-e.g., "Helpful"                 e.g., "Condescending"
+[特徴2]                          [反特徴2]
+例：「親切」                       例：「上から目線」
 
-[Characteristic 3]              [Anti-characteristic 3]
-e.g., "Clear"                   e.g., "Dumbed down"
+[特徴3]                          [反特徴3]
+例：「明確」                       例：「過度に単純化」
 
-[Characteristic 4]              [Anti-characteristic 4]
-e.g., "Bold"                    e.g., "Aggressive"
+[特徴4]                          [反特徴4]
+例：「大胆」                       例：「攻撃的」
 ```
 
-#### Writing Do's and Don'ts
+#### ライティングのDo's and Don'ts
 
-**DO:**
-- [Specific writing instruction based on analysis]
-- [Example: "Use contractions to sound natural (we're, you'll, it's)"]
-- [Example: "Lead with the benefit, not the feature"]
-- [Example: "Use active voice in all headlines and CTAs"]
-- [Example: "Address the reader directly with 'you' and 'your'"]
+**すること：**
+- [分析に基づく具体的なライティング指示]
+- [例：「自然に聞こえるように短縮形を使う（私たちは、あなたは、それは）」]
+- [例：「機能ではなく利益からリードする」]
+- [例：「すべての見出しとCTAに能動態を使用する」]
+- [例：「『あなた』と『あなたの』で読者に直接話しかける」]
 
-**DON'T:**
-- [Specific anti-patterns based on analysis]
-- [Example: "Don't use jargon without explaining it"]
-- [Example: "Don't use passive voice in calls-to-action"]
-- [Example: "Don't use exclamation marks more than once per paragraph"]
-- [Example: "Don't start sentences with 'We' -- focus on the customer"]
+**しないこと：**
+- [分析に基づく具体的なアンチパターン]
+- [例：「専門用語を説明せずに使わない」]
+- [例：「CTAに受動態を使わない」]
+- [例：「1段落に1回以上感嘆符を使わない」]
+- [例：「『私たちは』で文を始めない -- 顧客に焦点を当てる」]
 
-### Step 10: Copy Samples in Identified Voice
+### ステップ10: 特定されたボイスでのコピーサンプル
 
-Provide 5-8 sample copy pieces written in the identified brand voice so the team has concrete examples to reference:
+チームが参照できる具体的な例を持てるよう、特定されたブランドボイスで書かれた5〜8のサンプルコピーを提供します：
 
-**1. Homepage Headline:**
-"[Sample headline in the brand voice]"
+**1. ホームページの見出し：**
+「[ブランドボイスでのサンプル見出し]」
 
-**2. Product Description Paragraph:**
-"[Sample product description in the brand voice]"
+**2. 製品説明の段落：**
+「[ブランドボイスでのサンプル製品説明]」
 
-**3. Blog Post Opening:**
-"[Sample blog intro in the brand voice]"
+**3. ブログ記事の書き出し：**
+「[ブランドボイスでのサンプルブログイントロ]」
 
-**4. Social Media Post:**
-"[Sample social post in the brand voice]"
+**4. SNS投稿：**
+「[ブランドボイスでのサンプルSNS投稿]」
 
-**5. Email Subject Line:**
-"[Sample subject line in the brand voice]"
+**5. メール件名：**
+「[ブランドボイスでのサンプル件名]」
 
-**6. CTA Button Text:**
-"[Sample CTA text in the brand voice]"
+**6. CTAボタンのテキスト：**
+「[ブランドボイスでのサンプルCTAテキスト]」
 
-**7. Error Message:**
-"[Sample error message in the brand voice]"
+**7. エラーメッセージ：**
+「[ブランドボイスでのサンプルエラーメッセージ]」
 
-**8. Customer Thank You Message:**
-"[Sample thank you message in the brand voice]"
+**8. 顧客へのお礼のメッセージ：**
+「[ブランドボイスでのサンプルお礼メッセージ]」
 
-## Output Format
+## 出力フォーマット
 
-Generate a file called `BRAND-VOICE.md` with:
+`BRAND-VOICE.md` というファイルを以下の内容で生成します：
 
 ```markdown
-# Brand Voice Guidelines
-## [Brand Name]
-### Analysis Date: [Date]
+# ブランドボイスガイドライン
+## [ブランド名]
+### 分析日：[日付]
 
 ---
 
-## Voice Summary
-[2-3 sentence summary of the brand voice, personality, and key characteristics]
+## ボイスサマリー
+[ブランドボイス、パーソナリティ、主要特徴についての2〜3文のサマリー]
 
 ---
 
-## Voice Dimensions
+## ボイスディメンション
 
-### Formal <-----> Casual: [X/10]
-[Evidence and explanation]
+### フォーマル ←→ カジュアル：[X/10]
+[証拠と説明]
 
-### Serious <-----> Playful: [X/10]
-[Evidence and explanation]
+### シリアス ←→ プレイフル：[X/10]
+[証拠と説明]
 
-### Technical <-----> Simple: [X/10]
-[Evidence and explanation]
+### テクニカル ←→ シンプル：[X/10]
+[証拠と説明]
 
-### Reserved <-----> Bold: [X/10]
-[Evidence and explanation]
+### リザーブド ←→ ボールド：[X/10]
+[証拠と説明]
 
-### Visual Voice Map
+### ビジュアルボイスマップ
 ```
-Formal                                    Casual
+フォーマル                                カジュアル
 |----[X]----------------------------------|
-Serious                                   Playful
+シリアス                                  プレイフル
 |--------[X]------------------------------|
-Technical                                 Simple
+テクニカル                                シンプル
 |------------------[X]--------------------|
-Reserved                                  Bold
+リザーブド                                ボールド
 |------------[X]--------------------------|
 ```
 
 ---
 
-## Brand Personality
-- Primary Archetype: [Archetype]
-- Secondary Archetype: [Archetype]
-- [Explanation and evidence]
+## ブランドパーソナリティ
+- プライマリアーキタイプ：[アーキタイプ]
+- セカンダリアーキタイプ：[アーキタイプ]
+- [説明と証拠]
 
 ---
 
-## Tone by Context
-| Context | Tone | Example |
+## コンテキスト別トーン
+| コンテキスト | トーン | 例 |
 |---|---|---|
-| [context] | [tone] | "[example]" |
+| [コンテキスト] | [トーン] | 「[例]」 |
 
 ---
 
-## Vocabulary
+## 語彙
 
-### Words We Use
-[Organized word lists]
+### 使う言葉
+[整理された語彙リスト]
 
-### Words We Avoid
-[Words that don't fit the brand]
+### 避ける言葉
+[ブランドに合わない言葉]
 
-### Signature Phrases
-[Recurring patterns and phrases]
+### シグネチャーフレーズ
+[繰り返し出現するパターンとフレーズ]
 
 ---
 
-## Voice Chart
-| Our Voice IS | Our Voice IS NOT |
+## ボイスチャート
+| 私たちのボイスはこうです | 私たちのボイスはこうではありません |
 |---|---|
-| [trait] | [anti-trait] |
+| [特徴] | [反特徴] |
 
 ---
 
-## Writing Guidelines
+## ライティングガイドライン
 
-### Do's
-- [specific guidelines]
+### すること
+- [具体的なガイドライン]
 
-### Don'ts
-- [specific anti-patterns]
-
----
-
-## Brand Messaging Hierarchy
-
-### Tagline
-[tagline]
-
-### Value Propositions
-1. [value prop]
-
-### Elevator Pitch
-[pitch]
-
-### Boilerplate
-[boilerplate]
+### しないこと
+- [具体的なアンチパターン]
 
 ---
 
-## Copy Samples
-[8 examples of copy in the brand voice]
+## ブランドメッセージング階層
+
+### タグライン
+[タグライン]
+
+### バリュープロポジション
+1. [価値提案]
+
+### エレベーターピッチ
+[ピッチ]
+
+### 定型文
+[定型文]
 
 ---
 
-## Competitor Voice Comparison
-[Comparison matrix and differentiation analysis]
+## コピーサンプル
+[ブランドボイスでのコピーの8例]
 
 ---
 
-## Consistency Audit
-[Channel-by-channel assessment]
-- Overall Consistency Score: [X/10]
+## 競合他社のボイス比較
+[比較マトリックスと差別化分析]
 
 ---
 
-## Recommendations
-### Immediate Actions
-1. [recommendation]
+## 一貫性監査
+[チャネル別の評価]
+- 全体的な一貫性スコア：[X/10]
 
-### Voice Evolution Opportunities
-1. [recommendation]
+---
 
-### Consistency Improvements
-1. [recommendation]
+## 推奨事項
+### 即時アクション
+1. [推奨事項]
+
+### ボイス進化の機会
+1. [推奨事項]
+
+### 一貫性の改善
+1. [推奨事項]
 ```
 
-## Key Principles
-- Brand voice analysis requires reading like a detective. Every word choice, punctuation decision, and sentence structure reveals something about how the brand wants to be perceived.
-- Always provide EVIDENCE for every assessment. Don't just say "the brand is casual" -- quote specific examples that prove it.
-- The brand voice guide should be usable by someone who has never worked with the brand before. A new copywriter should be able to read this document and write on-brand content.
-- Copy samples are the most valuable part of the deliverable. People learn voice by example, not by description. Make the samples diverse (headlines, body copy, social, email, error messages) so writers have references for every context.
-- Voice and tone are different. Voice is the consistent personality. Tone shifts based on context (a customer complaint response is different from a product launch announcement, but both should be in the same voice).
-- If the brand's voice is inconsistent across channels, frame it as an opportunity to strengthen their brand, not as a failure. Consistency issues are common and fixable.
-- If the user has run `/market competitors` previously, use that data for the competitor voice comparison section.
-- The voice dimensions should be plotted visually (text-based spectrum) so stakeholders can quickly understand the positioning at a glance.
+## 主要原則
+- ブランドボイス分析は探偵のように読むことが必要です。すべての言葉の選択、句読点の決断、文構造がブランドがどのように見られたいかについて何かを明らかにしています。
+- すべての評価に**証拠**を提供します。「ブランドはカジュアルだ」と言うだけでなく、それを証明する具体的な例を引用します。
+- ブランドボイスガイドは、そのブランドと一度も仕事をしたことのない人でも使えるものであるべきです。新しいコピーライターはこのドキュメントを読んでブランドに沿ったコンテンツを書けるはずです。
+- コピーサンプルは成果物の最も価値ある部分です。人々は説明ではなく例でボイスを学びます。ライターがすべてのコンテキスト（見出し、本文コピー、SNS、メール、エラーメッセージ）で参照できるよう、サンプルを多様にします。
+- ボイスとトーンは異なります。ボイスは一貫したパーソナリティです。トーンはコンテキストによって変化します（クレーム対応は製品ローンチアナウンスとは異なりますが、両方とも同じボイスであるべきです）。
+- ブランドのボイスがチャネル全体で一貫していない場合は、失敗としてではなく、ブランドを強化する機会としてフレーミングします。一貫性の問題は一般的で修正可能です。
+- ユーザーが以前に `/market competitors` を実行していた場合は、そのデータを競合他社のボイス比較セクションに使用します。
+- ボイスのディメンションはビジュアル的に（テキストベースのスペクトルとして）プロットし、ステークホルダーが一目でポジショニングを理解できるようにします。

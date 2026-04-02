@@ -1,78 +1,78 @@
-# Content Calendar Template (30 Days)
+# コンテンツカレンダーテンプレート（30日間）
 
-## Content Pillar Distribution
-| Pillar | Frequency | Purpose |
-|--------|-----------|---------|
-| Educational (40%) | 12 posts/month | Build authority, attract audience |
-| Engagement (20%) | 6 posts/month | Drive comments, build community |
-| Behind-the-Scenes (15%) | 5 posts/month | Build trust, show authenticity |
-| Social Proof (15%) | 5 posts/month | Build credibility, convert |
-| Promotional (10%) | 3 posts/month | Drive sales, grow revenue |
+## コンテンツ柱の配分
+| 柱 | 投稿頻度 | 目的 |
+|----|---------|------|
+| 教育コンテンツ（40%） | 月12投稿 | 権威構築、オーディエンス獲得 |
+| エンゲージメント（20%） | 月6投稿 | コメント促進、コミュニティ形成 |
+| 舞台裏（15%） | 月5投稿 | 信頼構築、リアルな姿を見せる |
+| 社会的証明（15%） | 月5投稿 | 信頼性向上、コンバージョン促進 |
+| プロモーション（10%） | 月3投稿 | 売上促進、収益向上 |
 
-## Weekly Structure
+## 週間スケジュール
 
-### Monday — Educational
-Start the week with value. Teach something your audience can implement today.
+### 月曜日 — 教育コンテンツ
+週の始まりに価値を提供する。オーディエンスが今日から実践できることを教える。
 
-### Tuesday — Engagement
-Ask a question, share a hot take, or run a poll. Get people talking.
+### 火曜日 — エンゲージメント
+質問を投げかけ、意見を共有し、アンケートを実施する。会話を生み出す。
 
-### Wednesday — Educational
-Share a framework, breakdown, or how-to.
+### 水曜日 — 教育コンテンツ
+フレームワーク、解説、ハウツーを共有する。
 
-### Thursday — Behind-the-Scenes / Social Proof
-Show the real work, share a win, or feature a customer result.
+### 木曜日 — 舞台裏 / 社会的証明
+実際の取り組みを見せ、成果を共有し、お客様の結果を紹介する。
 
-### Friday — Educational / Engagement
-End the week with something shareable — a tip list, myth-busting, or controversial take.
+### 金曜日 — 教育コンテンツ / エンゲージメント
+シェアされやすいコンテンツで週を締めくくる — ヒントリスト、通説打破、議論を呼ぶ視点など。
 
-### Weekend — Optional
-Lighter content: memes, personal story, or reshare of top-performing post from the week.
+### 週末 — 任意
+軽めのコンテンツ：ミーム、個人的なストーリー、週のトップ投稿のリシェアなど。
 
-## 30-Day Calendar Grid
+## 30日カレンダーグリッド
 
-| Day | Date | Pillar | Format | Topic Idea | Platform |
-|-----|------|--------|--------|------------|----------|
-| 1 | Mon | Educational | How-to | [Topic] | LinkedIn, Twitter |
-| 2 | Tue | Engagement | Question | [Topic] | Twitter, Instagram |
-| 3 | Wed | Educational | Framework | [Topic] | LinkedIn, Twitter |
-| 4 | Thu | Social Proof | Case study | [Topic] | LinkedIn, Instagram |
-| 5 | Fri | Educational | Tips list | [Topic] | All platforms |
-| 6 | Sat | — | Rest or reshare | — | — |
-| 7 | Sun | — | Rest or reshare | — | — |
-| 8 | Mon | Educational | Data breakdown | [Topic] | LinkedIn, Twitter |
-| 9 | Tue | Engagement | Poll | [Topic] | Twitter, LinkedIn |
-| 10 | Wed | Educational | Myth-busting | [Topic] | LinkedIn, Twitter |
-| 11 | Thu | Behind-the-Scenes | Process reveal | [Topic] | Instagram, Twitter |
-| 12 | Fri | Promotional | Product demo | [Topic] | All platforms |
-| 13 | Sat | — | Rest or reshare | — | — |
-| 14 | Sun | — | Rest or reshare | — | — |
-| 15 | Mon | Educational | Industry insight | [Topic] | LinkedIn, Twitter |
-| 16 | Tue | Engagement | Hot take | [Topic] | Twitter, LinkedIn |
-| 17 | Wed | Educational | Tool stack | [Topic] | LinkedIn, Twitter |
-| 18 | Thu | Social Proof | Testimonial | [Topic] | LinkedIn, Instagram |
-| 19 | Fri | Behind-the-Scenes | Day in the life | [Topic] | Instagram, TikTok |
-| 20 | Sat | — | Rest or reshare | — | — |
-| 21 | Sun | — | Rest or reshare | — | — |
-| 22 | Mon | Educational | Comparison | [Topic] | LinkedIn, Twitter |
-| 23 | Tue | Engagement | Fill in the blank | [Topic] | Twitter, Instagram |
-| 24 | Wed | Educational | Step-by-step | [Topic] | LinkedIn, Twitter |
-| 25 | Thu | Social Proof | Results/metrics | [Topic] | LinkedIn, Instagram |
-| 26 | Fri | Promotional | Special offer | [Topic] | All platforms |
-| 27 | Sat | — | Rest or reshare | — | — |
-| 28 | Sun | — | Rest or reshare | — | — |
-| 29 | Mon | Educational | Lessons learned | [Topic] | LinkedIn, Twitter |
-| 30 | Tue | Engagement | AMA / Q&A | [Topic] | Twitter, Instagram |
+| 日 | 曜日 | 柱 | フォーマット | トピック案 | プラットフォーム |
+|----|------|----|------------|----------|--------------|
+| 1 | 月 | 教育コンテンツ | ハウツー | [トピック] | LinkedIn、Twitter |
+| 2 | 火 | エンゲージメント | 質問 | [トピック] | Twitter、Instagram |
+| 3 | 水 | 教育コンテンツ | フレームワーク | [トピック] | LinkedIn、Twitter |
+| 4 | 木 | 社会的証明 | ケーススタディ | [トピック] | LinkedIn、Instagram |
+| 5 | 金 | 教育コンテンツ | ヒントリスト | [トピック] | 全プラットフォーム |
+| 6 | 土 | — | 休止またはリシェア | — | — |
+| 7 | 日 | — | 休止またはリシェア | — | — |
+| 8 | 月 | 教育コンテンツ | データ解説 | [トピック] | LinkedIn、Twitter |
+| 9 | 火 | エンゲージメント | アンケート | [トピック] | Twitter、LinkedIn |
+| 10 | 水 | 教育コンテンツ | 通説打破 | [トピック] | LinkedIn、Twitter |
+| 11 | 木 | 舞台裏 | プロセス公開 | [トピック] | Instagram、Twitter |
+| 12 | 金 | プロモーション | 製品デモ | [トピック] | 全プラットフォーム |
+| 13 | 土 | — | 休止またはリシェア | — | — |
+| 14 | 日 | — | 休止またはリシェア | — | — |
+| 15 | 月 | 教育コンテンツ | 業界インサイト | [トピック] | LinkedIn、Twitter |
+| 16 | 火 | エンゲージメント | 意見・持論 | [トピック] | Twitter、LinkedIn |
+| 17 | 水 | 教育コンテンツ | ツールスタック | [トピック] | LinkedIn、Twitter |
+| 18 | 木 | 社会的証明 | お客様の声 | [トピック] | LinkedIn、Instagram |
+| 19 | 金 | 舞台裏 | 1日の仕事風景 | [トピック] | Instagram、TikTok |
+| 20 | 土 | — | 休止またはリシェア | — | — |
+| 21 | 日 | — | 休止またはリシェア | — | — |
+| 22 | 月 | 教育コンテンツ | 比較・対比 | [トピック] | LinkedIn、Twitter |
+| 23 | 火 | エンゲージメント | 穴埋め問題 | [トピック] | Twitter、Instagram |
+| 24 | 水 | 教育コンテンツ | ステップバイステップ | [トピック] | LinkedIn、Twitter |
+| 25 | 木 | 社会的証明 | 結果・数値 | [トピック] | LinkedIn、Instagram |
+| 26 | 金 | プロモーション | 特別オファー | [トピック] | 全プラットフォーム |
+| 27 | 土 | — | 休止またはリシェア | — | — |
+| 28 | 日 | — | 休止またはリシェア | — | — |
+| 29 | 月 | 教育コンテンツ | 学んだこと | [トピック] | LinkedIn、Twitter |
+| 30 | 火 | エンゲージメント | AMA / Q&A | [トピック] | Twitter、Instagram |
 
-## Repurposing Workflow
-1 long-form piece → 10+ social posts:
-1. Blog post or YouTube video (original)
-2. Twitter thread with 5-7 key insights
-3. LinkedIn article or long-form post
-4. Instagram carousel (5-10 slides)
-5. TikTok/Reel (60-90s summary)
-6. 3-5 quote graphics from key lines
-7. Poll or question based on one insight
-8. Behind-the-scenes of creating it
-9. Reshare 2-4 weeks later with new angle
-10. Compile monthly into newsletter
+## コンテンツ再活用ワークフロー
+1つの長尺コンテンツ → 10以上のSNS投稿：
+1. ブログ記事またはYouTube動画（オリジナル）
+2. 5〜7つの重要な気づきをまとめたTwitterスレッド
+3. LinkedInの記事または長文投稿
+4. Instagramカルーセル（5〜10枚）
+5. TikTok/リール（60〜90秒のサマリー）
+6. 重要フレーズを使った引用グラフィック3〜5枚
+7. 1つの気づきを元にしたアンケートや質問
+8. 制作過程の舞台裏コンテンツ
+9. 2〜4週後に新しい切り口でリシェア
+10. 毎月まとめてニュースレターに掲載

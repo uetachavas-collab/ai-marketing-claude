@@ -1,129 +1,129 @@
-# Product Launch Email Sequence Template (8 Emails)
+# 製品ローンチメールシーケンステンプレート（全8通）
 
-## Timeline: 2-Week Launch Window
-
----
-
-## PRE-LAUNCH PHASE
-
-### Email 1: The Teaser (Day -7)
-
-**Subject:** Something big is coming...
-**Preview text:** I've been working on this for months. You'll be the first to know.
-
-**Framework:**
-1. Build anticipation without revealing the product
-2. Hint at the problem it solves
-3. Make them feel like insiders ("You're hearing about this before anyone else")
-4. CTA: "Reply if you want early access"
+## タイムライン：2週間のローンチ期間
 
 ---
 
-### Email 2: The Problem (Day -5)
+## ローンチ前フェーズ
 
-**Subject:** Why [common approach] is failing you
-**Preview text:** There's a better way. I'll show you in 5 days.
+### メール1：ティーザー（7日前）
 
-**Framework:**
-1. Deep dive into the problem your product solves
-2. Show why current solutions fall short
-3. Tease that you've been building the answer
-4. CTA: Save the date / Mark your calendar
+**件名：** 大きなお知らせが近づいています…
+**プレビューテキスト：** 数ヶ月間取り組んできました。一番最初にお伝えします。
 
----
-
-### Email 3: The Sneak Peek (Day -2)
-
-**Subject:** First look: [Product Name]
-**Preview text:** Here's what it does and why it matters.
-
-**Framework:**
-1. Reveal the product name and what it does
-2. Show 2-3 key features with outcomes (not just features)
-3. Share early results from beta users
-4. CTA: "Join the waitlist for launch day access"
+**フレームワーク：**
+1. 製品を明かさずに期待感を高める
+2. 解決する課題をほのめかす
+3. インサイダー感を演出する（「誰よりも先にお伝えしています」）
+4. CTA：「早期アクセスを希望の方は返信してください」
 
 ---
 
-## LAUNCH PHASE
+### メール2：課題の提示（5日前）
 
-### Email 4: Launch Day! (Day 0 — Morning)
+**件名：** [一般的なアプローチ]がうまくいかない理由
+**プレビューテキスト：** より良い方法があります。5日後にご紹介します。
 
-**Subject:** It's live: [Product Name] is here
-**Preview text:** The door is open. Here's everything you need to know.
-
-**Framework:**
-1. Announce the launch (excitement, not hype)
-2. Clear value proposition in 1-2 sentences
-3. Full feature breakdown with benefits
-4. Launch pricing or special offer
-5. Strong CTA: Get [Product] Now
-6. PS: "Launch pricing ends [date]"
+**フレームワーク：**
+1. 製品が解決する課題を深く掘り下げる
+2. 現在の解決策が不十分な理由を示す
+3. その答えを構築してきたことをほのめかす
+4. CTA：日程をメモする／カレンダーに追加する
 
 ---
 
-### Email 5: Social Proof (Day 1)
+### メール3：スニークピーク（2日前）
 
-**Subject:** "[specific result quote]" — [Customer Name]
-**Preview text:** People are already seeing results. Here's proof.
+**件名：** 先行公開：[製品名]
+**プレビューテキスト：** 機能と価値をご紹介します。
 
-**Framework:**
-1. Lead with the best testimonial or early result
-2. Share 2-3 more quick wins from early users
-3. Address the "is this right for me?" question
-4. Reiterate the offer
-5. CTA: Join them
-
----
-
-### Email 6: FAQ / Objection Handling (Day 3)
-
-**Subject:** Your top 5 questions about [Product], answered
-**Preview text:** I've been getting these questions all week. Here are the honest answers.
-
-**Framework:**
-1. Answer the top 5 real questions you've received
-2. Be honest — if something isn't for someone, say so
-3. Include a guarantee or risk reversal
-4. CTA: "Still have questions? Reply to this email"
+**フレームワーク：**
+1. 製品名と概要を公開する
+2. 機能だけでなく結果を伴う2〜3の主要機能を紹介する
+3. ベータユーザーの初期結果を共有する
+4. CTA：「ローンチ当日のアクセスのためにウェイトリストに登録してください」
 
 ---
 
-## CLOSING PHASE
+## ローンチフェーズ
 
-### Email 7: The Deadline Warning (Day 5)
+### メール4：ローンチ当日！（0日目 — 午前）
 
-**Subject:** 48 hours left for [launch pricing / bonus / early access]
-**Preview text:** After Friday, the price goes up. Just being transparent.
+**件名：** 公開開始：[製品名]が登場しました
+**プレビューテキスト：** ドアが開きました。知っておくべきことを全てお伝えします。
 
-**Framework:**
-1. Remind them of the deadline (be specific)
-2. Recap the best result from a customer
-3. Quick value stack (everything they get)
-4. Address the "I'll do it later" objection
-5. CTA: Get in before the deadline
-
----
-
-### Email 8: Final Hours (Day 7)
-
-**Subject:** Last call — [offer] expires tonight
-**Preview text:** This is genuinely the last email about this.
-
-**Framework:**
-1. Brief, respectful urgency
-2. One-sentence reminder of what they get
-3. One-sentence reminder of the best result
-4. Clear deadline (tonight at midnight)
-5. CTA: Final chance
-6. PS: "If this isn't for you right now, no hard feelings. I'll be back with more free content next week."
+**フレームワーク：**
+1. ローンチを発表する（興奮を伝える、誇張しない）
+2. 1〜2文で明確な価値提案を伝える
+3. メリットを交えた全機能の説明
+4. ローンチ価格または特別オファー
+5. 力強いCTA：今すぐ[製品]を入手する
+6. PS：「ローンチ価格の有効期限：[日付]」
 
 ---
 
-## Launch Email Metrics
-| Metric | Good | Great | Exceptional |
-|--------|------|-------|-------------|
-| Open rate (launch day) | 30% | 45% | 60%+ |
-| Click rate (launch day) | 5% | 10% | 15%+ |
-| Conversion rate (full sequence) | 2% | 5% | 10%+ |
-| Revenue per subscriber | $1-3 | $3-8 | $8+ |
+### メール5：社会的証明（1日目）
+
+**件名：** 「[具体的な成果の引用]」 — [お客様名]
+**プレビューテキスト：** 既に成果が出ています。証拠をお見せします。
+
+**フレームワーク：**
+1. 最も効果的なお客様の声や初期結果で始める
+2. 初期ユーザーからの2〜3の短い成功事例を共有する
+3. 「自分に合っているか？」という疑問に回答する
+4. オファーを改めて伝える
+5. CTA：一緒に始める
+
+---
+
+### メール6：よくある質問／懸念事項への回答（3日目）
+
+**件名：** [製品]に関するよくある5つの質問にお答えします
+**プレビューテキスト：** 今週たくさんのご質問をいただきました。正直にお答えします。
+
+**フレームワーク：**
+1. 実際に受けた上位5つの質問に回答する
+2. 正直に — 向いていない方には正直に伝える
+3. 保証やリスク軽減策を含める
+4. CTA：「まだご質問がありましたら、このメールに返信してください」
+
+---
+
+## クロージングフェーズ
+
+### メール7：締め切り警告（5日目）
+
+**件名：** [ローンチ価格 / 特典 / 早期アクセス]まで残り48時間
+**プレビューテキスト：** 金曜日以降は値上がりします。透明性を大切にお伝えします。
+
+**フレームワーク：**
+1. 締め切りをリマインドする（具体的に）
+2. お客様の最も印象的な結果を振り返る
+3. 簡潔な価値の積み上げ（得られるもの全て）
+4. 「後でやろう」という先送りへの対処
+5. CTA：締め切り前に申し込む
+
+---
+
+### メール8：最終案内（7日目）
+
+**件名：** 最終案内 — [オファー]は本日終了します
+**プレビューテキスト：** このオファーに関する最後のメールです。
+
+**フレームワーク：**
+1. 簡潔で丁寧な緊急性の訴求
+2. 一文で得られるものをリマインド
+3. 一文で最高の成果をリマインド
+4. 明確な締め切り（本日深夜0時）
+5. CTA：最後のチャンス
+6. PS：「今が適切なタイミングでなければ、全く問題ありません。来週も無料コンテンツをお届けします。」
+
+---
+
+## ローンチメール指標
+| 指標 | 良好 | 優秀 | 特別 |
+|------|------|------|------|
+| 開封率（ローンチ当日） | 30% | 45% | 60%以上 |
+| クリック率（ローンチ当日） | 5% | 10% | 15%以上 |
+| コンバージョン率（シーケンス全体） | 2% | 5% | 10%以上 |
+| 購読者1人あたりの収益 | $1〜3 | $3〜8 | $8以上 |

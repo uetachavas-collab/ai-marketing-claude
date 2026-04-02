@@ -1,456 +1,456 @@
-# Product/Service Launch Playbook Generator
+# 製品・サービス ローンチプレイブック ジェネレーター
 
-## Skill Purpose
-Generate a complete, week-by-week launch playbook for any product, service, or feature launch. This skill produces a tactical plan with templates, checklists, email sequences, social posts, and metrics tracking -- everything needed to execute a successful launch.
+## スキルの目的
+あらゆる製品・サービス・機能のローンチに対応した、完全な週次ローンチプレイブックを生成します。このスキルは、テンプレート・チェックリスト・メールシーケンス・ソーシャル投稿・メトリクス追跡を含む戦術的な計画を作成し、成功するローンチに必要なすべてを提供します。
 
-## When to Use
-- User is planning to launch a new product, service, feature, or offering
-- User asks for a launch plan, go-to-market strategy, or launch checklist
-- User wants to coordinate a multi-channel launch campaign
-- Triggered by `/market launch` or `/market launch <product description>`
+## 使用するタイミング
+- ユーザーが新製品・サービス・機能・オファリングのローンチを計画している場合
+- ユーザーがローンチ計画、ゴートゥーマーケット戦略、またはローンチチェックリストを求めている場合
+- ユーザーがマルチチャネルのローンチキャンペーンを調整したい場合
+- `/market launch` または `/market launch <製品説明>` でトリガーされた場合
 
-## How to Execute
+## 実行方法
 
-### Step 1: Gather Launch Context
-Before generating the playbook, collect these inputs from the user (ask if not provided):
+### ステップ1: ローンチコンテキストの収集
+プレイブックを生成する前に、以下の情報をユーザーから収集します（未提供の場合は確認します）：
 
-1. **What are you launching?** (product, service, feature, course, event)
-2. **Who is the target audience?** (demographics, pain points, existing list size)
-3. **What is the primary launch goal?** (revenue target, signups, downloads, awareness)
-4. **What is the launch date?** (or desired timeline)
-5. **What channels do you have access to?** (email list size, social following, ad budget, partnerships)
-6. **What is the price point?** (if applicable)
-7. **Do you have existing customers/users?** (for beta, testimonials, case studies)
-8. **What is the budget?** (bootstrapped, moderate, well-funded)
+1. **何をローンチしますか？**（製品、サービス、機能、コース、イベント）
+2. **ターゲットオーディエンスは誰ですか？**（属性、ペインポイント、既存リストのサイズ）
+3. **ローンチの主要目標は何ですか？**（売上目標、サインアップ数、ダウンロード数、認知度）
+4. **ローンチ日はいつですか？**（または希望するタイムライン）
+5. **どのチャネルにアクセスできますか？**（メールリストのサイズ、SNSフォロワー数、広告予算、パートナーシップ）
+6. **価格帯はいくらですか？**（該当する場合）
+7. **既存の顧客・ユーザーはいますか？**（ベータ版、推薦文、ケーススタディ用）
+8. **予算はいくらですか？**（自己資金、中程度、十分な資金）
 
-### Step 2: Determine Launch Type
-Select the primary launch strategy based on the user's context:
+### ステップ2: ローンチタイプの決定
+ユーザーのコンテキストに基づいて主要なローンチ戦略を選択します：
 
-| Launch Type | Best For | Key Channel | Timeline |
+| ローンチタイプ | 最適な対象 | 主要チャネル | タイムライン |
 |---|---|---|---|
-| Product Hunt | SaaS, dev tools, consumer apps | Product Hunt + Twitter/X | 4-6 weeks prep |
-| Email List Launch | Course, info product, SaaS with existing list | Email | 6-8 weeks |
-| Social Media Launch | Consumer product, personal brand | Twitter/X, LinkedIn, Instagram | 4-6 weeks |
-| Paid Ads Launch | E-commerce, established product | Facebook/Google Ads | 2-4 weeks prep |
-| Community Launch | Niche product, developer tools | Reddit, Discord, Slack communities | 6-8 weeks |
-| Partner Launch | B2B, enterprise, marketplace | Partner channels | 8-12 weeks |
-| Hybrid Launch | Any high-stakes launch | Multi-channel coordinated | 8-12 weeks |
+| Product Hunt | SaaS、開発ツール、コンシューマーアプリ | Product Hunt + Twitter/X | 4〜6週間の準備 |
+| メールリストローンチ | コース、情報商材、既存リストを持つSaaS | メール | 6〜8週間 |
+| SNSローンチ | コンシューマー製品、個人ブランド | Twitter/X、LinkedIn、Instagram | 4〜6週間 |
+| 有料広告ローンチ | Eコマース、確立された製品 | Facebook/Google広告 | 2〜4週間の準備 |
+| コミュニティローンチ | ニッチ製品、開発者ツール | Reddit、Discord、Slackコミュニティ | 6〜8週間 |
+| パートナーローンチ | B2B、エンタープライズ、マーケットプレイス | パートナーチャネル | 8〜12週間 |
+| ハイブリッドローンチ | あらゆる高リスクローンチ | マルチチャネル連携 | 8〜12週間 |
 
-### Step 3: Generate the 8-Week Launch Timeline
+### ステップ3: 8週間のローンチタイムライン生成
 
-#### Weeks 1-2: Foundation
-**Objective:** Lock in positioning, build assets, set up infrastructure.
+#### 第1〜2週：基盤構築
+**目標：** ポジショニングを確定し、アセットを構築し、インフラをセットアップする。
 
-**Tasks:**
-- [ ] Define launch positioning statement: "For [TARGET] who [PROBLEM], [PRODUCT] is a [CATEGORY] that [KEY BENEFIT]. Unlike [ALTERNATIVE], we [DIFFERENTIATOR]."
-- [ ] Create launch one-pager (internal alignment doc)
-- [ ] Set up landing page / waitlist page
-- [ ] Set up analytics and tracking (UTM parameters, conversion goals, event tracking)
-- [ ] Create launch-specific email list/segment
-- [ ] Draft all email sequences (see Email Templates below)
-- [ ] Brief design team on visual assets needed
-- [ ] Identify 10-20 potential beta testers or early access users
-- [ ] Research and list 20+ communities, forums, and groups where target audience gathers
-- [ ] Set up social media content calendar tool
+**タスク：**
+- [ ] ローンチポジショニングステートメントを定義する：「[ターゲット]で[課題]を抱える方に、[製品]は[主要ベネフィット]をもたらす[カテゴリー]です。[代替手段]と異なり、私たちは[差別化ポイント]を提供します。」
+- [ ] ローンチ用の1枚紙（社内整合ドキュメント）を作成する
+- [ ] ランディングページ / ウェイトリストページをセットアップする
+- [ ] アナリティクスとトラッキングをセットアップする（UTMパラメーター、コンバージョン目標、イベントトラッキング）
+- [ ] ローンチ専用のメールリスト/セグメントを作成する
+- [ ] すべてのメールシーケンスを下書きする（以下のメールテンプレートを参照）
+- [ ] 必要なビジュアルアセットについてデザインチームに説明する
+- [ ] 10〜20名の潜在的なベータテスターまたはアーリーアクセスユーザーを特定する
+- [ ] ターゲットオーディエンスが集まる20以上のコミュニティ・フォーラム・グループをリサーチしてリスト化する
+- [ ] SNSコンテンツカレンダーツールをセットアップする
 
-**Deliverables:**
-- Positioning statement
-- Landing page live
-- Email sequences drafted
-- Beta tester list
+**成果物：**
+- ポジショニングステートメント
+- ランディングページの公開
+- メールシーケンスの下書き
+- ベータテスターリスト
 
-#### Weeks 3-4: Audience Building
-**Objective:** Build anticipation, grow waitlist, recruit beta testers.
+#### 第3〜4週：オーディエンス構築
+**目標：** 期待感を高め、ウェイトリストを成長させ、ベータテスターを募集する。
 
-**Tasks:**
-- [ ] Begin content seeding: publish 2-3 blog posts / threads related to the problem you solve
-- [ ] Share behind-the-scenes content on social media (building in public)
-- [ ] Start engaging in target communities (provide value, don't pitch yet)
-- [ ] Reach out to beta testers with personal invitations
-- [ ] Collect early feedback and testimonials from beta users
-- [ ] Begin influencer/partner outreach (see Partner Coordination below)
-- [ ] Set up referral mechanism for waitlist (e.g., viral waitlist with rewards)
-- [ ] Create teaser content (sneak peeks, countdowns, problem-awareness posts)
-- [ ] Record demo video or product walkthrough
-- [ ] Write press release or media pitch (if relevant)
+**タスク：**
+- [ ] コンテンツのシード配布を開始する：解決する課題に関連するブログ記事/スレッドを2〜3本公開する
+- [ ] SNSで舞台裏コンテンツを共有する（パブリックでの構築）
+- [ ] ターゲットコミュニティへの参加を開始する（価値を提供し、まだ売り込まない）
+- [ ] 個人的な招待状でベータテスターにアプローチする
+- [ ] ベータユーザーから初期フィードバックと推薦文を収集する
+- [ ] インフルエンサー/パートナーへのアウトリーチを開始する（以下のパートナー連携を参照）
+- [ ] ウェイトリスト用の紹介メカニズムをセットアップする（例：報酬付きのバイラルウェイトリスト）
+- [ ] ティーザーコンテンツを作成する（スニークピーク、カウントダウン、課題認識投稿）
+- [ ] デモ動画または製品ウォークスルーを収録する
+- [ ] プレスリリースまたはメディアピッチを作成する（該当する場合）
 
-**Content Calendar (Weeks 3-4):**
-| Day | Content Type | Channel | Theme |
+**コンテンツカレンダー（第3〜4週）：**
+| 曜日 | コンテンツタイプ | チャネル | テーマ |
 |---|---|---|---|
-| Mon | Problem-awareness post | LinkedIn/Twitter | Why this problem matters |
-| Tue | Behind-the-scenes | Instagram/Twitter | Show what you're building |
-| Wed | Educational content | Blog/LinkedIn | Teach something related to your space |
-| Thu | Social proof | Twitter/LinkedIn | Beta tester quote or result |
-| Fri | Teaser/countdown | All channels | Build anticipation for launch |
+| 月 | 課題認識投稿 | LinkedIn/Twitter | この課題がなぜ重要かを伝える |
+| 火 | 舞台裏 | Instagram/Twitter | 構築中のものを見せる |
+| 水 | 教育コンテンツ | ブログ/LinkedIn | 自分の領域に関する知識を教える |
+| 木 | ソーシャルプルーフ | Twitter/LinkedIn | ベータテスターの声や成果 |
+| 金 | ティーザー/カウントダウン | 全チャネル | ローンチへの期待感を高める |
 
-**Deliverables:**
-- 4-6 content pieces published
-- Beta testers onboarded and providing feedback
-- Waitlist growing
-- Partner/influencer commitments secured
+**成果物：**
+- 4〜6本のコンテンツを公開
+- ベータテスターのオンボーディングとフィードバック収集
+- ウェイトリストの増加
+- パートナー/インフルエンサーのコミットメント獲得
 
-#### Weeks 5-6: Pre-Launch Intensification
-**Objective:** Maximize anticipation, finalize assets, prep launch infrastructure.
+#### 第5〜6週：ローンチ前の強化
+**目標：** 期待感を最大化し、アセットを完成させ、ローンチインフラを準備する。
 
-**Tasks:**
-- [ ] Send pre-launch email sequence to waitlist (see Email Templates)
-- [ ] Increase social media posting frequency to daily
-- [ ] Publish case study or results from beta testers
-- [ ] Finalize pricing and offer structure
-- [ ] Create launch-day content package (all posts, emails, and graphics ready)
-- [ ] Brief partners/affiliates on launch plan and provide swipe copy
-- [ ] Set up live chat or support for launch day
-- [ ] Test all purchase/signup flows end-to-end
-- [ ] Prepare FAQ document for support team
-- [ ] Create urgency mechanism (early bird pricing, limited spots, bonus expiration)
-- [ ] Rehearse launch day by walking through every step
-- [ ] Set up real-time dashboard for launch metrics
+**タスク：**
+- [ ] ウェイトリストへのプレローンチメールシーケンスを送信する（以下のメールテンプレートを参照）
+- [ ] SNS投稿頻度を毎日に増やす
+- [ ] ベータテスターのケーススタディまたは結果を公開する
+- [ ] 価格とオファー構造を最終決定する
+- [ ] ローンチ日コンテンツパッケージを作成する（すべての投稿、メール、グラフィックを準備）
+- [ ] パートナー/アフィリエイトにローンチ計画を説明し、スワイプコピーを提供する
+- [ ] ローンチ日用のライブチャットまたはサポートをセットアップする
+- [ ] すべての購入/サインアップフローをエンドツーエンドでテストする
+- [ ] サポートチーム用のFAQドキュメントを作成する
+- [ ] 緊急性メカニズムを作成する（アーリーバード価格、限定枠、ボーナス期限）
+- [ ] すべての手順を通じてローンチ日のリハーサルを行う
+- [ ] ローンチメトリクスのリアルタイムダッシュボードをセットアップする
 
-**Deliverables:**
-- All launch assets finalized and scheduled
-- Partners briefed and ready
-- Checkout/signup flow tested
-- Support team prepared
+**成果物：**
+- すべてのローンチアセットの完成とスケジュール設定
+- パートナーへの説明と準備完了
+- チェックアウト/サインアップフローのテスト完了
+- サポートチームの準備完了
 
-#### Week 7: LAUNCH WEEK
-**Objective:** Execute the launch with maximum impact and coordinated effort.
+#### 第7週：ローンチウィーク
+**目標：** 最大限のインパクトと協調した取り組みでローンチを実行する。
 
-**Day-by-Day Breakdown:**
+**日別スケジュール：**
 
-**Monday - Soft Launch / VIP Access:**
-- Send early access email to VIPs, beta testers, and top waitlist members
-- Post on social: "We're live for our early supporters"
-- Collect first-day feedback and testimonials
-- Monitor for bugs and issues
-- Goal: First 50-100 users/customers
+**月曜日 - ソフトローンチ / VIPアクセス：**
+- VIP、ベータテスター、上位ウェイトリストメンバーにアーリーアクセスメールを送信
+- SNS投稿：「私たちの早期サポーターのためにライブになりました」
+- 初日のフィードバックと推薦文を収集
+- バグや問題を監視する
+- 目標：最初の50〜100人のユーザー/顧客
 
-**Tuesday - Public Announcement:**
-- Send main launch email to full list
-- Publish launch blog post
-- Post launch announcement on all social channels
-- Submit to Product Hunt (if applicable -- schedule for 12:01 AM PT)
-- Activate partner/affiliate promotions
-- Begin paid ad campaigns (if applicable)
-- Goal: Maximum visibility and traffic
+**火曜日 - パブリックアナウンス：**
+- 全リストにメインローンチメールを送信
+- ローンチブログ記事を公開
+- 全SNSチャネルでローンチアナウンスを投稿
+- Product Huntに申請する（該当する場合 -- 太平洋時間0:01に予約投稿）
+- パートナー/アフィリエイトのプロモーションを開始
+- 有料広告キャンペーンを開始（該当する場合）
+- 目標：最大限の認知度とトラフィック
 
-**Wednesday - Social Proof Push:**
-- Share first customer testimonials and results
-- Repost/retweet customer reactions
-- Send "look what people are saying" email
-- Post in communities (with genuine value, not spam)
-- Respond to every comment, mention, and question
-- Goal: Build momentum through social proof
+**水曜日 - ソーシャルプルーフの推進：**
+- 最初の顧客の推薦文と結果を共有
+- 顧客の反応をリポスト/リツイート
+- 「こんな声が届いています」メールを送信
+- コミュニティに投稿する（スパムではなく真の価値として）
+- すべてのコメント、メンション、質問に返答する
+- 目標：ソーシャルプルーフによるモメンタムの構築
 
-**Thursday - Objection Handling:**
-- Publish FAQ or "everything you need to know" post
-- Send email addressing top 3 objections
-- Host live Q&A or AMA (Twitter Space, LinkedIn Live, webinar)
-- Share comparison content (why this vs alternatives)
-- Goal: Convert fence-sitters
+**木曜日 - 反論への対処：**
+- FAQ または「知っておくべきすべてのこと」投稿を公開
+- 上位3つの反論に対応するメールを送信
+- ライブQ&AまたはAMAを開催する（Twitter Space、LinkedIn Live、ウェビナー）
+- 比較コンテンツを共有する（なぜこれが代替案より優れているか）
+- 目標：迷っている人をコンバート
 
-**Friday - Urgency and Scarcity:**
-- Send "early bird pricing ends soon" email
-- Post countdown content on social
-- Share final testimonials and case studies
-- Activate scarcity mechanisms (limited spots, bonus expires)
-- Goal: Drive final wave of conversions
+**金曜日 - 緊急性と希少性：**
+- 「アーリーバード価格がもうすぐ終了します」メールを送信
+- SNSにカウントダウンコンテンツを投稿
+- 最後の推薦文とケーススタディを共有
+- 希少性メカニズムを起動する（限定枠、ボーナス期限）
+- 目標：最後のコンバージョンの波を生み出す
 
-**Saturday/Sunday - Wrap Up:**
-- Send "last chance" email for any time-limited offers
-- Compile launch week results
-- Thank early customers publicly
-- Begin post-launch content planning
+**土曜日・日曜日 - まとめ：**
+- 期間限定オファーの「ラストチャンス」メールを送信
+- ローンチウィークの結果をまとめる
+- 初期顧客に公開でお礼を伝える
+- ポストローンチコンテンツの計画を開始する
 
-#### Week 8: Post-Launch
-**Objective:** Maintain momentum, collect feedback, plan next iteration.
+#### 第8週：ポストローンチ
+**目標：** モメンタムを維持し、フィードバックを収集し、次のイテレーションを計画する。
 
-**Tasks:**
-- [ ] Send post-launch survey to new customers
-- [ ] Compile and analyze launch metrics (see Metrics section)
-- [ ] Write launch retrospective (what worked, what didn't, what to change)
-- [ ] Transition from launch pricing to regular pricing
-- [ ] Set up onboarding email sequence for new customers
-- [ ] Plan next content calendar based on launch learnings
-- [ ] Follow up with media contacts and partners with results
-- [ ] Identify top customers for case studies
-- [ ] Begin planning v2 features based on feedback
-- [ ] Set up ongoing marketing engine (content, ads, email nurture)
+**タスク：**
+- [ ] 新規顧客にポストローンチアンケートを送信する
+- [ ] ローンチメトリクスをまとめて分析する（以下のメトリクスセクションを参照）
+- [ ] ローンチの振り返りを書く（何が機能したか、しなかったか、変更すべきことは何か）
+- [ ] ローンチ価格から通常価格に移行する
+- [ ] 新規顧客向けのオンボーディングメールシーケンスをセットアップする
+- [ ] ローンチの学びに基づいて次のコンテンツカレンダーを計画する
+- [ ] メディア担当者とパートナーに結果を報告する
+- [ ] ケーススタディ用のトップ顧客を特定する
+- [ ] フィードバックに基づいてv2機能の計画を開始する
+- [ ] 継続的なマーケティングエンジンをセットアップする（コンテンツ、広告、メールナーチャー）
 
-### Step 4: Email Sequence Templates
+### ステップ4: メールシーケンステンプレート
 
-#### Pre-Launch Sequence (Weeks 5-6)
+#### プレローンチシーケンス（第5〜6週）
 
-**Email 1: The Teaser (2 weeks before)**
-Subject: Something big is coming...
-Purpose: Build anticipation
-Content: Hint at the product, share the problem it solves, tease the launch date. Don't reveal everything.
-CTA: "Stay tuned" or "Make sure you're on the list"
+**メール1：ティーザー（2週間前）**
+件名：何か大きなことが起こります...
+目的：期待感の構築
+内容：製品についてのヒントを出し、解決する課題を伝え、ローンチ日をティーズする。すべては明かさない。
+CTA：「お楽しみに」または「リストに登録済みであることを確認してください」
 
-**Email 2: The Reveal (1 week before)**
-Subject: Here's what we've been building
-Purpose: Show the product, build desire
-Content: Reveal the product with screenshots/video. Share beta tester results. Announce launch date and any early bird offer.
-CTA: "Mark your calendar" or "Get notified on launch day"
+**メール2：リビール（1週間前）**
+件名：私たちが作ってきたものをお見せします
+目的：製品を見せ、欲求を高める
+内容：スクリーンショット/動画で製品を公開する。ベータテスターの結果を共有する。ローンチ日とアーリーバードオファーを発表する。
+CTA：「カレンダーに記録してください」または「ローンチ日に通知を受け取る」
 
-**Email 3: The Social Proof (3 days before)**
-Subject: "[Beta Tester Name] got [Result] in [Timeframe]"
-Purpose: Prove it works
-Content: Feature 2-3 beta tester testimonials with specific results. Address the "does this actually work?" objection.
-CTA: "Be ready for [launch day]"
+**メール3：ソーシャルプルーフ（3日前）**
+件名：「[ベータテスター名]が[期間]で[成果]を達成しました」
+目的：機能することを証明する
+内容：具体的な結果を持つ2〜3人のベータテスターの推薦文を紹介する。「これは本当に機能するの？」という反論に対処する。
+CTA：「[ローンチ日]に備えてください」
 
-#### Launch Sequence (Week 7)
+#### ローンチシーケンス（第7週）
 
-**Email 4: The Launch (Day 1)**
-Subject: It's live -- [Product Name] is here
-Purpose: Drive immediate action
-Content: Announce the launch. State the offer clearly. Include early bird pricing or bonus. Link directly to purchase/signup.
-CTA: "Get [Product] now" with primary button
+**メール4：ローンチ（1日目）**
+件名：ライブです -- [製品名]がここに
+目的：即時行動を促す
+内容：ローンチを発表する。オファーを明確に述べる。アーリーバード価格またはボーナスを含める。購入/サインアップへの直接リンクを入れる。
+CTA：プライマリボタンで「今すぐ[製品]を入手する」
 
-**Email 5: The Social Proof Follow-Up (Day 3)**
-Subject: People are already seeing results
-Purpose: Convert through social proof
-Content: Share first-customer testimonials, screenshots of reactions, usage stats. Create FOMO.
-CTA: "Join [X] others who already [outcome]"
+**メール5：ソーシャルプルーフフォローアップ（3日目）**
+件名：すでに成果が出ています
+目的：ソーシャルプルーフでコンバートする
+内容：最初の顧客の推薦文、反応のスクリーンショット、使用状況の統計を共有する。FOOMOを創出する。
+CTA：「すでに[成果]を達成した[X]人に加わる」
 
-**Email 6: The Objection Handler (Day 4)**
-Subject: "But what if [common objection]?"
-Purpose: Address hesitations
-Content: List and answer top 3-5 objections. Include guarantee/risk reversal. Share FAQ.
-CTA: "Try it risk-free"
+**メール6：反論への対処（4日目）**
+件名：「でも[よくある反論]だったら？」
+目的：迷いに対処する
+内容：上位3〜5つの反論をリストアップして回答する。保証/リスクリバーサルを含める。FAQを共有する。
+CTA：「リスクなしで試してみる」
 
-**Email 7: The Urgency Close (Day 5-7)**
-Subject: [X hours] left for [early bird / bonus / discount]
-Purpose: Drive final conversions with urgency
-Content: Remind of the deadline. Recap the value. Final testimonial. Clear, single CTA.
-CTA: "Last chance to get [offer]"
+**メール7：緊急性クローズ（5〜7日目）**
+件名：[アーリーバード / ボーナス / 割引]まで[X時間]
+目的：緊急性で最後のコンバージョンを促す
+内容：締め切りを思い出させる。価値をまとめる。最後の推薦文。明確な単一CTA。
+CTA：「[オファー]を入手する最後のチャンス」
 
-### Step 5: Social Media Launch Posts
+### ステップ5: SNSローンチ投稿
 
-#### Twitter/X Thread Template:
+#### Twitter/X スレッドテンプレート：
 ```
-Post 1: After [X months/weeks] of building, I'm thrilled to announce [Product Name] is live.
+投稿1：[Xヶ月/週間]の開発を経て、[製品名]がライブになったことを嬉しくお知らせします。
 
-[Product] helps [target audience] [achieve outcome] without [pain point].
+[製品]は[ターゲットオーディエンス]が[ペインポイント]なしに[成果を達成]できるようにします。
 
-Here's the story of why I built it (and what it can do for you):
+なぜこれを作ったのか、そしてあなたにとって何ができるかについての話：
 
-[Thread emoji] 1/
+[スレッド絵文字] 1/
 
-Post 2: The problem: [Describe the problem in detail. Make it relatable.]
+投稿2：課題：[課題を詳しく説明する。共感できる内容にする。]
 
-Post 3: The solution: [What your product does, in simple terms. Include screenshot or demo GIF.]
+投稿3：解決策：[製品が何をするか、シンプルな言葉で。スクリーンショットやデモGIFを含める。]
 
-Post 4: Early results: [Beta tester results, specific numbers]
+投稿4：初期結果：[ベータテスターの結果、具体的な数字]
 
-Post 5: What's included: [Key features as bullet points]
+投稿5：含まれるもの：[主要機能を箇条書きで]
 
-Post 6: Special launch offer: [Pricing, early bird deal, bonus]
+投稿6：特別ローンチオファー：[価格、アーリーバード特典、ボーナス]
 
-Post 7: Try it now: [Link] [CTA]
-```
-
-#### LinkedIn Post Template:
-```
-I just launched [Product Name], and here's why it matters:
-
-[1-2 sentences about the problem]
-
-After [talking to X customers / spending Y months building / experiencing this problem myself], I realized [insight].
-
-So I built [Product Name] to [specific outcome].
-
-Early users are already seeing:
-- [Result 1]
-- [Result 2]
-- [Result 3]
-
-If you [target audience descriptor], I'd love for you to check it out:
-[Link]
-
-Special launch pricing available for the next [timeframe].
-
-#relevant #hashtags
+投稿7：今すぐ試してみる：[リンク] [CTA]
 ```
 
-#### Instagram / Visual Platform Template:
+#### LinkedIn 投稿テンプレート：
 ```
-Image/Carousel: Product screenshots, before/after, or results graphic
+[製品名]をローンチしました。なぜそれが重要なのかを説明します：
 
-Caption:
-[Hook - first line that stops the scroll]
+[課題について1〜2文]
 
-The problem: [1-2 sentences]
-The solution: [1-2 sentences about your product]
-The results: [specific outcomes from beta users]
+[X人の顧客と話した後 / Y ヶ月間構築した後 / この課題を自分で経験した後]、私は[インサイト]に気づきました。
 
-Launch special: [offer details]
+そこで[製品名]を作り、[具体的な成果]を実現しました。
 
-Link in bio to get started.
+早期ユーザーはすでに次のような成果を出しています：
+- [成果1]
+- [成果2]
+- [成果3]
 
-[Relevant hashtags - 15-20 for Instagram]
-```
+あなたが[ターゲットオーディエンスの説明]であれば、ぜひチェックしてみてください：
+[リンク]
 
-### Step 6: Press and Media Outreach
+次の[期間]は特別ローンチ価格でご利用いただけます。
 
-**Press Release Structure:**
-1. Headline: [Company] Launches [Product] to Help [Audience] [Outcome]
-2. Subheadline: [Supporting detail with a key stat or differentiator]
-3. First paragraph: Who, what, when, where, why (the news)
-4. Quote from founder/CEO
-5. Product details and key features
-6. Market context (why now, market size, trend)
-7. Customer quote or early results
-8. Availability and pricing
-9. About the company (boilerplate)
-10. Contact information
-
-**Media Pitch Email Template:**
-```
-Subject: [Angle] -- [Product Name] launches to [outcome]
-
-Hi [Name],
-
-I'm reaching out because you've covered [related topic] and I thought [Product Name] might be interesting for your readers.
-
-[One sentence about what it does and why it's newsworthy]
-
-[One sentence about early traction or results]
-
-[One sentence about what makes it different]
-
-I'd love to offer you [exclusive story / early access / founder interview / demo].
-
-Happy to share more details if you're interested.
-
-Best,
-[Name]
+#関連 #ハッシュタグ
 ```
 
-### Step 7: Influencer and Partner Coordination
+#### Instagram / ビジュアルプラットフォームテンプレート：
+```
+画像/カルーセル：製品スクリーンショット、ビフォーアフター、または結果のグラフィック
 
-**Partner Outreach Timeline:**
-- Week 3: Initial outreach with personal message
-- Week 4: Follow up, share product details and demo
-- Week 5: Confirm participation, send swipe copy and affiliate links
-- Week 6: Reminder with launch day schedule
-- Week 7: Day-of coordination, thank you notes
-- Week 8: Share results, pay commissions, plan ongoing partnership
+キャプション：
+[フック - スクロールを止める最初の行]
 
-**What to Provide Partners:**
-- Product access (free account or sample)
-- Swipe copy for email, social, and blog
-- Branded graphics and assets
-- Unique affiliate/referral link with tracking
-- Commission structure or reciprocal promotion plan
-- Launch day schedule with specific asks
+課題：[1〜2文]
+解決策：[製品について1〜2文]
+結果：[ベータユーザーからの具体的な成果]
 
-### Step 8: Launch Metrics Dashboard
+ローンチスペシャル：[オファーの詳細]
 
-Track these metrics in real-time during launch week:
+始めるにはプロフィールのリンクから。
 
-**Awareness Metrics:**
-- Website traffic (total and by source)
-- Social media impressions and reach
-- Press mentions and backlinks
-- Email open rates
+[関連ハッシュタグ - Instagramなら15〜20個]
+```
 
-**Engagement Metrics:**
-- Time on site
-- Pages per session
-- Social media engagement rate
-- Email click-through rates
-- Demo video completion rate
+### ステップ6: プレスとメディアへのアウトリーチ
 
-**Conversion Metrics:**
-- Signup/purchase conversion rate
-- Revenue generated
-- Average order value
-- Cost per acquisition
-- Email-to-conversion rate
+**プレスリリース構成：**
+1. 見出し：[会社名]が[製品]をローンチし、[オーディエンス]が[成果]を達成できるように
+2. サブ見出し：[主要な統計や差別化ポイントを含むサポート詳細]
+3. 第1段落：誰が、何を、いつ、どこで、なぜ（ニュース）
+4. 創業者/CEOのコメント
+5. 製品詳細と主要機能
+6. 市場コンテキスト（なぜ今か、市場規模、トレンド）
+7. 顧客コメントまたは初期結果
+8. 提供状況と価格
+9. 会社概要（定型文）
+10. 連絡先情報
 
-**Retention Metrics (Post-Launch):**
-- Day 1 / Day 7 retention
-- Feature adoption rate
-- Support ticket volume
-- NPS score
+**メディアピッチメールテンプレート：**
+```
+件名：[アングル] -- [製品名]が[成果]のためにローンチ
 
-### Step 9: Common Launch Mistakes to Avoid
+[名前]様、
 
-1. **Launching to nobody** -- Build the audience BEFORE the product is ready
-2. **No urgency mechanism** -- Without a deadline, people bookmark and forget
-3. **Perfectionism** -- Ship at 80% quality; iterate based on real feedback
-4. **Single-channel launch** -- Coordinate across email, social, communities, and partners
-5. **No follow-up sequence** -- Most conversions happen on days 3-7, not day 1
-6. **Ignoring time zones** -- Schedule launches and emails for your audience's active hours
-7. **No support plan** -- Launch day will generate support requests; be ready
-8. **Pricing confusion** -- Make the offer crystal clear; don't make people calculate
-9. **Forgetting mobile** -- Test every email, page, and checkout on mobile
-10. **No post-launch plan** -- The launch is the beginning, not the end
+[関連トピック]についての記事を拝見し、[製品名]が読者の皆様にとって興味深いものになるかと思いご連絡しました。
 
-### Step 10: Budget Allocation Guide
+[何をするか、なぜニュース価値があるかについての1文]
 
-| Budget Level | Allocation |
+[初期のトラクションまたは結果についての1文]
+
+[何が違うかについての1文]
+
+[独占記事 / アーリーアクセス / 創業者インタビュー / デモ]をぜひご提供できればと思います。
+
+詳細について興味がおありでしたら、喜んでお伝えします。
+
+よろしくお願いいたします。
+[名前]
+```
+
+### ステップ7: インフルエンサーとパートナーの連携
+
+**パートナーアウトリーチタイムライン：**
+- 第3週：個人的なメッセージで初期アウトリーチ
+- 第4週：フォローアップし、製品詳細とデモを共有
+- 第5週：参加を確認し、スワイプコピーとアフィリエイトリンクを送付
+- 第6週：ローンチ日スケジュールのリマインダー
+- 第7週：当日の連携とお礼
+- 第8週：結果を共有し、コミッションを支払い、継続的なパートナーシップを計画
+
+**パートナーに提供するもの：**
+- 製品アクセス（無料アカウントまたはサンプル）
+- メール、SNS、ブログ用のスワイプコピー
+- ブランドのグラフィックとアセット
+- トラッキング付きのユニークなアフィリエイト/紹介リンク
+- コミッション構造または相互プロモーション計画
+- 具体的な依頼を含むローンチ日スケジュール
+
+### ステップ8: ローンチメトリクスダッシュボード
+
+ローンチウィーク中にこれらのメトリクスをリアルタイムで追跡します：
+
+**認知度メトリクス：**
+- ウェブサイトトラフィック（合計と流入元別）
+- SNSのインプレッションとリーチ
+- プレスでの言及とバックリンク
+- メール開封率
+
+**エンゲージメントメトリクス：**
+- サイト滞在時間
+- セッションあたりのページ数
+- SNSエンゲージメント率
+- メールクリック率
+- デモ動画の視聴完了率
+
+**コンバージョンメトリクス：**
+- サインアップ/購入のコンバージョン率
+- 生成された売上
+- 平均注文額
+- 顧客獲得コスト
+- メールからコンバージョンへの率
+
+**リテンションメトリクス（ポストローンチ）：**
+- 1日目 / 7日目のリテンション
+- 機能採用率
+- サポートチケットの量
+- NPS スコア
+
+### ステップ9: 避けるべき一般的なローンチの失敗
+
+1. **誰もいない状態でローンチする** -- 製品が完成する前にオーディエンスを構築する
+2. **緊急性メカニズムがない** -- 締め切りがなければ、人々はブックマークして忘れる
+3. **完璧主義** -- 80%の品質でリリースし、実際のフィードバックに基づいてイテレートする
+4. **単一チャネルのローンチ** -- メール、SNS、コミュニティ、パートナー間で調整する
+5. **フォローアップシーケンスがない** -- ほとんどのコンバージョンは1日目ではなく3〜7日目に起こる
+6. **タイムゾーンを無視する** -- オーディエンスのアクティブな時間帯にローンチとメールをスケジュールする
+7. **サポート計画がない** -- ローンチ日はサポートリクエストを生成する。準備しておく
+8. **価格の混乱** -- オファーを明確にする。計算させない
+9. **モバイルを忘れる** -- すべてのメール、ページ、チェックアウトをモバイルでテストする
+10. **ポストローンチ計画がない** -- ローンチは終わりではなく始まり
+
+### ステップ10: 予算配分ガイド
+
+| 予算レベル | 配分 |
 |---|---|
-| **Bootstrapped ($0-500)** | 100% organic: content, communities, email list, personal outreach |
-| **Moderate ($500-5,000)** | 40% paid ads, 30% influencer/partner, 20% tools/software, 10% design |
-| **Well-Funded ($5,000-25,000)** | 35% paid ads, 25% influencer/partner, 20% PR/media, 10% events, 10% tools |
-| **Enterprise ($25,000+)** | 30% paid ads, 20% events/webinars, 20% PR, 15% influencer, 10% content, 5% tools |
+| **自己資金（$0〜500）** | 100%オーガニック：コンテンツ、コミュニティ、メールリスト、個人アウトリーチ |
+| **中程度（$500〜5,000）** | 40%有料広告、30%インフルエンサー/パートナー、20%ツール/ソフトウェア、10%デザイン |
+| **十分な資金（$5,000〜25,000）** | 35%有料広告、25%インフルエンサー/パートナー、20%PR/メディア、10%イベント、10%ツール |
+| **エンタープライズ（$25,000以上）** | 30%有料広告、20%イベント/ウェビナー、20%PR、15%インフルエンサー、10%コンテンツ、5%ツール |
 
-### Step 11: Post-Launch Analysis Framework
+### ステップ11: ポストローンチ分析フレームワーク
 
-After the launch, generate a retrospective covering:
+ローンチ後に振り返りを作成し、以下をカバーします：
 
-1. **Goal vs Actual**: Did you hit your targets?
-2. **Channel Performance**: Which channels drove the most conversions?
-3. **Email Performance**: Open rates, click rates, conversion rates by email
-4. **Top Converting Content**: Which posts, pages, or ads drove the most action?
-5. **Customer Feedback Themes**: What are people saying?
-6. **What Worked**: Top 3 things that drove results
-7. **What Didn't Work**: Top 3 things to change next time
-8. **Unexpected Insights**: Surprises from the data
-9. **Next Steps**: Immediate actions based on learnings
+1. **目標対実績**：ターゲットを達成しましたか？
+2. **チャネルパフォーマンス**：どのチャネルが最もコンバージョンをもたらしましたか？
+3. **メールパフォーマンス**：メール別の開封率、クリック率、コンバージョン率
+4. **トップコンバージョンコンテンツ**：どの投稿、ページ、または広告が最も行動を促しましたか？
+5. **顧客フィードバックのテーマ**：人々は何と言っていますか？
+6. **機能したこと**：結果をもたらした上位3つ
+7. **機能しなかったこと**：次回変更すべき上位3つ
+8. **予期しないインサイト**：データからの驚き
+9. **次のステップ**：学びに基づく即時アクション
 
-## Output Format
+## 出力フォーマット
 
-Generate a file called `LAUNCH-PLAYBOOK.md` with:
+`LAUNCH-PLAYBOOK.md` というファイルを以下の内容で生成します：
 
 ```markdown
-# Launch Playbook: [Product Name]
-## Launch Date: [Date]
-## Launch Type: [Type]
-## Primary Goal: [Goal with specific target]
+# ローンチプレイブック：[製品名]
+## ローンチ日：[日付]
+## ローンチタイプ：[タイプ]
+## 主要目標：[具体的なターゲットを含む目標]
 
 ---
 
-## Week-by-Week Plan
-[Detailed week-by-week tasks with checkboxes]
+## 週次計画
+[チェックボックス付きの詳細な週次タスク]
 
-## Email Sequences
-[Complete email templates customized for the product]
+## メールシーケンス
+[製品用にカスタマイズされた完全なメールテンプレート]
 
-## Social Media Content
-[Platform-specific posts ready to customize and schedule]
+## SNSコンテンツ
+[カスタマイズとスケジュール設定の準備ができたプラットフォーム別投稿]
 
-## Partner/Influencer Plan
-[Outreach templates and coordination timeline]
+## パートナー/インフルエンサー計画
+[アウトリーチテンプレートと連携タイムライン]
 
-## Launch Day Checklist
-[Hour-by-hour launch day plan]
+## ローンチ日チェックリスト
+[時間別のローンチ日計画]
 
-## Metrics Dashboard
-[Metrics to track with target benchmarks]
+## メトリクスダッシュボード
+[ターゲットベンチマーク付きの追跡メトリクス]
 
-## Budget Allocation
-[Specific dollar amounts based on stated budget]
+## 予算配分
+[記載された予算に基づく具体的な金額]
 
-## Post-Launch Plan
-[Week 8+ activities and analysis framework]
+## ポストローンチ計画
+[第8週以降の活動と分析フレームワーク]
 ```
 
-## Key Principles
-- Every recommendation should be tied to the user's specific product, audience, and resources. Generic advice is useless.
-- Include specific templates they can copy-paste and customize, not just frameworks.
-- If the user has run previous skills (market audit, market landing, market brand), incorporate those findings into the launch plan.
-- Time the playbook to their stated launch date and work backwards.
-- Always include a "minimum viable launch" option for users with limited resources.
-- Emphasize that launching is an event, not a moment -- the buildup and follow-through matter more than day one.
+## 主要原則
+- すべての推奨事項は、ユーザーの特定の製品、オーディエンス、リソースに結びついている必要があります。汎用的なアドバイスは役に立ちません。
+- フレームワークだけでなく、コピーペーストしてカスタマイズできる具体的なテンプレートを含めてください。
+- ユーザーが以前のスキル（market audit、market landing、market brand）を実行した場合は、それらの知見をローンチ計画に組み込みます。
+- プレイブックを記載されたローンチ日に合わせて逆算してタイミングを設定します。
+- リソースが限られているユーザーのために「最小限のローンチ」オプションを常に含めます。
+- ローンチはイベントであり、瞬間ではないことを強調します -- 準備と事後対応は1日目よりも重要です。

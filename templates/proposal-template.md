@@ -1,139 +1,139 @@
-# Client Marketing Proposal Template
+# クライアント向けマーケティング提案書テンプレート
 
 ---
 
-## [Cover Page]
+## [表紙]
 
-### Marketing Strategy Proposal
-**Prepared for:** [Client Company Name]
-**Prepared by:** [Your Name / Agency Name]
-**Date:** [Date]
-**Valid until:** [Date + 30 days]
-
----
-
-## Executive Summary
-
-[Client Name] has a strong [product/service] but is currently leaving significant revenue on the table due to [2-3 key marketing gaps identified in the audit]. This proposal outlines a [timeframe] engagement to address these gaps and deliver measurable growth.
-
-**Expected Outcomes:**
-- [Specific metric improvement, e.g., "Increase website conversion rate from 2.1% to 4-5%"]
-- [Specific metric, e.g., "Generate 150+ qualified leads per month through content + SEO"]
-- [Specific metric, e.g., "Reduce customer acquisition cost by 30% through funnel optimization"]
+### マーケティング戦略提案書
+**提出先：** [クライアント企業名]
+**作成者：** [あなたの氏名 / 会社名]
+**日付：** [日付]
+**有効期限：** [日付 + 30日]
 
 ---
 
-## Situation Analysis
+## エグゼクティブサマリー
 
-### What We Found
+[クライアント名]は優れた[製品/サービス]を持ちながらも、[監査で特定した2〜3の主要なマーケティング上の課題]により、現在多大な収益機会を逃しています。本提案書では、これらの課題を解決し、測定可能な成長を実現するための[期間]の取り組みをご提案します。
 
-Based on our marketing audit of [website], here are the key findings:
-
-**Strengths (what's working):**
-1. [Strength with specific example]
-2. [Strength with specific example]
-3. [Strength with specific example]
-
-**Opportunities (what's missing):**
-1. [Gap with revenue impact estimate]
-2. [Gap with revenue impact estimate]
-3. [Gap with revenue impact estimate]
-
-**Current Marketing Score:** [X/100]
-**Target Marketing Score:** [Y/100] (after engagement)
+**期待される成果：**
+- [具体的な指標改善例：「ウェブサイトのコンバージョン率を2.1%から4〜5%へ向上」]
+- [具体的な指標例：「コンテンツ＋SEOを通じて月150件以上の質の高いリードを獲得」]
+- [具体的な指標例：「ファネル最適化により顧客獲得コストを30%削減」]
 
 ---
 
-## Proposed Strategy
+## 現状分析
 
-### Phase 1: Foundation (Weeks 1-4)
-- [Specific deliverable]
-- [Specific deliverable]
-- [Specific deliverable]
+### 発見事項
 
-### Phase 2: Growth (Weeks 5-8)
-- [Specific deliverable]
-- [Specific deliverable]
-- [Specific deliverable]
+[ウェブサイト]のマーケティング監査に基づく主要な発見事項は以下の通りです。
 
-### Phase 3: Scale (Weeks 9-12)
-- [Specific deliverable]
-- [Specific deliverable]
-- [Specific deliverable]
+**強み（機能している点）：**
+1. [具体例を交えた強み]
+2. [具体例を交えた強み]
+3. [具体例を交えた強み]
 
----
+**機会（不足している点）：**
+1. [収益への影響推定を含む課題]
+2. [収益への影響推定を含む課題]
+3. [収益への影響推定を含む課題]
 
-## Scope of Work
-
-| Deliverable | Description | Timeline |
-|-------------|-------------|----------|
-| [Deliverable 1] | [Brief description] | Week 1-2 |
-| [Deliverable 2] | [Brief description] | Week 2-4 |
-| [Deliverable 3] | [Brief description] | Week 4-6 |
-| [Deliverable 4] | [Brief description] | Week 6-8 |
-| [Deliverable 5] | [Brief description] | Ongoing |
+**現在のマーケティングスコア：** [X/100]
+**目標マーケティングスコア：** [Y/100]（取り組み後）
 
 ---
 
-## Investment
+## 提案戦略
 
-### Option 1: [Package Name] — $[X,XXX]/month
-- [What's included]
-- [What's included]
-- [What's included]
-- Best for: [who this is for]
+### フェーズ1：基盤構築（第1〜4週）
+- [具体的な成果物]
+- [具体的な成果物]
+- [具体的な成果物]
 
-### Option 2: [Package Name] — $[X,XXX]/month (Recommended)
-- Everything in Option 1, plus:
-- [Additional deliverable]
-- [Additional deliverable]
-- Best for: [who this is for]
+### フェーズ2：成長（第5〜8週）
+- [具体的な成果物]
+- [具体的な成果物]
+- [具体的な成果物]
 
-### Option 3: [Package Name] — $[X,XXX]/month
-- Everything in Option 2, plus:
-- [Additional deliverable]
-- [Additional deliverable]
-- Best for: [who this is for]
-
-**Minimum engagement:** [3 months]
-**Payment terms:** Monthly, due on the 1st
+### フェーズ3：スケール（第9〜12週）
+- [具体的な成果物]
+- [具体的な成果物]
+- [具体的な成果物]
 
 ---
 
-## ROI Projection
+## 作業範囲
 
-| Metric | Current | Projected (90 days) | Value |
-|--------|---------|---------------------|-------|
-| Monthly website visitors | [X] | [Y] | — |
-| Conversion rate | [X%] | [Y%] | — |
-| Monthly leads | [X] | [Y] | — |
-| Customer acquisition cost | $[X] | $[Y] | $[savings] |
-| Monthly revenue impact | — | — | $[estimate] |
-
-**Projected ROI:** [X]x return on investment within [timeframe]
+| 成果物 | 説明 | スケジュール |
+|--------|------|------------|
+| [成果物1] | [簡単な説明] | 第1〜2週 |
+| [成果物2] | [簡単な説明] | 第2〜4週 |
+| [成果物3] | [簡単な説明] | 第4〜6週 |
+| [成果物4] | [簡単な説明] | 第6〜8週 |
+| [成果物5] | [簡単な説明] | 継続 |
 
 ---
 
-## Why Work With Us
+## 費用
 
-1. **[Differentiator]** — [Brief explanation]
-2. **[Differentiator]** — [Brief explanation]
-3. **[Differentiator]** — [Brief explanation]
+### オプション1：[パッケージ名] — $[X,XXX]/月
+- [含まれるもの]
+- [含まれるもの]
+- [含まれるもの]
+- 最適な方：[対象者]
 
-### Client Results
-- "[Specific testimonial with numbers]" — [Client Name, Title]
-- "[Specific testimonial with numbers]" — [Client Name, Title]
+### オプション2：[パッケージ名] — $[X,XXX]/月（推奨）
+- オプション1の全内容に加え：
+- [追加成果物]
+- [追加成果物]
+- 最適な方：[対象者]
+
+### オプション3：[パッケージ名] — $[X,XXX]/月
+- オプション2の全内容に加え：
+- [追加成果物]
+- [追加成果物]
+- 最適な方：[対象者]
+
+**最低契約期間：** [3ヶ月]
+**支払い条件：** 毎月1日払い
 
 ---
 
-## Next Steps
+## ROI予測
 
-1. **Review** this proposal (take your time)
-2. **Schedule** a 30-minute call to discuss questions → [booking link]
-3. **Sign** the agreement and we begin within [X days]
+| 指標 | 現状 | 予測（90日後） | 価値 |
+|------|------|--------------|------|
+| 月間ウェブサイト訪問者数 | [X] | [Y] | — |
+| コンバージョン率 | [X%] | [Y%] | — |
+| 月間リード数 | [X] | [Y] | — |
+| 顧客獲得コスト | $[X] | $[Y] | $[削減額] |
+| 月間収益への影響 | — | — | $[見積もり] |
 
-**Questions?** Reply to this email or call [phone number].
+**予測ROI：** [期間]以内に投資対効果[X]倍のリターン
 
 ---
 
-*This proposal is valid for 30 days from the date above.*
+## 私たちが選ばれる理由
+
+1. **[差別化要因]** — [簡単な説明]
+2. **[差別化要因]** — [簡単な説明]
+3. **[差別化要因]** — [簡単な説明]
+
+### クライアントの実績
+- 「[数字を含む具体的なお客様の声]」 — [クライアント名、役職]
+- 「[数字を含む具体的なお客様の声]」 — [クライアント名、役職]
+
+---
+
+## 次のステップ
+
+1. **ご確認** この提案書をご一読ください（お時間をかけてどうぞ）
+2. **日程調整** ご質問について30分のオンライン通話を予約する → [予約リンク]
+3. **契約締結** 合意書にご署名後、[X日]以内に開始します
+
+**ご質問は？** このメールに返信するか、[電話番号]までお電話ください。
+
+---
+
+*本提案書の有効期限は上記日付から30日間です。*
