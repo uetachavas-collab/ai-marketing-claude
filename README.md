@@ -82,30 +82,30 @@ pip install reportlab
 
 ```
 ai-marketing-claude/
-├── market/SKILL.md                     # メインオーケストレーター（全 /market コマンドのルーティング）
+├── market/SKILL.md                     # メイン司令塔（全 /market コマンドの振り分け）
 │
 ├── skills/                             # 14個のサブスキル
-│   ├── market-audit/SKILL.md           # 完全監査のオーケストレーション
-│   ├── market-copy/SKILL.md            # コピーライティング分析と生成
-│   ├── market-emails/SKILL.md          # メールシーケンスの生成
-│   ├── market-social/SKILL.md          # SNSコンテンツカレンダー
-│   ├── market-ads/SKILL.md             # 広告クリエイティブとコピー
-│   ├── market-funnel/SKILL.md          # ファネル分析と最適化
-│   ├── market-competitors/SKILL.md     # 競合インテリジェンス
-│   ├── market-landing/SKILL.md         # ランディングページのCRO
-│   ├── market-launch/SKILL.md          # ローンチプレイブックの生成
-│   ├── market-proposal/SKILL.md        # クライアント提案書の生成
+│   ├── market-audit/SKILL.md           # 総合監査（5エージェントを起動・統括）
+│   ├── market-copy/SKILL.md            # コピーライティング分析と改善案生成
+│   ├── market-emails/SKILL.md          # メールシーケンス生成
+│   ├── market-social/SKILL.md          # SNSコンテンツカレンダー生成
+│   ├── market-ads/SKILL.md             # 広告クリエイティブとコピー生成
+│   ├── market-funnel/SKILL.md          # セールスファネル分析と改善
+│   ├── market-competitors/SKILL.md     # 競合調査・比較レポート
+│   ├── market-landing/SKILL.md         # ランディングページのコンバージョン改善
+│   ├── market-launch/SKILL.md          # 製品ローンチ計画の作成
+│   ├── market-proposal/SKILL.md        # クライアント提案書の作成
 │   ├── market-report/SKILL.md          # マーケティングレポート（Markdown）
 │   ├── market-report-pdf/SKILL.md      # マーケティングレポート（PDF）
 │   ├── market-seo/SKILL.md             # SEOコンテンツ監査
-│   └── market-brand/SKILL.md           # ブランドボイス分析
+│   └── market-brand/SKILL.md           # ブランドボイス分析・ガイドライン作成
 │
 ├── agents/                             # 5つの並列サブエージェント
-│   ├── market-content.md               # コンテンツ & メッセージング分析
-│   ├── market-conversion.md            # CRO＆ファネル最適化
-│   ├── market-competitive.md           # 競合ポジショニング
-│   ├── market-technical.md             # テクニカルSEO＆トラッキング
-│   └── market-strategy.md              # ブランド、価格設定＆成長戦略
+│   ├── market-content.md               # コンテンツ・メッセージング分析
+│   ├── market-conversion.md            # コンバージョン率改善分析
+│   ├── market-competitive.md           # 競合ポジショニング分析
+│   ├── market-technical.md             # テクニカルSEO・計測タグ確認
+│   └── market-strategy.md              # ブランド・価格・成長戦略分析
 │
 ├── scripts/                            # Pythonユーティリティスクリプト
 │   ├── analyze_page.py                 # ウェブページマーケティング分析
